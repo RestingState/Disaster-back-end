@@ -3,10 +3,10 @@ CREATE TABLE IF NOT EXISTS public."user"
     id serial NOT NULL,
     first_name character varying NOT NULL,
     last_name character varying NOT NULL,
-    email character varying NOT NULL,
+    email character varying unique NOT NULL,
     password character varying NOT NULL,
     country character varying NOT NULL,
-    username character varying NOT NULL,
+    username character varying unique NOT NULL,
     PRIMARY KEY (id)
 );
 
