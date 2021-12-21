@@ -1,0 +1,10 @@
+psql -U postgres -d stellarly -a -f script.sql
+
+curl -X POST -H "Content-Type:application/json" --data-binary "{\"first_name\":\"S\", \"last_name\":\"J\", \"email\":\"qwerty@gmail.com\", \"password\":\"12345\", \"country\": \"tmp\", \"username\":\"stevej\"}" http://127.0.0.1:5000/user
+curl -X POST -H "Content-Type:application/json" --data-binary "{\"first_name\":\"P\", \"last_name\":\"M\", \"email\":\"paul@gmail.com\", \"password\":\"123458\", \"country\": \"tmp\", \"username\":\"paulm\"}" http://127.0.0.1:5000/user
+
+curl -X GET -u stevej:12345 http://127.0.0.1:5000/user/login
+curl -X GET -u paulm:123458 http://127.0.0.1:5000/user/login
+
+curl http://127.0.0.1:5000/user/stevej -X GET -H "Authorization: Bearer "
+curl http://127.0.0.1:5000/user/paulm -X GET -H "Authorization: Bearer "
