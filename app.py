@@ -1,6 +1,6 @@
 from app import api
 from wsgiref.simple_server import make_server
-from app.rest.test_api import api_blueprint
+from app.rest.api import api_blueprint
 
 
 api.register_blueprint(api_blueprint)
