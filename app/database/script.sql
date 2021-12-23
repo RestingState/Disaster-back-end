@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS public."user"
     last_name character varying NOT NULL,
     email character varying unique NOT NULL,
     password character varying NOT NULL,
-    country character varying NOT NULL,
+    city character varying NOT NULL,
     username character varying unique NOT NULL,
     PRIMARY KEY (id)
 );
