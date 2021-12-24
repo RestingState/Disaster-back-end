@@ -7,10 +7,10 @@ class UserSchema(Schema):
     last_name = fields.Str()
     email = fields.Email()
     password = fields.Str()
-    country = fields.Str()
+    city_id = fields.Int()
     username = fields.Str()
 
-
-class CategorySchema(Schema):
-    id = fields.Int()
-    name = fields.Str()
+#
+# class CategorySchema(Schema):
+#     id = fields.Int()
+#     name = fields.Str()
