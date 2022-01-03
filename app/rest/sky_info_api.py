@@ -1,20 +1,20 @@
 from . import sky_blueprint, weather
 from app import Session
-from flask import jsonify
+from flask import jsonify, request
 from app.models.models import User, City
 from app.models.schemas import UserSchema
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
 
-@sky_blueprint.route('/stars/<limit>', methods=['GET'])
-def get_stars_filter_by_limit(limit):
+@sky_blueprint.route('/stars', methods=['GET'])
+def get_stars_filter_by_limit():
     """
     !!!WARNING!!!
     this method works with table USER because STAR isn`t created yet
     User should be replaces with Star model
     UserSchema should be replaces with Star schema
 
-    limit: int
+    ?limit=Value: int, Default=100
     Returns list of stars limited by the given integer
 
     Notice: if limit is greater than actual number of stars it will return all of them
@@ -22,6 +22,7 @@ def get_stars_filter_by_limit(limit):
 
     session = Session()
 
+    limit = request.args.get('limit', 100)
     try:
         limit = int(limit)
     except ValueError:
@@ -36,15 +37,15 @@ def get_stars_filter_by_limit(limit):
     return jsonify(result)
 
 
-@sky_blueprint.route('/satellites/<limit>', methods=['GET'])
-def get_satellites_filter_by_limit(limit):
+@sky_blueprint.route('/satellites', methods=['GET'])
+def get_satellites_filter_by_limit():
     """
     !!!WARNING!!!
     this method works with table USER because SATELLITE isn`t created yet
     User should be replaces with Satellite model
     UserSchema should be replaces with Satellite schema
 
-    limit: int
+    ?limit=Value: int, Default=100
     Returns list of satellites limited by the given integer
 
     Notice: if limit is greater than actual number of satellite it will return all of them
@@ -52,6 +53,7 @@ def get_satellites_filter_by_limit(limit):
 
     session = Session()
 
+    limit = request.args.get('limit', 100)
     try:
         limit = int(limit)
     except ValueError:
