@@ -1,7 +1,6 @@
-from . import *
+# from . import *
 
 
-@api_blueprint.route("/hello")
-def hello():
-    return "<p>Hello, World!</p>"
-
+# @api_blueprint.route("/hello")
+# def hello():
+#     return "<p>Hello, World!</p>"

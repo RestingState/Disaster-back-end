@@ -8,3 +8,8 @@ curl -X GET -u paulm:123458 http://127.0.0.1:5000/user/login
 
 curl http://127.0.0.1:5000/user/stevej -X GET -H "Authorization: Bearer "
 curl http://127.0.0.1:5000/user/paulm -X GET -H "Authorization: Bearer "
+
+
+curl -X GET http://127.0.0.1:5000/stars/2
+curl -X GET http://127.0.0.1:5000/satellites/3
+curl http://127.0.0.1:5000/weather -X GET -H "Authorization: Bearer "
