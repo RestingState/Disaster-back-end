@@ -1,6 +1,5 @@
 from app import Base
 from app.models import Table, Column, Integer, ForeignKey, VARCHAR
-from sqlalchemy import BigInteger
 
 # user_category = Table('user_category', Base.metadata,
 #                       Column('user_id', ForeignKey('user.id'), primary_key=True),
