@@ -1,5 +1,12 @@
+---------------------------------------------------------------------------------------
+launch sql script
+---------------------------------------------------------------------------------------
 psql -U postgres -d stellarly -a -f script.sql
 
+
+---------------------------------------------------------------------------------------
+api
+---------------------------------------------------------------------------------------
 curl -X POST -H "Content-Type:application/json" --data-binary "{\"first_name\":\"S\", \"last_name\":\"J\", \"email\":\"qwerty@gmail.com\", \"password\":\"12345\", \"city_id\": 1, \"username\":\"stevej\"}" http://127.0.0.1:5000/user
 curl -X POST -H "Content-Type:application/json" --data-binary "{\"first_name\":\"P\", \"last_name\":\"M\", \"email\":\"paul@gmail.com\", \"password\":\"123458\", \"city_id\": 2, \"username\":\"paulm\"}" http://127.0.0.1:5000/user
 
@@ -10,8 +17,15 @@ curl http://127.0.0.1:5000/user/stevej -X GET -H "Authorization: Bearer "
 curl http://127.0.0.1:5000/user/paulm -X GET -H "Authorization: Bearer "
 
 
+---------------------------------------------------------------------------------------
+sky_info_api
+---------------------------------------------------------------------------------------
 curl -X GET http://127.0.0.1:5000/stars
 curl -X GET http://127.0.0.1:5000/stars?limit=1
+
 curl -X GET http://127.0.0.1:5000/satellites
 curl -X GET http://127.0.0.1:5000/satellites?limit=2
+
 curl http://127.0.0.1:5000/weather -X GET -H "Authorization: Bearer "
+curl http://127.0.0.1:5000/weather?city=London -X GET -H "Authorization: Bearer "
+
