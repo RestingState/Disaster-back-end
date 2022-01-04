@@ -29,6 +29,9 @@ def get_stars_filter_by_limit():
     except ValueError:
         return {'message': 'Wrong input data provided'}, 400
 
+    if limit < 0:
+        return {'message': 'Wrong input data provided'}, 400
+
     result = []
     stars = session.query(User).limit(limit)
     for star in stars:
@@ -59,6 +62,9 @@ def get_satellites_filter_by_limit():
     try:
         limit = int(limit)
     except ValueError:
+        return {'message': 'Wrong input data provided'}, 400
+
+    if limit < 0:
         return {'message': 'Wrong input data provided'}, 400
 
     result = []
