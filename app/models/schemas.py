@@ -14,3 +14,17 @@ class UserSchema(Schema):
 # class CategorySchema(Schema):
 #     id = fields.Int()
 #     name = fields.Str()
+
+
+class SatellitesSchema(Schema):
+    norad_id = fields.Int()
+    satname = fields.Str()
+    owner = fields.Str()
+    launchdate = fields.Date()
+    launchsite = fields.Str()
+    inclination = fields.Str()
+    ascending_node_longitude = fields.Str()
+    eccentricity = fields.Str()
+    pericenter_argument = fields.Str()
+    average_anomaly = fields.Str()
+    call_frequency = fields.Str()
