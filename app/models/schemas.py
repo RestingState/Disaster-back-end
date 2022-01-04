@@ -28,3 +28,13 @@ class SatellitesSchema(Schema):
     pericenter_argument = fields.Str()
     average_anomaly = fields.Str()
     call_frequency = fields.Str()
+
+
+class StarSchema(Schema):
+    id = fields.Int()
+    name = fields.Str()
+    right_ascension = fields.Str()
+    declination = fields.Str()
+    flux_visible_light = fields.Float()
+    parallax = fields.Float()
+    spectral_type = fields.Str()
