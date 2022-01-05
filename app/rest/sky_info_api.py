@@ -68,9 +68,9 @@ def get_satellites_filter_by_limit():
         return {'message': 'Wrong input data provided'}, 400
 
     result = []
-    stars = session.query(User).limit(limit)
-    for star in stars:
-        result.append(UserSchema().dump(star))
+    satellites = session.query(User).limit(limit)
+    for satellite in satellites:
+        result.append(UserSchema().dump(satellite))
 
     session.close()
     return jsonify(result)
