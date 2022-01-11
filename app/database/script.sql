@@ -64,11 +64,11 @@ CREATE TABLE IF NOT EXISTS public.satellites
 CREATE TABLE IF NOT EXISTS public.stars
 (   
     id serial NOT NULL,
-    name character varying NOT NULL,
-    right_ascension character varying NOT NULL,
-    declination character varying NOT NULL,
-    flux_visible_light decimal NOT NULL,
-    parallax decimal NOT NULL,
-    spectral_type character varying NOT NULL,
+    name character varying,
+    right_ascension character varying,
+    declination character varying,
+    flux_visible_light decimal,
+    parallax decimal,
+    spectral_type character varying,
     PRIMARY KEY (id)
 );
