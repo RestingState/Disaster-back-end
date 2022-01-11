@@ -44,3 +44,14 @@ class Satellites(Base):
     pericenter_argument = Column(VARCHAR, nullable=False)
     average_anomaly = Column(VARCHAR, nullable=False)
     call_frequency = Column(VARCHAR, nullable=False)
+
+
+class Star(Base):
+    __tablename__ = 'star'
+    id = Column(BigInteger, primary_key=True, autoincrement=True)
+    name = Column(VARCHAR)
+    right_ascension = Column(VARCHAR)
+    declination = Column(VARCHAR)
+    flux_visible_light = Column(VARCHAR)
+    parallax = Column(VARCHAR)
+    spectral_type = Column(VARCHAR)
