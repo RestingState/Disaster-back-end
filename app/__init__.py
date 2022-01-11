@@ -6,6 +6,7 @@ from flask_bcrypt import Bcrypt
 from datetime import timedelta
 from flask_jwt_extended import JWTManager
 from config import Config
+from flask_cors import CORS
 
 
 api = Flask(__name__)
@@ -13,6 +14,7 @@ api.config['JWT_SECRET_KEY'] = Config.JWT_SECRET_KEY
 api.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
 jwt = JWTManager(api)
 bcrypt = Bcrypt(api)
+cors = CORS(api)
 
 
 engine = create_engine(Config.DB_URI)
