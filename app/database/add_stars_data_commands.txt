@@ -1,0 +1,3 @@
+cd {path to postgres bin folder}	
+psql stellarly postgres
+stellarly=# COPY stars from '{path to stars_data.csv}' delimiter ',' header CSV;
