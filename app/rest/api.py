@@ -36,17 +36,17 @@ def create_user():
 @api_blueprint.route('/user/login', methods=['GET'])
 def login_user():
     session = Session()
-    auth = request.authorization
+    data = request.get_json()
 
-    if not auth or not auth.username or not auth.password:
+    if not data or 'username' not in data or 'password' not in data:
         return {'message': 'Wrong input data provided'}, 401
 
-    user = session.query(User).filter_by(username=auth.username).first()
+    user = session.query(User).filter_by(username=data['username']).first()
 
     if user is None:
         return {'message': 'User not found'}, 404
 
-    if not bcrypt.check_password_hash(user.password, auth.password):
+    if not bcrypt.check_password_hash(user.password, data['password']):
         return {'message': 'Invalid username or password provided'}, 400
 
     access_token = create_access_token(identity=user.username)
