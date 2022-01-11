@@ -30,11 +30,11 @@ class SatellitesSchema(Schema):
     call_frequency = fields.Str()
 
 
-class StarSchema(Schema):
+class StarsSchema(Schema):
     id = fields.Int()
     name = fields.Str()
     right_ascension = fields.Str()
     declination = fields.Str()
-    flux_visible_light = fields.Float()
-    parallax = fields.Float()
+    flux_visible_light = fields.Str()
+    parallax = fields.Str()
     spectral_type = fields.Str()

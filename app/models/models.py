@@ -46,8 +46,8 @@ class Satellites(Base):
     call_frequency = Column(VARCHAR, nullable=False)
 
 
-class Star(Base):
-    __tablename__ = 'star'
+class Stars(Base):
+    __tablename__ = 'stars'
     id = Column(BigInteger, primary_key=True, autoincrement=True)
     name = Column(VARCHAR)
     right_ascension = Column(VARCHAR)
