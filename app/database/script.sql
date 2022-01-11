@@ -67,8 +67,8 @@ CREATE TABLE IF NOT EXISTS public.stars
     name character varying,
     right_ascension character varying,
     declination character varying,
-    flux_visible_light decimal,
-    parallax decimal,
+    flux_visible_light character varying,
+    parallax character varying,
     spectral_type character varying,
     PRIMARY KEY (id)
 );
