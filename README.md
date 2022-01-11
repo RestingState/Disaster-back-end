@@ -23,7 +23,13 @@ source env/bin/activate
 
     Run app.py
     
-    
+
+Environment variables for db:    
+     STELLARLY_USER  - postgres username(default = 'postgres')
+     STELLARLY_PASSWORD - postgres password
+     STELLARLY_SERVER - postgres server name(default = 'localhost')
+
+
 Description:
 
 API - package used for storing data about some libs, where there is information about planets, etc.
