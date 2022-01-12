@@ -55,17 +55,14 @@ def login_user():
     return {'token': access_token}
 
 
-@api_blueprint.route('/user/<username>', methods=['GET'])
+@api_blueprint.route('/user', methods=['GET'])
 @jwt_required()
-def get_user(username):
+def get_user():
     session = Session()
     current_identity_username = get_jwt_identity()
 
-    user = session.query(User).filter_by(username=username).first()
+    user = session.query(User).filter_by(username=current_identity_username).first()
     if user is None:
-        return {'message': 'Invalid username provided'}, 400
-
-    if current_identity_username != username:
-        return {'message': 'Access is denied'}, 403
+        return {'message': 'Invalid token provided'}, 400
 
     return jsonify(UserSchema().dump(user))
