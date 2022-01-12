@@ -8,13 +8,12 @@ psql -U postgres -d stellarly -a -f script.sql
 api
 ---------------------------------------------------------------------------------------
 curl -X POST -H "Content-Type:application/json" --data-binary "{\"first_name\":\"S\", \"last_name\":\"J\", \"email\":\"qwerty@gmail.com\", \"password\":\"12345\", \"city_id\": 1, \"username\":\"stevej\"}" http://127.0.0.1:5000/user
-curl -X POST -H "Content-Type:application/json" --data-binary "{\"first_name\":\"P\", \"last_name\":\"M\", \"email\":\"paul@gmail.com\", \"password\":\"123458\", \"city_id\": 2, \"username\":\"paulm\"}" http://127.0.0.1:5000/user
+curl -X POST -H "Content-Type:application/json" --data-binary "{\"first_name\":\"P\", \"last_name\":\"M\", \"email\":\"paul@gmail.com\", \"password\":\"123458\", \"city_id\": 1, \"username\":\"paulm\"}" http://127.0.0.1:5000/user
 
-curl -X GET -H "Content-Type:application/json" --data-binary "{\"username\":\"stevej\", \"password\":\"12345\"}" http://127.0.0.1:5000/user/login
-curl -X GET -H "Content-Type:application/json" --data-binary "{\"username\":\"paulm\", \"password\":\"123458\"}" http://127.0.0.1:5000/user/login
+curl -X POST -H "Content-Type:application/json" --data-binary "{\"username\":\"stevej\", \"password\":\"12345\"}" http://127.0.0.1:5000/user/login
+curl -X POST -H "Content-Type:application/json" --data-binary "{\"username\":\"paulm\", \"password\":\"123458\"}" http://127.0.0.1:5000/user/login
 
-curl http://127.0.0.1:5000/user/stevej -X GET -H "Authorization: Bearer "
-curl http://127.0.0.1:5000/user/paulm -X GET -H "Authorization: Bearer "
+curl http://127.0.0.1:5000/user -X GET -H "Authorization: Bearer "
 
 
 ---------------------------------------------------------------------------------------
