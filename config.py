@@ -14,4 +14,4 @@ class Config:
 
     DB_URI = os.getenv('DB_URI', f'postgresql+psycopg2://{user}:{password}@{server}/{database}')
     JWT_SECRET_KEY = 'super-secret'
-    WEATHER_API_KEY = ''
+    WEATHER_API_KEY = '38a998fffca4ade707ae1065880997a3'
