@@ -71,7 +71,7 @@ def get_satellites_filter_by_limit():
 def get_weather_for_user():
     """
     Before using this method make sure the api key in
-    app.rest.__init__ is provided for Weather class
+    config.py is provided
 
     ?city=Value: str, Default=user`s location
 
