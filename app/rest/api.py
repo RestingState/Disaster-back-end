@@ -33,7 +33,7 @@ def create_user():
     return {'message': 'User successfully created'}
 
 
-@api_blueprint.route('/user/login', methods=['GET'])
+@api_blueprint.route('/user/login', methods=['POST'])
 def login_user():
     session = Session()
     data = request.get_json()
