@@ -5,3 +5,4 @@ to create and fill the db
 1) run script.sql
 2) run insert from satellites_data.txt
 3) do instructions from add_stars_data_commands.txt
+4) run insert from add_planet_data.txt
