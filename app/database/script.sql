@@ -72,3 +72,15 @@ CREATE TABLE IF NOT EXISTS public.stars
     spectral_type character varying,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS public.planet
+(
+    id serial NOT NULL,
+    name character varying,
+    mass character varying,
+    density character varying,
+    mean_temperature character varying,
+    radius character varying,
+    visual_mag character varying,
+    PRIMARY KEY (id)
+);
