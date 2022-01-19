@@ -49,9 +49,6 @@ CREATE TABLE IF NOT EXISTS public.satellites
 (
     norad_id bigint NOT NULL,
 	satname character varying NOT NULL,
-	owner character varying NOT NULL,
-    launchdate date,
-    launchsite character varying NOT NULL,
     inclination character varying NOT NULL,
     ascending_node_longitude character varying NOT NULL,
     eccentricity character varying NOT NULL,
@@ -59,6 +56,12 @@ CREATE TABLE IF NOT EXISTS public.satellites
     average_anomaly character varying NOT NULL,
     call_frequency character varying NOT NULL,
     PRIMARY KEY (norad_id)
+);
+
+CREATE TABLE IF NOT EXISTS public.satellite_data_raw
+(
+    norad_id bigint,
+    sat_data jsonb
 );
 
 CREATE TABLE IF NOT EXISTS public.stars
