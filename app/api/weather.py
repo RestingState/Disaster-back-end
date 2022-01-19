@@ -35,7 +35,7 @@ class Weather:
                                 f'appid={self.api_key}')
         data = json.loads(response.text)
         if data['cod'] != 200:
-            return None
+            return data
         return self.__format_weather_data(data)
 
     def using_lat_and_lon(self, latitude, longitude):
@@ -51,5 +51,5 @@ class Weather:
                                 f'appid={self.api_key}')
         data = json.loads(response.text)
         if data['cod'] != 200:
-            return None
+            return data
         return self.__format_weather_data(data)

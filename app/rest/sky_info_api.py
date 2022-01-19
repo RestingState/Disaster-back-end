@@ -91,4 +91,10 @@ def get_weather_for_user():
     city = request.args.get('city', city_object.name)
 
     data = weather.in_the_city(city)
-    return (jsonify(data), 200) if data else ({'message': 'Wrong city provided'}, 401)
+
+    if 'cod' not in data:
+        return jsonify(data), 200
+    elif data['message'] == 'city not found':
+        return {'message': 'Wrong city provided'}, 401
+    else:
+        return {'message': 'Server error'}, 500
