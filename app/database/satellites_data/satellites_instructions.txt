@@ -3,7 +3,8 @@ This site will help you, you can choose time interval here
 https://in-the-sky.org/search.php?s=&searchtype=Spacecraft&obj1Type=0&objorder=1&distunit=0&magmin=&magmax=&distmin=&distmax=&lyearmin=2022&lyearmax=2022&satorder=0&satgroup=0&satdest=0&satsite=0&satowner=0&feed=DFAN&ordernews=asc&maxdiff=7&startday=5&startmonth=1&startyear=2022&endday=31&endmonth=12&endyear=2032&news_view=normal
 2. You need to write what concrete norad_id you want to add (start point and end point)
 (There is example in add_satellites.py)
-3. Run add_satellites.py (be aware that it can take few minutes depend on how many satellites you want to add)
+3. Change connection in satellites_json.py (17 line)
+4. Run add_satellites.py (be aware that it can take few minutes depend on how many satellites you want to add)
 Optional:
 You may check if your table satellite_data_raw has data
 4. Run in your pgadmin satellites_parsing script
