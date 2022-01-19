@@ -86,12 +86,15 @@ def get_weather_for_user():
     current_identity_username = get_jwt_identity()
 
     user = session.query(User).filter_by(username=current_identity_username).first()
-    city_object = session.query(City).filter_by(id=user.city_id).first()
+    if not user:
+        return {'message': 'User not found'}, 404
 
+    city_object = session.query(City).filter_by(id=user.city_id).first()
+    if not city_object:
+        return {'message': 'City not found in database'}, 404
     city = request.args.get('city', city_object.name)
 
     data = weather.in_the_city(city)
-
     if 'cod' not in data:
         return jsonify(data), 200
     elif data['message'] == 'city not found':
