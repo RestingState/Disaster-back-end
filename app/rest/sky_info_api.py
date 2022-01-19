@@ -29,6 +29,9 @@ def get_stars_filter_by_limit():
 
     result = []
     stars = session.query(Stars).limit(limit)
+    if not stars:
+        return {'message': 'Stars not found'}, 404
+
     for star in stars:
         result.append(StarsSchema().dump(star))
 
@@ -59,6 +62,9 @@ def get_satellites_filter_by_limit():
 
     result = []
     satellites = session.query(Satellites).limit(limit)
+    if not satellites:
+        return {'message': 'Satellites not found'}, 404
+
     for satellite in satellites:
         result.append(SatellitesSchema().dump(satellite))
 
