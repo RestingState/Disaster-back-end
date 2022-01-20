@@ -38,3 +38,13 @@ class StarsSchema(Schema):
     flux_visible_light = fields.Str()
     parallax = fields.Str()
     spectral_type = fields.Str()
+
+
+class PlanetSchema(Schema):
+    id = fields.Int()
+    name = fields.Str()
+    mass = fields.Str()
+    density = fields.Str()
+    mean_temperature = fields.Str()
+    radius = fields.Str()
+    visual_mag = fields.Str()
