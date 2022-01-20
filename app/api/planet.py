@@ -1,6 +1,6 @@
 import json
 import requests
-from horizon_api_objects_list import objects_list
+from app.api.horizon_api_objects_list import objects_list
 
 
 class Planet:

@@ -55,3 +55,14 @@ class Stars(Base):
     flux_visible_light = Column(VARCHAR)
     parallax = Column(VARCHAR)
     spectral_type = Column(VARCHAR)
+
+
+class Planet(Base):
+    __tablename__ = 'planet'
+    id = Column(Integer, primary_key=True)
+    name = Column(VARCHAR)
+    mass = Column(VARCHAR)
+    density = Column(VARCHAR)
+    mean_temperature = Column(VARCHAR)
+    radius = Column(VARCHAR)
+    visual_mag = Column(VARCHAR)
