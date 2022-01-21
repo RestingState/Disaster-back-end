@@ -110,4 +110,4 @@ def get_weather_for_user():
     elif data['message'] == 'city not found':
         return {'message': 'Wrong city provided'}, 401
     else:
-        return {'message': 'Server error'}, 500
+        return {'message': 'internal server error'}, 500
