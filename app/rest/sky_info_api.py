@@ -4,6 +4,11 @@ from flask import jsonify, request
 from app.models.models import User, City, Satellites, Stars
 from app.models.schemas import SatellitesSchema, StarsSchema
 from flask_jwt_extended import jwt_required, get_jwt_identity
+from app.api.planet import Planet as PlanetClass
+from datetime import datetime
+from app.models.models import Planet, PlanetCoordinates
+from app.models.schemas import PlanetSchema, PlanetCoordinatesSchema
+from app.api.planet import load_planet_coordinates
 
 
 @sky_blueprint.route('/stars', methods=['GET'])
@@ -111,3 +116,46 @@ def get_weather_for_user():
         return {'message': 'Wrong city provided'}, 401
     else:
         return {'message': 'internal server error'}, 500
+
+
+@sky_blueprint.route('/load_planet', methods=['POST'])
+def load_planets():
+    session = Session()
+
+    time = datetime.today().strftime('%Y %m %d')
+    time = time.split()
+    # start_time = f'{time[0]}-{time[1]}-{time[2]} 00:00'
+    # stop_time = f'{time[0]}-{time[1]}-{int(time[2])} 00:10'
+    start_time = '2022-01-20'
+    stop_time = '2022-01-22'
+
+    planets = session.query(Planet).all()
+    if not planets:
+        return {'message': 'Planets not found'}, 200
+
+    for planet in planets:
+        coordinates = PlanetClass.get_dec_and_ra_in_time_interval(planet.name, start_time, stop_time)
+        loading_result = load_planet_coordinates(planet, coordinates, session)
+        if loading_result:
+            return {'message': 'internal server error'}, 500
+
+    session.close()
+    return {'message': 'success'}, 200
+
+
+@sky_blueprint.route('/planets', methods=['GET'])
+def get_planets():
+    session = Session()
+
+    planets = session.query(Planet).all()
+    result = []
+    for planet in planets:
+        information = PlanetSchema().dump(planet)
+        db_coordinates = session.query(PlanetCoordinates).all()
+        coordinates = []
+        for coordinate in db_coordinates:
+            coordinates.append(PlanetCoordinatesSchema().dump(coordinate))
+        result.append({'name': planet.name, 'information': information, 'coordinates': coordinates})
+
+    session.close()
+    return jsonify(result)
