@@ -18,19 +18,19 @@ def get_stars_filter_by_limit():
 
     session = Session()
 
-    limit = request.args.get('limit', 100)
     try:
+        limit = request.args.get('limit', 100)
         limit = int(limit)
     except ValueError:
         return {'message': 'Wrong input data provided'}, 400
+    except Exception:
+        return {'message': 'internal server error'}, 500
 
     if limit < 0:
         return {'message': 'Wrong input data provided'}, 400
 
     result = []
     stars = session.query(Stars).limit(limit)
-    if not stars:
-        return {'message': 'Stars not found'}, 404
 
     for star in stars:
         result.append(StarsSchema().dump(star))
@@ -51,19 +51,19 @@ def get_satellites_filter_by_limit():
 
     session = Session()
 
-    limit = request.args.get('limit', 100)
     try:
+        limit = request.args.get('limit', 100)
         limit = int(limit)
     except ValueError:
         return {'message': 'Wrong input data provided'}, 400
+    except Exception:
+        return {'message': 'internal server error'}, 500
 
     if limit < 0:
         return {'message': 'Wrong input data provided'}, 400
 
     result = []
     satellites = session.query(Satellites).limit(limit)
-    if not satellites:
-        return {'message': 'Satellites not found'}, 404
 
     for satellite in satellites:
         result.append(SatellitesSchema().dump(satellite))
@@ -98,7 +98,11 @@ def get_weather_for_user():
     city_object = session.query(City).filter_by(id=user.city_id).first()
     if not city_object:
         return {'message': 'City not found in database'}, 404
-    city = request.args.get('city', city_object.name)
+
+    try:
+        city = request.args.get('city', city_object.name)
+    except Exception:
+        return {'message': 'internal server error'}, 500
 
     data = weather.in_the_city(city)
     if 'cod' not in data:
