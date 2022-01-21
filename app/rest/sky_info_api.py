@@ -125,7 +125,7 @@ def load_planets(start_time, stop_time):
     stop_time: YYYY-MM-DD
 
     Loads coordinates for all the planet table objects in
-    set time interval into table planet_coordinates
+    time interval into table planet_coordinates
     Returns success message
     """
     session = Session()
@@ -153,6 +153,13 @@ def load_planets(start_time, stop_time):
 
 @sky_blueprint.route('/planets', methods=['GET'])
 def get_planets():
+    """
+    Returns dict
+    {'name': planet_name, 'information': planet_dict, 'coordinates': coordinates_dict}
+    where coordinates_dict is an planet_coordinates table object dict which for today`s date
+    and planet_dict is planet table object dict for current planet.
+    """
+
     session = Session()
     date = datetime.today().strftime('%Y-%b-%d 00:00')
 
@@ -163,9 +170,6 @@ def get_planets():
             information = PlanetSchema().dump(planet)
             db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
             coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
-            # coordinates = []
-            # for coordinate in db_coordinates:
-            #     coordinates.append(PlanetCoordinatesSchema().dump(coordinate))
             result.append({'name': planet.name, 'information': information, 'coordinates': coordinates})
     except Exception:
         return {'message': 'internal server error'}, 500
