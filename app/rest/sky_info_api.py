@@ -161,10 +161,11 @@ def get_planets():
         result = []
         for planet in planets:
             information = PlanetSchema().dump(planet)
-            db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).all()
-            coordinates = []
-            for coordinate in db_coordinates:
-                coordinates.append(PlanetCoordinatesSchema().dump(coordinate))
+            db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
+            coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
+            # coordinates = []
+            # for coordinate in db_coordinates:
+            #     coordinates.append(PlanetCoordinatesSchema().dump(coordinate))
             result.append({'name': planet.name, 'information': information, 'coordinates': coordinates})
     except Exception:
         return {'message': 'internal server error'}, 500
