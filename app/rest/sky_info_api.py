@@ -147,15 +147,18 @@ def load_planets():
 def get_planets():
     session = Session()
 
-    planets = session.query(Planet).all()
-    result = []
-    for planet in planets:
-        information = PlanetSchema().dump(planet)
-        db_coordinates = session.query(PlanetCoordinates).all()
-        coordinates = []
-        for coordinate in db_coordinates:
-            coordinates.append(PlanetCoordinatesSchema().dump(coordinate))
-        result.append({'name': planet.name, 'information': information, 'coordinates': coordinates})
+    try:
+        planets = session.query(Planet).all()
+        result = []
+        for planet in planets:
+            information = PlanetSchema().dump(planet)
+            db_coordinates = session.query(PlanetCoordinates).all()
+            coordinates = []
+            for coordinate in db_coordinates:
+                coordinates.append(PlanetCoordinatesSchema().dump(coordinate))
+            result.append({'name': planet.name, 'information': information, 'coordinates': coordinates})
+    except Exception:
+        return {'message': 'internal server error'}, 500
 
     session.close()
     return jsonify(result)
