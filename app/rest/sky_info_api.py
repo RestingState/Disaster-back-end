@@ -120,6 +120,14 @@ def get_weather_for_user():
 
 @sky_blueprint.route('/load_planets/<start_time>/<stop_time>', methods=['POST'])
 def load_planets(start_time, stop_time):
+    """
+    start_time: YYYY-MM-DD
+    stop_time: YYYY-MM-DD
+
+    Loads coordinates for all the planet table objects in
+    set time interval into table planet_coordinates
+    Returns success message
+    """
     session = Session()
 
     planets = session.query(Planet).all()
@@ -146,13 +154,14 @@ def load_planets(start_time, stop_time):
 @sky_blueprint.route('/planets', methods=['GET'])
 def get_planets():
     session = Session()
+    date = datetime.today().strftime('%Y-%b-%d 00:00')
 
     try:
         planets = session.query(Planet).all()
         result = []
         for planet in planets:
             information = PlanetSchema().dump(planet)
-            db_coordinates = session.query(PlanetCoordinates).all()
+            db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).all()
             coordinates = []
             for coordinate in db_coordinates:
                 coordinates.append(PlanetCoordinatesSchema().dump(coordinate))
