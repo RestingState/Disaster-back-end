@@ -1,6 +1,7 @@
 import json
 import requests
 from app.api.horizon_api_objects_list import objects_list
+from app.models.models import PlanetCoordinates
 
 
 class Planet:
@@ -103,6 +104,21 @@ class Planet:
                 result[line[1:18]] = info
 
         return result
+
+
+def load_planet_coordinates(planet, coordinates, session):
+    for key, value in coordinates.items():
+        dec = value.get('dec', None)
+        ra = value.get('ra', None)
+        if not dec or not ra:
+            return 'error'
+        try:
+            data = PlanetCoordinates(planet_id=planet.id, date=key, dec=dec, ra=ra)
+            session.add(data)
+            session.commit()
+        except Exception:
+            return 'error'
+    return None
 
 
 # Examples

@@ -66,3 +66,12 @@ class Planet(Base):
     mean_temperature = Column(VARCHAR)
     radius = Column(VARCHAR)
     visual_mag = Column(VARCHAR)
+
+
+class PlanetCoordinates(Base):
+    __tablename__ = 'planet_coordinates'
+    id = Column(Integer, primary_key=True)
+    planet_id = Column(Integer, ForeignKey('planet.id'))
+    date = Column(VARCHAR)
+    dec = Column(VARCHAR)
+    ra = Column(VARCHAR)
