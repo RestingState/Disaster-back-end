@@ -75,15 +75,16 @@ class Planet:
 
         if 'Bad dates -- start must be earlier than stop' in data:
             raise ValueError('Bad dates -- start must be earlier than stop')
-        elif 'Cannot interpret date. Type "?!" or try YYYY-MMM-DD {HH:MN} format.' in data:
-            raise ValueError('Cannot interpret date. Type "?!" or try YYYY-MMM-DD {HH:MN} format.')
+        elif 'Cannot interpret date' in data:
+            raise ValueError('Cannot interpret date.')
         elif 'Observer table for observer=target disallowed.' in data:
-            raise ValueError('Can not get position from the observing point')
+            raise RuntimeError('Can not get position from the observing point')
+        elif 'error' in response.keys():
+            print(response['error'])
+            raise RuntimeError('Api error')
         elif '$$SOE' not in data:
             raise RuntimeError('Api error')
         elif not data:
-            raise RuntimeError('Api error')
-        elif 'error' in response.keys():
             raise RuntimeError('Api error')
 
         lines = data.split('\n')

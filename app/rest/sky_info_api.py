@@ -118,23 +118,23 @@ def get_weather_for_user():
         return {'message': 'internal server error'}, 500
 
 
-@sky_blueprint.route('/load_planet', methods=['POST'])
-def load_planets():
+@sky_blueprint.route('/load_planets/<start_time>/<stop_time>', methods=['POST'])
+def load_planets(start_time, stop_time):
     session = Session()
-
-    time = datetime.today().strftime('%Y %m %d')
-    time = time.split()
-    # start_time = f'{time[0]}-{time[1]}-{time[2]} 00:00'
-    # stop_time = f'{time[0]}-{time[1]}-{int(time[2])} 00:10'
-    start_time = '2022-01-20'
-    stop_time = '2022-01-22'
 
     planets = session.query(Planet).all()
     if not planets:
         return {'message': 'Planets not found'}, 200
 
     for planet in planets:
-        coordinates = PlanetClass.get_dec_and_ra_in_time_interval(planet.name, start_time, stop_time)
+
+        try:
+            coordinates = PlanetClass.get_dec_and_ra_in_time_interval(planet.name, start_time, stop_time)
+        except ValueError:
+            return {'message': 'Wrong input data provided'}, 400
+        except Exception:
+            return {'message': 'internal server error'}, 500
+
         loading_result = load_planet_coordinates(planet, coordinates, session)
         if loading_result:
             return {'message': 'internal server error'}, 500

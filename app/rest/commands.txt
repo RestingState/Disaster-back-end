@@ -28,4 +28,6 @@ curl -X GET http://127.0.0.1:5000/satellites?limit=2
 curl http://127.0.0.1:5000/weather -X GET -H "Authorization: Bearer "
 curl http://127.0.0.1:5000/weather?city=London -X GET -H "Authorization: Bearer "
 
+curl -X POST http://127.0.0.1:5000/load_planets/YYYY-MM-DD/YYYY-MM-DD
+
 curl -X GET http://127.0.0.1:5000/planets
