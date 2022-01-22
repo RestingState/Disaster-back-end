@@ -133,10 +133,9 @@ def load_coordinates(start_time, stop_time):
 
     planets = session.query(Planet).all()
     if not planets:
-        return {'message': 'Planets not found'}, 200
+        return {'message': 'The planet table is empty'}, 200
 
     for planet in planets:
-
         try:
             coordinates = PlanetClass.get_dec_and_ra_in_time_interval(planet.name, start_time, stop_time)
         except ValueError:
@@ -162,7 +161,6 @@ def get_planets():
     """
 
     session = Session()
-    # date = datetime.today().strftime('%Y-%b-%d 00:00')
     date = datetime.today().strftime('%Y-%m-%d')
 
     try:
