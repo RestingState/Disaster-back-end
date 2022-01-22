@@ -162,7 +162,8 @@ def get_planets():
     """
 
     session = Session()
-    date = datetime.today().strftime('%Y-%b-%d 00:00')
+    # date = datetime.today().strftime('%Y-%b-%d 00:00')
+    date = datetime.today().strftime('%Y-%m-%d')
 
     try:
         planets = session.query(Planet).all()
