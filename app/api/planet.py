@@ -9,6 +9,21 @@ class Planet:
     Class for getting planets and other space objects info using horizons api.
     """
 
+    month_dict = {
+        'Jan': '01',
+        'Feb': '02',
+        'Mar': '03',
+        'Apr': '04',
+        'May': '05',
+        'Jun': '06',
+        'Jul': '07',
+        'Aug': '08',
+        'Sep': '09',
+        'Oct': '10',
+        'Nov': '11',
+        'Dec': '12'
+    }
+
     @staticmethod
     def __object_name_code(object_name):
         """
@@ -102,7 +117,8 @@ class Planet:
                 info = dict()
                 info['ra'] = line[23:34]
                 info['dec'] = line[35:]
-                result[line[1:18]] = info
+                date = line[1:12].split('-')
+                result[f'{date[0]}-{Planet.month_dict[date[1]]}-{date[2]}'] = info
 
         return result
 
