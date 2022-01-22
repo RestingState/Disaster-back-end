@@ -118,8 +118,8 @@ def get_weather_for_user():
         return {'message': 'internal server error'}, 500
 
 
-@sky_blueprint.route('/load_planets/<start_time>/<stop_time>', methods=['POST'])
-def load_planets(start_time, stop_time):
+@sky_blueprint.route('/load_coordinates/<start_time>/<stop_time>', methods=['POST'])
+def load_coordinates(start_time, stop_time):
     """
     start_time: YYYY-MM-DD
     stop_time: YYYY-MM-DD
@@ -128,6 +128,7 @@ def load_planets(start_time, stop_time):
     time interval into table planet_coordinates
     Returns success message
     """
+
     session = Session()
 
     planets = session.query(Planet).all()
@@ -148,7 +149,7 @@ def load_planets(start_time, stop_time):
             return {'message': 'internal server error'}, 500
 
     session.close()
-    return {'message': 'success'}, 200
+    return {'message': 'success'}
 
 
 @sky_blueprint.route('/planets', methods=['GET'])
