@@ -53,6 +53,6 @@ class PlanetSchema(Schema):
 class PlanetCoordinatesSchema(Schema):
     id = fields.Int()
     planet_id = fields.Int()
-    date = fields.Str()
+    date = fields.Date()
     dec = fields.Str()
     ra = fields.Str()

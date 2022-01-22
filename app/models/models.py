@@ -72,6 +72,6 @@ class PlanetCoordinates(Base):
     __tablename__ = 'planet_coordinates'
     id = Column(Integer, primary_key=True)
     planet_id = Column(Integer, ForeignKey('planet.id'))
-    date = Column(VARCHAR)
+    date = Column(Date)
     dec = Column(VARCHAR)
     ra = Column(VARCHAR)
