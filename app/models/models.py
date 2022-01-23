@@ -1,6 +1,7 @@
 from app import Base
 from app.models import Table, Column, Integer, ForeignKey, VARCHAR
 from sqlalchemy import BigInteger, Date
+from sqlalchemy.orm import relationship
 
 
 # user_category = Table('user_category', Base.metadata,
@@ -75,3 +76,5 @@ class PlanetCoordinates(Base):
     date = Column(Date)
     dec = Column(VARCHAR)
     ra = Column(VARCHAR)
+
+    planet = relationship(Planet, backref='planet_coordinates', lazy=False)
