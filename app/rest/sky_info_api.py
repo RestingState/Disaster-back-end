@@ -159,6 +159,8 @@ def get_planets():
     {'name': planet_name, 'information': planet_dict, 'coordinates': coordinates_dict}
     where coordinates_dict is an planet_coordinates table object dict which for today`s date
     and planet_dict is planet table object dict for current planet.
+
+    !!! In case there are no date for today in the date base the coordinates_dict will be empty.
     """
 
     session = Session()
