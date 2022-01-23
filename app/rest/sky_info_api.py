@@ -147,6 +147,7 @@ def load_coordinates(start_time, stop_time):
         if loading_result:
             return {'message': 'internal server error'}, 500
 
+    session.commit()
     session.close()
     return {'message': 'success'}
 

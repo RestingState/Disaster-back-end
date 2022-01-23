@@ -132,7 +132,6 @@ def load_planet_coordinates(planet, coordinates, session):
         try:
             data = PlanetCoordinates(planet=planet, date=key, dec=dec, ra=ra)
             session.add(data)
-            session.commit()
         except Exception:
             return 'error'
     return None
