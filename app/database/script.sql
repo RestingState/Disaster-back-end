@@ -87,3 +87,17 @@ CREATE TABLE IF NOT EXISTS public.planet
     visual_mag character varying,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS public.planet_coordinates
+(
+    id serial NOT NULL,
+    planet_id bigint,
+    "date" date,
+    dec character varying,
+    ra character varying,
+    PRIMARY KEY (id)
+);
+
+ALTER TABLE IF EXISTS public."planet_coordinates"
+    ADD FOREIGN KEY (planet_id)
+    REFERENCES public.planet (id) ;
