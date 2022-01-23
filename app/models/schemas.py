@@ -48,3 +48,11 @@ class PlanetSchema(Schema):
     mean_temperature = fields.Str()
     radius = fields.Str()
     visual_mag = fields.Str()
+
+
+class PlanetCoordinatesSchema(Schema):
+    id = fields.Int()
+    planet_id = fields.Int()
+    date = fields.Date()
+    dec = fields.Str()
+    ra = fields.Str()

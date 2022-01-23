@@ -4,6 +4,11 @@ from flask import jsonify, request
 from app.models.models import User, City, Satellites, Stars
 from app.models.schemas import SatellitesSchema, StarsSchema
 from flask_jwt_extended import jwt_required, get_jwt_identity
+from app.api.planet import Planet as PlanetClass
+from datetime import datetime
+from app.models.models import Planet, PlanetCoordinates
+from app.models.schemas import PlanetSchema, PlanetCoordinatesSchema
+from app.api.planet import load_planet_coordinates
 
 
 @sky_blueprint.route('/stars', methods=['GET'])
@@ -111,3 +116,64 @@ def get_weather_for_user():
         return {'message': 'Wrong city provided'}, 401
     else:
         return {'message': 'internal server error'}, 500
+
+
+@sky_blueprint.route('/load_coordinates/<start_time>/<stop_time>', methods=['POST'])
+def load_coordinates(start_time, stop_time):
+    """
+    start_time: YYYY-MM-DD
+    stop_time: YYYY-MM-DD
+
+    Loads coordinates for all the planet table objects in
+    time interval into table planet_coordinates
+    Returns success message
+    """
+
+    session = Session()
+
+    planets = session.query(Planet).all()
+    if not planets:
+        return {'message': 'The planet table is empty'}, 200
+
+    for planet in planets:
+        try:
+            coordinates = PlanetClass.get_dec_and_ra_in_time_interval(planet.name, start_time, stop_time)
+        except ValueError:
+            return {'message': 'Wrong input data provided'}, 400
+        except Exception:
+            return {'message': 'internal server error'}, 500
+
+        loading_result = load_planet_coordinates(planet, coordinates, session)
+        if loading_result:
+            return {'message': 'internal server error'}, 500
+
+    session.commit()
+    session.close()
+    return {'message': 'success'}
+
+
+@sky_blueprint.route('/planets', methods=['GET'])
+def get_planets():
+    """
+    Returns dict
+    {'name': planet_name, 'information': planet_dict, 'coordinates': coordinates_dict}
+    where coordinates_dict is an planet_coordinates table object dict which for today`s date
+    and planet_dict is planet table object dict for current planet.
+    """
+
+    session = Session()
+    date = datetime.today().strftime('%Y-%m-%d')
+
+    try:
+        planets = session.query(Planet).all()
+        result = []
+        for planet in planets:
+            information = PlanetSchema().dump(planet)
+            db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
+            coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
+            result.append({'name': planet.name, 'information': information, 'coordinates': coordinates})
+    except Exception:
+        return {'message': 'internal server error'}, 500
+
+    session.close()
+    return jsonify(result)

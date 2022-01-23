@@ -1,6 +1,7 @@
 from app import Base
 from app.models import Table, Column, Integer, ForeignKey, VARCHAR
 from sqlalchemy import BigInteger, Date
+from sqlalchemy.orm import relationship
 
 
 # user_category = Table('user_category', Base.metadata,
@@ -66,3 +67,14 @@ class Planet(Base):
     mean_temperature = Column(VARCHAR)
     radius = Column(VARCHAR)
     visual_mag = Column(VARCHAR)
+
+
+class PlanetCoordinates(Base):
+    __tablename__ = 'planet_coordinates'
+    id = Column(Integer, primary_key=True)
+    planet_id = Column(Integer, ForeignKey('planet.id'))
+    date = Column(Date)
+    dec = Column(VARCHAR)
+    ra = Column(VARCHAR)
+
+    planet = relationship(Planet, backref='planet_coordinates', lazy=False)

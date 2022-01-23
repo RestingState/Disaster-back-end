@@ -1,12 +1,28 @@
 import json
 import requests
 from app.api.horizon_api_objects_list import objects_list
+from app.models.models import PlanetCoordinates
 
 
 class Planet:
     """
     Class for getting planets and other space objects info using horizons api.
     """
+
+    month_dict = {
+        'Jan': '01',
+        'Feb': '02',
+        'Mar': '03',
+        'Apr': '04',
+        'May': '05',
+        'Jun': '06',
+        'Jul': '07',
+        'Aug': '08',
+        'Sep': '09',
+        'Oct': '10',
+        'Nov': '11',
+        'Dec': '12'
+    }
 
     @staticmethod
     def __object_name_code(object_name):
@@ -74,15 +90,16 @@ class Planet:
 
         if 'Bad dates -- start must be earlier than stop' in data:
             raise ValueError('Bad dates -- start must be earlier than stop')
-        elif 'Cannot interpret date. Type "?!" or try YYYY-MMM-DD {HH:MN} format.' in data:
-            raise ValueError('Cannot interpret date. Type "?!" or try YYYY-MMM-DD {HH:MN} format.')
+        elif 'Cannot interpret date' in data:
+            raise ValueError('Cannot interpret date.')
         elif 'Observer table for observer=target disallowed.' in data:
-            raise ValueError('Can not get position from the observing point')
+            raise RuntimeError('Can not get position from the observing point')
+        elif 'error' in response.keys():
+            print(response['error'])
+            raise RuntimeError('Api error')
         elif '$$SOE' not in data:
             raise RuntimeError('Api error')
         elif not data:
-            raise RuntimeError('Api error')
-        elif 'error' in response.keys():
             raise RuntimeError('Api error')
 
         lines = data.split('\n')
@@ -100,9 +117,24 @@ class Planet:
                 info = dict()
                 info['ra'] = line[23:34]
                 info['dec'] = line[35:]
-                result[line[1:18]] = info
+                date = line[1:12].split('-')
+                result[f'{date[0]}-{Planet.month_dict[date[1]]}-{date[2]}'] = info
 
         return result
+
+
+def load_planet_coordinates(planet, coordinates, session):
+    for key, value in coordinates.items():
+        dec = value.get('dec', None)
+        ra = value.get('ra', None)
+        if not dec or not ra:
+            return 'error'
+        try:
+            data = PlanetCoordinates(planet=planet, date=key, dec=dec, ra=ra)
+            session.add(data)
+        except Exception:
+            return 'error'
+    return None
 
 
 # Examples
