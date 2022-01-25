@@ -155,7 +155,7 @@ def load_coordinates(start_time, stop_time):
 @sky_blueprint.route('/planets', methods=['GET'])
 def get_planets():
     """
-    Returns dict
+    Returns list of dicts
     {'name': planet_name, 'information': planet_dict, 'coordinates': coordinates_dict}
     where coordinates_dict is an planet_coordinates table object dict which for today`s date
     and planet_dict is planet table object dict for current planet.
