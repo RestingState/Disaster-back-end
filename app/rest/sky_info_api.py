@@ -170,6 +170,8 @@ def get_planets():
         planets = session.query(Planet).all()
         result = []
         for planet in planets:
+            if planet.name in ('Sun', 'Moon'):
+                continue
             information = PlanetSchema().dump(planet)
             db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
             coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
