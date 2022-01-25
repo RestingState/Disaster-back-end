@@ -155,7 +155,7 @@ def load_coordinates(start_time, stop_time):
 @sky_blueprint.route('/planets', methods=['GET'])
 def get_planets():
     """
-    Returns dict
+    Returns list of dicts
     {'name': planet_name, 'information': planet_dict, 'coordinates': coordinates_dict}
     where coordinates_dict is an planet_coordinates table object dict which for today`s date
     and planet_dict is planet table object dict for current planet.
@@ -170,10 +170,66 @@ def get_planets():
         planets = session.query(Planet).all()
         result = []
         for planet in planets:
+            if planet.name in ('Sun', 'Moon'):
+                continue
             information = PlanetSchema().dump(planet)
             db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
             coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
             result.append({'name': planet.name, 'information': information, 'coordinates': coordinates})
+    except Exception:
+        return {'message': 'internal server error'}, 500
+
+    session.close()
+    return jsonify(result)
+
+
+@sky_blueprint.route('/Sun', methods=['GET'])
+def get_sun():
+    """
+    Returns dict
+    {'name': 'Sun', 'information': planet_dict, 'coordinates': coordinates_dict}
+    where coordinates_dict is an planet_coordinates table object dict which for today`s date
+    and planet_dict is planet table object dict for Sun.
+
+    !!! In case there are no date for today in the date base the coordinates_dict will be empty.
+    """
+
+    session = Session()
+    date = datetime.today().strftime('%Y-%m-%d')
+
+    try:
+        planet = session.query(Planet).filter_by(name='Sun').first()
+        information = PlanetSchema().dump(planet)
+        db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
+        coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
+        result = {'name': planet.name, 'information': information, 'coordinates': coordinates}
+    except Exception:
+        return {'message': 'internal server error'}, 500
+
+    session.close()
+    return jsonify(result)
+
+
+@sky_blueprint.route('/Moon', methods=['GET'])
+def get_moon():
+    """
+    Returns dict
+    {'name': 'Moon', 'information': planet_dict, 'coordinates': coordinates_dict}
+    where coordinates_dict is an planet_coordinates table object dict which for today`s date
+    and planet_dict is planet table object dict for Moon.
+
+    !!! In case there are no date for today in the date base the coordinates_dict will be empty.
+    """
+
+    session = Session()
+    date = datetime.today().strftime('%Y-%m-%d')
+
+    try:
+        planet = session.query(Planet).filter_by(name='Moon').first()
+        information = PlanetSchema().dump(planet)
+        db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
+        coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
+        result = {'name': planet.name, 'information': information, 'coordinates': coordinates}
     except Exception:
         return {'message': 'internal server error'}, 500
 
