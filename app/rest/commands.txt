@@ -31,3 +31,7 @@ curl http://127.0.0.1:5000/weather?city=London -X GET -H "Authorization: Bearer 
 curl -X POST http://127.0.0.1:5000/load_coordinates/YYYY-MM-DD/YYYY-MM-DD
 
 curl -X GET http://127.0.0.1:5000/planets
+
+curl -X GET http://127.0.0.1:5000/Sun
+
+curl -X GET http://127.0.0.1:5000/Moon
