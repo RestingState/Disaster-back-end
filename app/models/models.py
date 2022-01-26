@@ -1,4 +1,4 @@
-from app import Base
+from app import Base, engine
 from app.models import Table, Column, Integer, ForeignKey, VARCHAR
 from sqlalchemy import BigInteger, Date
 from sqlalchemy.orm import relationship
@@ -78,3 +78,8 @@ class PlanetCoordinates(Base):
     ra = Column(VARCHAR)
 
     planet = relationship(Planet, backref='planet_coordinates', lazy=False)
+
+
+# models for views
+StarsFluxV = Table('stars_flux_v', Base.metadata, autoload_with=engine)
+StarsParallax = Table('stars_parallax', Base.metadata, autoload_with=engine)

@@ -1,7 +1,7 @@
 from . import sky_blueprint, weather
 from app import Session
 from flask import jsonify, request
-from app.models.models import User, City, Satellites, Stars
+from app.models.models import User, City, Satellites, Stars, StarsFluxV, StarsParallax
 from app.models.schemas import SatellitesSchema, StarsSchema
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.api.planet import Planet as PlanetClass
@@ -14,9 +14,12 @@ from app.api.planet import load_planet_coordinates
 @sky_blueprint.route('/stars', methods=['GET'])
 def get_stars_filter_by_limit():
     """
-    ?limit=Value: int, Default=100
+    optional parameters:
+    limit=Value: int, Default=100
+    sort=Value: str, Default=stars, Possible: flux_v, parallax, stars
 
     Returns list of stars limited by the given integer
+    and sorted by chosen parameter
 
     Notice: if limit is greater than actual number of stars it will return all of them
     """
@@ -25,6 +28,7 @@ def get_stars_filter_by_limit():
 
     try:
         limit = request.args.get('limit', 100)
+        mode = request.args.get('sort', 'stars')
         limit = int(limit)
     except ValueError:
         return {'message': 'Wrong input data provided'}, 400
@@ -34,8 +38,17 @@ def get_stars_filter_by_limit():
     if limit < 0:
         return {'message': 'Wrong input data provided'}, 400
 
+    if mode == 'flux_v':
+        model = StarsFluxV
+    elif mode == 'parallax':
+        model = StarsParallax
+    elif mode != 'stars':
+        return {'message': 'Wrong sort type provided'}, 400
+    else:
+        model = Stars
+
     result = []
-    stars = session.query(Stars).limit(limit)
+    stars = session.query(model).limit(limit)
 
     for star in stars:
         result.append(StarsSchema().dump(star))
