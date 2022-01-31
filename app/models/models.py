@@ -1,8 +1,7 @@
 from app import Base, engine
 from app.models import Table, Column, Integer, ForeignKey, VARCHAR
-from sqlalchemy import BigInteger, Date, Enum
+from sqlalchemy import BigInteger, Date
 from sqlalchemy.orm import relationship
-import enum
 
 
 # user_category = Table('user_category', Base.metadata,
@@ -81,16 +80,11 @@ class PlanetCoordinates(Base):
     planet = relationship(Planet, backref='planet_coordinates', lazy=False)
 
 
-class ApiKeyRoleEnum(enum.Enum):
-    admin = 'admin'
-    user = 'user'
-
-
 class KeyModel(Base):
     __tablename__ = 'key'
     id = Column(Integer, primary_key=True)
     code = Column(VARCHAR)
-    key_role = Column(Enum(ApiKeyRoleEnum))
+    key_role = Column(VARCHAR)
 
 
 # models for views
