@@ -8,6 +8,8 @@ CREATE TABLE IF NOT EXISTS public."user"
     password character varying NOT NULL,
     city_id bigint NOT NULL,
     username character varying NOT NULL,
+    longitude character varying NOT NULL,
+    latitude character varying NOT NULL,
     PRIMARY KEY (id)
 );
 
