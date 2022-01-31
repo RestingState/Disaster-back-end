@@ -1,0 +1,17 @@
+
+CREATE TYPE api_key_role_enum AS ENUM ('admin', 'user');
+
+
+CREATE TABLE IF NOT EXISTS public.planet_coordinates
+(
+    id serial NOT NULL,
+    code character varying,
+  key_role api_key_role_enum,
+    PRIMARY KEY (id)
+);
+
+
+INSERT INTO "key" VALUES
+  (1, 'x1fxc3xecOxcdxe2xf5x0cxcfJx19x13x97xeb', 'admin'),
+  (2, 'WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5', 'user'),
+  (3, 'Vxe5rdx95xd1x0exd1x95xaf', 'user');
