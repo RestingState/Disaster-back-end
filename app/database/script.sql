@@ -101,3 +101,21 @@ CREATE TABLE IF NOT EXISTS public.planet_coordinates
 ALTER TABLE IF EXISTS public."planet_coordinates"
     ADD FOREIGN KEY (planet_id)
     REFERENCES public.planet (id) ;
+    
+    
+    
+    
+create procedure delete_planet_coordinates_data (
+start_time date,
+end_time date)
+language plpgsql
+as $$
+begin
+   delete from planet_coordinates 
+   where date between start_time and end_time ;
+   
+   commit;
+end; $$
+
+-- example how to call procedure
+-- call delete_planet_coordinates_data('2003-01-01','2013-05-05');
