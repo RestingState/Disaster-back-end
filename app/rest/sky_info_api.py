@@ -18,6 +18,7 @@ def get_stars_filter_by_limit():
     optional parameters:
     limit=Value: int, Default=100
     sort=Value: str, Default=stars, Possible: flux_v, parallax, stars
+    key=Value: str, Default=None, Keys are registered in database table key
 
     Returns list of stars limited by the given integer
     and sorted by chosen parameter
@@ -66,7 +67,8 @@ def get_stars_filter_by_limit():
 @sky_blueprint.route('/satellites', methods=['GET'])
 def get_satellites_filter_by_limit():
     """
-    ?limit=Value: int, Default=100
+    limit=Value: int, Default=100
+    key=Value: str, Default=None, Keys are registered in database table key
 
     Returns list of satellites limited by the given integer
 
@@ -179,6 +181,8 @@ def load_coordinates(start_time, stop_time):
 @sky_blueprint.route('/planets', methods=['GET'])
 def get_planets():
     """
+    ?key=Value: str, Default=None, Keys are registered in database table key
+
     Returns list of dicts
     {'name': planet_name, 'information': planet_dict, 'coordinates': coordinates_dict}
     where coordinates_dict is an planet_coordinates table object dict which for today`s date
@@ -215,6 +219,8 @@ def get_planets():
 @sky_blueprint.route('/Sun', methods=['GET'])
 def get_sun():
     """
+    ?key=Value: str, Default=None, Keys are registered in database table key
+
     Returns dict
     {'name': 'Sun', 'information': planet_dict, 'coordinates': coordinates_dict}
     where coordinates_dict is an planet_coordinates table object dict which for today`s date
@@ -247,6 +253,8 @@ def get_sun():
 @sky_blueprint.route('/Moon', methods=['GET'])
 def get_moon():
     """
+    ?key=Value: str, Default=None, Keys are registered in database table key
+
     Returns dict
     {'name': 'Moon', 'information': planet_dict, 'coordinates': coordinates_dict}
     where coordinates_dict is an planet_coordinates table object dict which for today`s date
