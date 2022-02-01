@@ -23,17 +23,19 @@ curl -X GET http://127.0.0.1:5000/stars
 curl -X GET http://127.0.0.1:5000/stars?limit=1
 curl -X GET "http://127.0.0.1:5000/stars?limit=1&sort=flux_v"
 curl -X GET "http://127.0.0.1:5000/stars?limit=1&sort=parallax"
+curl -X GET "http://127.0.0.1:5000/stars?limit=1&sort=flux_v&key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5"
 
 curl -X GET http://127.0.0.1:5000/satellites
 curl -X GET http://127.0.0.1:5000/satellites?limit=2
+curl -X GET "http://127.0.0.1:5000/satellites?limit=2&key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5"
 
-curl http://127.0.0.1:5000/weather -X GET -H "Authorization: Bearer "
+curl http://127.0.0.1:5000/weather -X GET -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY0MzcxMzY3OCwianRpIjoiN2M5NzM1YjEtNGU0YS00ZDJmLTg1MzEtNmNiYWMyMmY1YzVlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InN0ZXZlaiIsIm5iZiI6MTY0MzcxMzY3OCwiZXhwIjoxNjQzNzE3Mjc4fQ.gtKXQW5AUyxmnOy-wGfPHTxAItaQYC0r_tFol9ylluU"
 curl http://127.0.0.1:5000/weather?city=London -X GET -H "Authorization: Bearer "
 
 curl -X POST http://127.0.0.1:5000/load_coordinates/YYYY-MM-DD/YYYY-MM-DD
 
-curl -X GET http://127.0.0.1:5000/planets
+curl -X GET http://127.0.0.1:5000/planets?key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5
 
-curl -X GET http://127.0.0.1:5000/Sun
+curl -X GET http://127.0.0.1:5000/Sun?key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5
 
-curl -X GET http://127.0.0.1:5000/Moon
+curl -X GET http://127.0.0.1:5000/Moon?key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5
