@@ -9,6 +9,7 @@ from datetime import datetime
 from app.models.models import Planet, PlanetCoordinates
 from app.models.schemas import PlanetSchema, PlanetCoordinatesSchema
 from app.api.planet import load_planet_coordinates
+from app.api.key import api_key_require
 
 
 @sky_blueprint.route('/stars', methods=['GET'])
@@ -25,6 +26,11 @@ def get_stars_filter_by_limit():
     """
 
     session = Session()
+
+    # checking api key
+    key = api_key_require(request, session)
+    if key:
+        return key
 
     try:
         limit = request.args.get('limit', 100)
@@ -68,6 +74,11 @@ def get_satellites_filter_by_limit():
     """
 
     session = Session()
+
+    # checking api key
+    key = api_key_require(request, session)
+    if key:
+        return key
 
     try:
         limit = request.args.get('limit', 100)
@@ -179,6 +190,11 @@ def get_planets():
     session = Session()
     date = datetime.today().strftime('%Y-%m-%d')
 
+    # checking api key
+    key = api_key_require(request, session)
+    if key:
+        return key
+
     try:
         planets = session.query(Planet).all()
         result = []
@@ -210,6 +226,11 @@ def get_sun():
     session = Session()
     date = datetime.today().strftime('%Y-%m-%d')
 
+    # checking api key
+    key = api_key_require(request, session)
+    if key:
+        return key
+
     try:
         planet = session.query(Planet).filter_by(name='Sun').first()
         information = PlanetSchema().dump(planet)
@@ -236,6 +257,11 @@ def get_moon():
 
     session = Session()
     date = datetime.today().strftime('%Y-%m-%d')
+
+    # checking api key
+    key = api_key_require(request, session)
+    if key:
+        return key
 
     try:
         planet = session.query(Planet).filter_by(name='Moon').first()

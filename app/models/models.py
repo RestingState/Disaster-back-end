@@ -80,6 +80,13 @@ class PlanetCoordinates(Base):
     planet = relationship(Planet, backref='planet_coordinates', lazy=False)
 
 
+class KeyModel(Base):
+    __tablename__ = 'key'
+    id = Column(Integer, primary_key=True)
+    code = Column(VARCHAR)
+    key_role = Column(VARCHAR)
+
+
 # models for views
 StarsFluxV = Table('stars_flux_v', Base.metadata, autoload_with=engine)
 StarsParallax = Table('stars_parallax', Base.metadata, autoload_with=engine)

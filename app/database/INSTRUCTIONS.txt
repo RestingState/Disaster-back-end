@@ -6,3 +6,4 @@ to create and fill the db
 2) do instructions from database.satellites_date.satellites_instructions.txt
 3) do instructions from add_stars_data_commands.txt
 4) run insert from add_planet_data.txt
+5) run script from api_key.txt
