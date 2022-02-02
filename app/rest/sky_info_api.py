@@ -10,6 +10,7 @@ from app.models.models import Planet, PlanetCoordinates
 from app.models.schemas import PlanetSchema, PlanetCoordinatesSchema
 from app.api.planet import load_planet_coordinates
 from app.api.key import api_key_require
+from app.api.satellite import Satellite
 
 
 @sky_blueprint.route('/stars', methods=['GET'])
@@ -277,6 +278,134 @@ def get_moon():
         db_coordinates = session.query(PlanetCoordinates).filter_by(planet_id=planet.id, date=date).first()
         coordinates = PlanetCoordinatesSchema().dump(db_coordinates)
         result = {'name': planet.name, 'information': information, 'coordinates': coordinates}
+    except Exception:
+        return {'message': 'internal server error'}, 500
+
+    session.close()
+    return jsonify(result)
+
+
+@sky_blueprint.route('/satellite/<int:id>', methods=['GET'])
+def get_current_satellite_coord(id):
+    """
+    Calculate satellite's position at current time
+
+    Returns dict
+    {'norad_id': satellite's norad, 'latitude': satellite's latitude, 'longitude': satellite's longitude,
+    'elevation': satellite's elevation}
+    """
+
+    session = Session()
+
+    try:
+        satellite = session.query(Satellites).filter_by(norad_id=id).first()
+        if not satellite:
+            return {'message': 'Satellite not found in database'}, 404
+
+        sat = Satellite(id)
+
+        dateTimeObj = datetime.now()
+        timestampStr = dateTimeObj.strftime("%d/%m/%y %H:%M:%S")
+
+        tle = "2 "
+        tle += str(id) + " "
+        tle += satellite['inclination'] + " "
+        tle += satellite['ascending_node_longitude'] + " "
+        tle += satellite['eccentricity'] + " "
+        tle += satellite['pericenter_argument'] + " "
+        tle += satellite['average_anomaly'] + " "
+        tle += satellite['call_frequency']
+
+        lat, lon, elev = sat.get_satellite_lon_lat(tle, timestampStr)
+        result = {'norad_id': id, 'latitude': lat, 'longitude': lon, 'elevation': elev}
+    except Exception:
+        return {'message': 'internal server error'}, 500
+
+    session.close()
+    return jsonify(result)
+
+
+@sky_blueprint.route('/satellite/<int:id>/<string:date>/<string:time>', methods=['GET'])
+def get_future_satellite_coord(id, date, time):
+    """
+    Get satellite's future position
+
+    future date: DD-MM-YY
+    future time: HH:MM:SS
+    EXAMPLE: 21-01-22
+             11:39:19
+
+    Returns dict
+    {'norad_id': satellite's norad, 'latitude': satellite's latitude, 'longitude': satellite's longitude,
+    'elevation': satellite's elevation}
+    """
+
+    session = Session()
+
+    try:
+        satellite = session.query(Satellites).filter_by(norad_id=id).first()
+        if not satellite:
+            return {'message': 'Satellite not found in database'}, 404
+
+        sat = Satellite(id)
+
+        tle = "2 "
+        tle += str(id) + " "
+        tle += satellite['inclination'] + " "
+        tle += satellite['ascending_node_longitude'] + " "
+        tle += satellite['eccentricity'] + " "
+        tle += satellite['pericenter_argument'] + " "
+        tle += satellite['average_anomaly'] + " "
+        tle += satellite['call_frequency']
+
+        date = date.replace("-", "/")
+        date_time = date + " " + time
+
+        lat, lon, elev = sat.get_satellite_lon_lat(tle, date_time)
+        result = {'norad_id': id, 'latitude': lat, 'longitude': lon, 'elevation': elev}
+    except Exception:
+        return {'message': 'internal server error'}, 500
+
+    session.close()
+    return jsonify(result)
+
+
+@sky_blueprint.route('/satellite/passes/<int:id>/<string:city>', methods=['GET'])
+def get_future_satellite_coord(id, city):
+    """
+    Get satellite passes through 2 days relative to an observer.
+    """
+
+    session = Session()
+
+    try:
+        satellite = session.query(Satellites).filter_by(norad_id=id).first()
+        if not satellite:
+            return {'message': 'Satellite not found in database'}, 404
+
+        sat = Satellite(id)
+
+        tle = "2 "
+        tle += str(id) + " "
+        tle += satellite['inclination'] + " "
+        tle += satellite['ascending_node_longitude'] + " "
+        tle += satellite['eccentricity'] + " "
+        tle += satellite['pericenter_argument'] + " "
+        tle += satellite['average_anomaly'] + " "
+        tle += satellite['call_frequency']
+
+        # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        # IT IS NOT FINISHED
+        # WAITING FOR ADDING CITY COORDINATES TO DATABASE CITY TABLE
+        # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        # city = session.query(City).filter_by(name=city).first()
+        # if not city:
+        #             return {'message': 'City not found in database'}, 404
+        # observer_lat = city['latitude']
+        # observer_long = city['longitude']
+        # result = sat.get_satellite_observation(tle, observer_lat, observer_long)
+        result = []
     except Exception:
         return {'message': 'internal server error'}, 500
 
