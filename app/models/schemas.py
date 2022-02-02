@@ -5,15 +5,17 @@ class UserSchema(Schema):
     id = fields.Int()
     first_name = fields.Str()
     last_name = fields.Str()
-    email = fields.Email()
-    password = fields.Str()
+    email = fields.Email(required=True)
+    password = fields.Str(required=True)
     city_id = fields.Int()
-    username = fields.Str()
+    username = fields.Str(required=True)
+    longitude = fields.Str()
+    latitude = fields.Str()
 
 
-# class CategorySchema(Schema):
-#     id = fields.Int()
-#     name = fields.Str()
+class CategorySchema(Schema):
+    id = fields.Int()
+    name = fields.Str()
 
 
 class SatellitesSchema(Schema):

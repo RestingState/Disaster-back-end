@@ -4,9 +4,9 @@ from sqlalchemy import BigInteger, Date
 from sqlalchemy.orm import relationship
 
 
-# user_category = Table('user_category', Base.metadata,
-#                       Column('user_id', ForeignKey('user.id'), primary_key=True),
-#                       Column('category_id', ForeignKey('category.id'), primary_key=True))
+user_category = Table('user_category', Base.metadata,
+                      Column('user_id', ForeignKey('user.id'), primary_key=True),
+                      Column('category_id', ForeignKey('category.id'), primary_key=True))
 
 
 class User(Base):
@@ -18,12 +18,15 @@ class User(Base):
     password = Column(VARCHAR, nullable=False)
     city_id = Column(Integer, ForeignKey('city.id'))
     username = Column(VARCHAR, nullable=False, unique=True)
+    longitude = Column(VARCHAR, nullable=False)
+    latitude = Column(VARCHAR, nullable=False)
+    categories = relationship("Category", secondary=user_category)
 
 
-# class Category(Base):
-#     __tablename__ = 'category'
-#     id = Column(Integer, primary_key=True)
-#     name = Column(VARCHAR, nullable=False)
+class Category(Base):
+    __tablename__ = 'category'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    name = Column(VARCHAR, nullable=False)
 
 
 class City(Base):
