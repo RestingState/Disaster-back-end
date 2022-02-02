@@ -11,7 +11,7 @@ from flask_cors import CORS
 
 api = Flask(__name__)
 api.config['JWT_SECRET_KEY'] = Config.JWT_SECRET_KEY
-api.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
+api.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=72)
 jwt = JWTManager(api)
 bcrypt = Bcrypt(api)
 cors = CORS(api)
