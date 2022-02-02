@@ -44,3 +44,7 @@ curl -X GET http://127.0.0.1:5000/planets?key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5
 curl -X GET http://127.0.0.1:5000/Sun?key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5
 
 curl -X GET http://127.0.0.1:5000/Moon?key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5
+
+curl -X GET http://127.0.0.1:5000/satellite/id
+
+curl -X GET http://127.0.0.1:5000/satellite/id/DD-MM-YY/HH:MM:SS
