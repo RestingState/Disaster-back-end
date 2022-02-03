@@ -1,5 +1,6 @@
 from app.rest import *
 from app import bcrypt
+from app.api.email_newsletter import check_email_existance
 
 
 @api_blueprint.route('/user', methods=['POST'])
@@ -36,6 +37,9 @@ def create_user():
     exists = session.query(User).filter_by(email=data['email']).first()
     if exists:
         return {'message': 'User with this email exists'}, 400
+
+    if check_email_existance(data['email']) != 'valid':
+        return {'message': 'This email does not exist'}, 400
 
     session.add(user)
     session.commit()
