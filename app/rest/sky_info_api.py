@@ -146,6 +146,7 @@ def get_weather_for_user():
 
 
 @sky_blueprint.route('/load_coordinates/<start_time>/<stop_time>', methods=['POST'])
+@jwt_required()
 def load_coordinates(start_time, stop_time):
     """
     start_time: YYYY-MM-DD
@@ -154,9 +155,15 @@ def load_coordinates(start_time, stop_time):
     Loads coordinates for all the planet table objects in
     time interval into table planet_coordinates
     Returns success message
+
+    Notice: works only for admin (with admin JWT token)
     """
 
     session = Session()
+    current_identity_username = get_jwt_identity()
+
+    if current_identity_username != 'admin':
+        return {'message': 'Access is denied'}, 403
 
     planets = session.query(Planet).all()
     if not planets:
