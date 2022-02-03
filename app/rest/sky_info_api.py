@@ -371,7 +371,7 @@ def get_future_satellite_coord(id, date, time):
 
 
 @sky_blueprint.route('/satellite/passes/<int:id>/<string:city>', methods=['GET'])
-def get_future_satellite_coord(id, city):
+def get_satellite_passes(id, city):
     """
     Get satellite passes through 2 days relative to an observer.
     """
