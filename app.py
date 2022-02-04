@@ -24,8 +24,6 @@ def delete_records():
 
 def insert_records():
     planets = session.query(Planet).all()
-    if not planets:
-        return {'message': 'The planet table is empty'}, 200
 
     start_time = datetime.datetime.today()
     stop_time = datetime.datetime.today() + datetime.timedelta(days=32)
@@ -33,14 +31,12 @@ def insert_records():
     for planet in planets:
         try:
             coordinates = PlanetClass.get_dec_and_ra_in_time_interval(planet.name, start_time, stop_time)
-        except ValueError:
-            ...
         except Exception:
-            ...
+            print('Internal server error')
         else:
             loading_result = load_planet_coordinates(planet, coordinates, session)
             if loading_result:
-                ...
+                print('Internal server error')
     session.commit()
 
 
