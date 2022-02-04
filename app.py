@@ -17,9 +17,9 @@ with make_server('', 5000, api) as server:
     try:
         scheduler = BackgroundScheduler()
         scheduler.add_job(func=insert_records, trigger="cron",
-                          year='*', month='*', day=4, hour=14, minute=49, second=0)
+                          year='*', month='*', day=1, hour=14, minute=44, second=0)
         scheduler.add_job(func=delete_records, trigger="cron",
-                          year='*', month='*', day=4, hour=14, minute=50, second=0)
+                          year='*', month='*', day=1, hour=14, minute=45, second=0)
         scheduler.start()
     except AttributeError:
         print('There is no data in database')
