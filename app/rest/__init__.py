@@ -5,6 +5,7 @@ from app import Session
 from marshmallow import ValidationError
 from flask import Flask, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
+from sqlalchemy import literal
 from app.api.weather import Weather
 from config import Config
 
