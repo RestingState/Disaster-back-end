@@ -9,13 +9,18 @@ class UserSchema(Schema):
     password = fields.Str(required=True)
     city_id = fields.Int()
     username = fields.Str(required=True)
-    longitude = fields.Str()
-    latitude = fields.Str()
 
 
 class CategorySchema(Schema):
     id = fields.Int()
     name = fields.Str()
+
+
+class CitySchema(Schema):
+    id = fields.Int()
+    name = fields.Str()
+    longitude = fields.Str()
+    latitude = fields.Str()
 
 
 class SatellitesSchema(Schema):

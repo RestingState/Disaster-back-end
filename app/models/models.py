@@ -18,8 +18,6 @@ class User(Base):
     password = Column(VARCHAR, nullable=False)
     city_id = Column(Integer, ForeignKey('city.id'))
     username = Column(VARCHAR, nullable=False, unique=True)
-    longitude = Column(VARCHAR, nullable=False)
-    latitude = Column(VARCHAR, nullable=False)
     categories = relationship("Category", secondary=user_category)
 
 
@@ -33,6 +31,8 @@ class City(Base):
     __tablename__ = 'city'
     id = Column(Integer, primary_key=True)
     name = Column(VARCHAR, nullable=False)
+    longitude = Column(VARCHAR, nullable=False)
+    latitude = Column(VARCHAR, nullable=False)
 
 
 class Satellites(Base):

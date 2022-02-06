@@ -8,8 +8,6 @@ CREATE TABLE IF NOT EXISTS public."user"
     password character varying NOT NULL,
     city_id bigint NOT NULL,
     username character varying NOT NULL,
-    longitude character varying NOT NULL,
-    latitude character varying NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -30,6 +28,8 @@ CREATE TABLE IF NOT EXISTS public.city
 (
     id serial NOT NULL,
     name character varying NOT NULL,
+    longitude character varying NOT NULL,
+    latitude character varying NOT NULL,
     PRIMARY KEY (id)
 );
 
@@ -113,9 +113,9 @@ end_time date)
 language plpgsql
 as $$
 begin
-   delete from planet_coordinates 
+   delete from planet_coordinates
    where date between start_time and end_time ;
-   
+
    commit;
 end; $$
 
