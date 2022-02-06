@@ -7,8 +7,8 @@ psql -U postgres -d stellarly -a -f script.sql
 ---------------------------------------------------------------------------------------
 api
 ---------------------------------------------------------------------------------------
-curl -X POST http://127.0.0.1:5000/user -H "Content-Type:application/json" --data-binary "{\"first_name\":\"S\", \"last_name\":\"J\", \"email\":\"qwerty@gmail.com\", \"password\":\"12345\", \"city_id\": 1, \"username\":\"stevej\", \"longitude\":\"30N\", \"latitude\":\"10W\"}"
-curl -X POST http://127.0.0.1:5000/user -H "Content-Type:application/json" --data-binary "{\"first_name\":\"P\", \"last_name\":\"M\", \"email\":\"paul@gmail.com\", \"password\":\"123458\", \"city_id\": 1, \"username\":\"paulm\", \"longitude\":\"53N\", \"latitude\":\"32W\"}"
+curl -X POST http://127.0.0.1:5000/user -H "Content-Type:application/json" --data-binary "{\"first_name\":\"S\", \"last_name\":\"J\", \"email\":\"qwerty@gmail.com\", \"password\":\"12345\", \"city_id\": 1, \"username\":\"stevej\"}"
+curl -X POST http://127.0.0.1:5000/user -H "Content-Type:application/json" --data-binary "{\"first_name\":\"P\", \"last_name\":\"M\", \"email\":\"paul@gmail.com\", \"password\":\"123458\", \"city_id\": 1, \"username\":\"paulm\"}"
 
 curl -X POST http://127.0.0.1:5000/user/login -H "Content-Type:application/json" --data-binary "{\"username\":\"stevej\", \"password\":\"12345\"}"
 curl -X POST http://127.0.0.1:5000/user/login -H "Content-Type:application/json" --data-binary "{\"username\":\"paulm\", \"password\":\"123458\"}"
@@ -20,6 +20,8 @@ curl http://127.0.0.1:5000/user -X GET -H "Authorization: Bearer "
 curl -X POST http://127.0.0.1:5000/category -H "Content-Type:application/json" --data "{\"name\":\"planets\"}" -H "Authorization: Bearer "
 
 curl -X POST http://127.0.0.1:5000/user/subscription -H "Content-Type:application/json" --data "{\"user_id\":1, \"category_id\":1}" -H "Authorization: Bearer "
+
+curl -X GET http://127.0.0.1:5000/cities -H "Content-Type:application/json" --data "{\"name\":\"o\"}
 
 ---------------------------------------------------------------------------------------
 sky_info_api
