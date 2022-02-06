@@ -1,6 +1,7 @@
 from app.rest import *
 from app import bcrypt
 from app.api.email_newsletter import check_email_existance
+import re
 
 
 @api_blueprint.route('/user', methods=['POST'])
@@ -177,3 +178,26 @@ def add_subscription():
     session.close()
 
     return {'message': 'Subscription is successfuly created'}, 200
+
+
+@api_blueprint.route('/cities', methods=['GET'])
+def get_cities():
+    """
+    Takes city name substring regardless of case
+
+    Returns all city names with that substring
+    """
+    session = Session()
+    data = request.get_json()
+    cities = session.query(City).all()
+
+    found_cities = []
+    for city in cities:
+        if re.search(data['name'], CitySchema().dump(city)['name'], re.IGNORECASE):
+            found_cities.append(city)
+
+    if len(found_cities) == 0:
+        return {'message': 'There are no cities with this name'}, 404
+
+    schema = CitySchema(many=True)
+    return jsonify(schema.dump(found_cities))
