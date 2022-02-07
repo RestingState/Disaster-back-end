@@ -1,0 +1,1 @@
+Command - > COPY city  from '{path to cities_ua.csv}' delimiter ',' header CSV;

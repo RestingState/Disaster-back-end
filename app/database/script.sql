@@ -28,8 +28,9 @@ CREATE TABLE IF NOT EXISTS public.city
 (
     id serial NOT NULL,
     name character varying NOT NULL,
-    longitude character varying NOT NULL,
     latitude character varying NOT NULL,
+    longitude character varying NOT NULL,
+    admin_name character varying,
     PRIMARY KEY (id)
 );
 

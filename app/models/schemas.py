@@ -19,8 +19,10 @@ class CategorySchema(Schema):
 class CitySchema(Schema):
     id = fields.Int()
     name = fields.Str()
-    longitude = fields.Str()
     latitude = fields.Str()
+    longitude = fields.Str()
+    admin_name = fields.Str()
+
 
 
 class SatellitesSchema(Schema):
