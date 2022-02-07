@@ -12,8 +12,14 @@ api.register_blueprint(sky_blueprint)
 
 with make_server('', 5000, api) as server:
 
+    # scheduler
     # updates planet_coordinates every month at 1st day and concrete hour(example: 14:44:00)
     # deletes old planet_coordinates every month at 1st day and concrete hour(example: 14:45:00)
+
+    # dates warning
+    # in case you change the day of month for jobs you should change update day in
+    # insert_records function in api/job_functions.py file
+
     try:
         scheduler = BackgroundScheduler()
         scheduler.add_job(func=insert_records, trigger="cron",
