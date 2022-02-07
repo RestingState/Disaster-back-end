@@ -22,6 +22,10 @@ def insert_records():
     start_time = datetime.datetime.today()
     stop_time = datetime.datetime.today() + datetime.timedelta(days=32)
 
+    # update day settings
+    start_time = start_time.strftime('%Y-%m-02')
+    stop_time = stop_time.strftime('%Y-%m-01')
+
     for planet in planets:
         try:
             coordinates = PlanetClass.get_dec_and_ra_in_time_interval(planet.name, start_time, stop_time)
