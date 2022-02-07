@@ -31,8 +31,9 @@ class City(Base):
     __tablename__ = 'city'
     id = Column(Integer, primary_key=True)
     name = Column(VARCHAR, nullable=False)
-    longitude = Column(VARCHAR, nullable=False)
     latitude = Column(VARCHAR, nullable=False)
+    longitude = Column(VARCHAR, nullable=False)
+    admin_name = Column(VARCHAR,nullable=False)
 
 
 class Satellites(Base):
