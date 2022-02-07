@@ -1,0 +1,1470 @@
+1,city,latidute,longtitude,admin_name
+2,Kyiv,50.4500,30.5236,"Kyyiv, Misto"
+3,Kharkiv,50.0000,36.2292,Kharkivs’ka Oblast’
+4,Odesa,46.4775,30.7326,Odes’ka Oblast’
+5,Dnipro,48.4500,34.9833,Dnipropetrovs’ka Oblast’
+6,Donetsk,48.0089,37.8042,Donets’ka Oblast’
+7,Zaporizhzhia,47.8378,35.1383,Zaporiz’ka Oblast’
+8,Lviv,49.8419,24.0315,L’vivs’ka Oblast’
+9,Kryvyi Rih,47.9086,33.3433,Dnipropetrovs’ka Oblast’
+10,Mykolaiv,46.9667,32.0000,Mykolayivs’ka Oblast’
+11,Mariupol,47.1306,37.5639,Donets’ka Oblast’
+12,Sevastopol,44.6000,33.5333,"Sevastopol’, Misto"
+13,Luhansk,48.5833,39.3333,Luhans’ka Oblast’
+14,Vinnytsia,49.2372,28.4672,Vinnyts’ka Oblast’
+15,Makiivka,48.0556,37.9611,Donets’ka Oblast’
+16,Simferopol,44.9484,34.1000,"Krym, Avtonomna Respublika"
+17,Poltava,49.5744,34.5686,Poltavs’ka Oblast’
+18,Chernihiv,51.4939,31.2947,Chernihivs’ka Oblast’
+19,Kherson,46.6333,32.6000,Khersons’ka Oblast’
+20,Cherkasy,49.4444,32.0597,Cherkas’ka Oblast’
+21,Khmelnytskyi,49.4200,27.0000,Khmel’nyts’ka Oblast’
+22,Zhytomyr,50.2544,28.6578,Zhytomyrs’ka Oblast’
+23,Chernivtsi,48.2908,25.9344,Chernivets’ka Oblast’
+24,Sumy,50.9068,34.7992,Sums’ka Oblast’
+25,Horlivka,48.3336,38.0925,Donets’ka Oblast’
+26,Rivne,50.6197,26.2514,Rivnens’ka Oblast’
+27,Ivano-Frankivsk,48.9228,24.7106,Ivano-Frankivs’ka Oblast’
+28,Kamianske,48.5076,34.6132,Dnipropetrovs’ka Oblast’
+29,Kremenchuk,49.0775,33.4239,Poltavs’ka Oblast’
+30,Kropyvnytskyi,48.5103,32.2667,Kirovohrads’ka Oblast’
+31,Ternopil,49.5667,25.6000,Ternopil’s’ka Oblast’
+32,Lutsk,50.7478,25.3244,Volyns’ka Oblast’
+33,Bila Tserkva,49.7956,30.1167,Kyyivs’ka Oblast’
+34,Kramatorsk,48.7208,37.5556,Donets’ka Oblast’
+35,Melitopol,46.8333,35.3667,Zaporiz’ka Oblast’
+36,Sievierodonetsk,48.9500,38.4833,Luhans’ka Oblast’
+37,Drohobych,49.3500,23.5000,L’vivs’ka Oblast’
+38,Khrustalnyi,48.1214,38.9453,Luhans’ka Oblast’
+39,Uzhhorod,48.6239,22.2950,Zakarpats’ka Oblast’
+40,Berdiansk,46.7598,36.7845,Zaporiz’ka Oblast’
+41,Sloviansk,48.8700,37.6250,Donets’ka Oblast’
+42,Nikopol,47.5772,34.3575,Dnipropetrovs’ka Oblast’
+43,Yevpatoriia,45.2000,33.3583,"Krym, Avtonomna Respublika"
+44,Pavlohrad,48.5200,35.8700,Dnipropetrovs’ka Oblast’
+45,Alchevsk,48.4672,38.7983,Luhans’ka Oblast’
+46,Konotop,51.2369,33.2027,Sums’ka Oblast’
+47,Brovary,50.5114,30.7903,Kyyivs’ka Oblast’
+48,Kamianets-Podilskyi,48.6806,26.5806,Khmel’nyts’ka Oblast’
+49,Lysychansk,48.9169,38.4306,Luhans’ka Oblast’
+50,Dovzhansk,48.0846,39.6516,Luhans’ka Oblast’
+51,Mukacheve,48.4414,22.7136,Zakarpats’ka Oblast’
+52,Uman,48.7500,30.2167,Cherkas’ka Oblast’
+53,Yalta,44.4994,34.1553,"Krym, Avtonomna Respublika"
+54,Yenakiieve,48.2311,38.2053,Donets’ka Oblast’
+55,Shostka,51.8657,33.4766,Sums’ka Oblast’
+56,Berdychiv,49.8919,28.6000,Zhytomyrs’ka Oblast’
+57,Bakhmut,48.6044,38.0067,Donets’ka Oblast’
+58,Stakhanov,48.5472,38.6361,Luhans’ka Oblast’
+59,Nizhyn,51.0500,31.9000,Chernihivs’ka Oblast’
+60,Kostiantynivka,48.5333,37.7167,Donets’ka Oblast’
+61,Izmail,45.3500,28.8333,Odes’ka Oblast’
+62,Novomoskovsk,48.6328,35.2239,Dnipropetrovs’ka Oblast’
+63,Nova Kakhovka,46.7667,33.3667,Khersons’ka Oblast’
+64,Kovel,51.2167,24.7167,Volyns’ka Oblast’
+65,Smila,49.2167,31.8667,Cherkas’ka Oblast’
+66,Kalush,49.0442,24.3597,Ivano-Frankivs’ka Oblast’
+67,Korosten,50.9500,28.6500,Zhytomyrs’ka Oblast’
+68,Pokrovsk,48.2833,37.1833,Donets’ka Oblast’
+69,Boryspil,50.3500,30.9500,Kyyivs’ka Oblast’
+70,Kolomyia,48.5167,25.0333,Ivano-Frankivs’ka Oblast’
+71,Rubizhne,49.0167,38.3667,Luhans’ka Oblast’
+72,Chornomorsk,46.3017,30.6569,Odes’ka Oblast’
+73,Khartsyzk,48.0333,38.1500,Donets’ka Oblast’
+74,Druzhkivka,48.6203,37.5278,Donets’ka Oblast’
+75,Stryi,49.2500,23.8500,L’vivs’ka Oblast’
+76,Bilhorod-Dnistrovskyi,46.1833,30.3333,Odes’ka Oblast’
+77,Irpin,50.5167,30.2500,Kyyivs’ka Oblast’
+78,Novohrad-Volynskyi,50.5833,27.6333,Zhytomyrs’ka Oblast’
+79,Lozova,48.8892,36.3161,Kharkivs’ka Oblast’
+80,Antratsyt,48.1167,39.0833,Luhans’ka Oblast’
+81,Enerhodar,47.4989,34.6558,Zaporiz’ka Oblast’
+82,Pryluky,50.6000,32.4000,Chernihivs’ka Oblast’
+83,Novovolynsk,50.7333,24.1667,Volyns’ka Oblast’
+84,Horishni Plavni,49.0107,33.6562,Poltavs’ka Oblast’
+85,Myrnohrad,48.3022,37.2614,Donets’ka Oblast’
+86,Shakhtarsk,48.0333,38.4833,Donets’ka Oblast’
+87,Okhtyrka,50.3074,34.9016,Sums’ka Oblast’
+88,Brianka,48.5133,38.6431,Luhans’ka Oblast’
+89,Snizhne,48.0167,38.7667,Donets’ka Oblast’
+90,Marhanets,47.6480,34.6167,Dnipropetrovs’ka Oblast’
+91,Rovenky,48.0833,39.3667,Luhans’ka Oblast’
+92,Fastiv,50.0747,29.9181,Kyyivs’ka Oblast’
+93,Lubny,50.0186,32.9869,Poltavs’ka Oblast’
+94,Svitlovodsk,49.0833,33.2500,Kirovohrads’ka Oblast’
+95,Zhovti Vody,48.3500,33.5167,Dnipropetrovs’ka Oblast’
+96,Krasnodon,48.3000,39.7333,Luhans’ka Oblast’
+97,Shepetivka,50.1833,27.0667,Khmel’nyts’ka Oblast’
+98,Vyshneve,50.3833,30.3667,Kyyivs’ka Oblast’
+99,Romny,50.7428,33.4879,Sums’ka Oblast’
+100,Myrhorod,49.9640,33.6124,Poltavs’ka Oblast’
+101,Podilsk,47.7419,29.5350,Odes’ka Oblast’
+102,Pokrov,47.6632,34.0811,Dnipropetrovs’ka Oblast’
+103,Volodymyr-Volynskyi,50.8481,24.3222,Volyns’ka Oblast’
+104,Pervomaisk,48.6333,38.5167,Luhans’ka Oblast’
+105,Dzhankoi,45.7086,34.3933,"Krym, Avtonomna Respublika"
+106,Vasylkiv,50.1775,30.3217,Kyyivs’ka Oblast’
+107,Dubno,50.3931,25.7350,Rivnens’ka Oblast’
+108,Boryslav,49.2881,23.4267,L’vivs’ka Oblast’
+109,Netishyn,50.3300,26.6400,Khmel’nyts’ka Oblast’
+110,Holubivske,48.6375,38.6433,Luhans’ka Oblast’
+111,Kakhovka,46.8000,33.4667,Khersons’ka Oblast’
+112,Boyarka,50.3292,30.2886,Kyyivs’ka Oblast’
+113,Yasynuvata,48.1167,37.8333,Donets’ka Oblast’
+114,Voznesensk,47.5725,31.3119,Mykolayivs’ka Oblast’
+115,Bucha,50.5464,30.2350,Kyyivs’ka Oblast’
+116,Sambir,49.5167,23.2000,L’vivs’ka Oblast’
+117,Avdiivka,48.1333,37.7500,Donets’ka Oblast’
+118,Zhmerynka,49.0425,28.0992,Vinnyts’ka Oblast’
+119,Toretsk,48.4000,37.8333,Donets’ka Oblast’
+120,Hlukhiv,51.6765,33.9078,Sums’ka Oblast’
+121,Obukhiv,50.1000,30.6167,Kyyivs’ka Oblast’
+122,Chuhuiv,49.8353,36.6756,Kharkivs’ka Oblast’
+123,Yuzhne,46.6222,31.1008,Odes’ka Oblast’
+124,Kostopil,50.8833,26.4431,Rivnens’ka Oblast’
+125,Tokmak,47.2514,35.7058,Zaporiz’ka Oblast’
+126,Mohyliv-Podilskyi,48.4500,27.7833,Vinnyts’ka Oblast’
+127,Synelnykove,48.3178,35.5119,Dnipropetrovs’ka Oblast’
+128,Novoyavorovskoye,49.9311,23.5731,L’vivs’ka Oblast’
+129,Pervomaiskyi,49.3869,36.2142,Kharkivs’ka Oblast’
+130,Alushta,44.6672,34.3978,"Krym, Avtonomna Respublika"
+131,Chortkiv,49.0167,25.8000,Ternopil’s’ka Oblast’
+132,Balakliia,49.4564,36.8389,Kharkivs’ka Oblast’
+133,Truskavets,49.2806,23.5050,L’vivs’ka Oblast’
+134,Novyi Rozdil,49.4703,24.1300,L’vivs’ka Oblast’
+135,Khust,48.1814,23.2978,Zakarpats’ka Oblast’
+136,Pershotravensk,48.3464,36.4044,Dnipropetrovs’ka Oblast’
+137,Khrestivka,48.1500,38.3667,Donets’ka Oblast’
+138,Khmilnyk,49.5500,27.9667,Vinnyts’ka Oblast’
+139,Ternivka,48.5231,36.0826,Dnipropetrovs’ka Oblast’
+140,Zolotonosha,49.6833,32.0333,Cherkas’ka Oblast’
+141,Vyshhorod,50.5833,30.5000,Kyyivs’ka Oblast’
+142,Bakhchysarai,44.7528,33.8608,"Krym, Avtonomna Respublika"
+143,Pereyaslav-Khmel’nyts’kyy,50.0650,31.4450,Kyyivs’ka Oblast’
+144,Sofiyivs’ka Borshchahivka,50.4114,30.3692,Kyyivs’ka Oblast’
+145,Malyn,50.7689,29.2700,Zhytomyrs’ka Oblast’
+146,Perevalsk,48.4333,38.8167,Luhans’ka Oblast’
+147,Yany Kapu,45.9675,33.8003,"Krym, Avtonomna Respublika"
+148,Haisyn,48.8094,29.3906,Vinnyts’ka Oblast’
+149,Korostyshiv,50.3186,29.0592,Zhytomyrs’ka Oblast’
+150,Vynohradiv,48.1397,23.0331,Zakarpats’ka Oblast’
+151,Slavutych,51.5206,30.7569,Kyyivs’ka Oblast’
+152,Saky,45.1336,33.5772,"Krym, Avtonomna Respublika"
+153,Kaniv,49.7447,31.4558,Cherkas’ka Oblast’
+154,Zolochiv,49.8075,24.9031,L’vivs’ka Oblast’
+155,Selydove,48.1500,37.3000,Donets’ka Oblast’
+156,Brody,50.0781,25.1542,L’vivs’ka Oblast’
+157,Berehove,48.2025,22.6375,Zakarpats’ka Oblast’
+158,Koziatyn,49.7167,28.8333,Vinnyts’ka Oblast’
+159,Vilnohirsk,48.4824,34.0189,Dnipropetrovs’ka Oblast’
+160,Molodohvardiisk,48.3444,39.6583,Luhans’ka Oblast’
+161,Znamianka,48.7136,32.6733,Kirovohrads’ka Oblast’
+162,Ladyzhyn,48.6667,29.2167,Vinnyts’ka Oblast’
+163,Nadvirna,48.6333,24.5833,Ivano-Frankivs’ka Oblast’
+164,Lyman,48.9861,37.8111,Donets’ka Oblast’
+165,Bilohorodka,50.4000,30.2167,Kyyivs’ka Oblast’
+166,Sukhodilsk,48.3500,39.7167,Luhans’ka Oblast’
+167,Sokal,50.4833,24.2833,L’vivs’ka Oblast’
+168,Liubotyn,49.9489,35.9306,Kharkivs’ka Oblast’
+169,Kremenets,50.1081,25.7275,Ternopil’s’ka Oblast’
+170,Dolyna,48.9703,24.0108,Ivano-Frankivs’ka Oblast’
+171,Henichesk,46.1769,34.7989,Khersons’ka Oblast’
+172,Yahotyn,50.2569,31.7817,Kyyivs’ka Oblast’
+173,Pidhorodne,48.5737,35.0966,Dnipropetrovs’ka Oblast’
+174,Balta,47.9361,29.6225,Odes’ka Oblast’
+175,Dolynska,48.1111,32.7648,Kirovohrads’ka Oblast’
+176,Kalynivka,49.4472,28.5231,Vinnyts’ka Oblast’
+177,Polohy,47.4796,36.2611,Zaporiz’ka Oblast’
+178,Piatykhatky,48.4126,33.7034,Dnipropetrovs’ka Oblast’
+179,Starobilsk,49.2667,38.9167,Luhans’ka Oblast’
+180,Vovchansk,50.2881,36.9461,Kharkivs’ka Oblast’
+181,Skadovsk,46.1167,32.9167,Khersons’ka Oblast’
+182,Dniprorudne,47.3855,34.9879,Zaporiz’ka Oblast’
+183,Svatove,49.4092,38.1619,Luhans’ka Oblast’
+184,Amvrosiivka,47.7958,38.4801,Donets’ka Oblast’
+185,Korsun-Shevchenkivskyi,49.4261,31.2806,Cherkas’ka Oblast’
+186,Bolhrad,45.6855,28.6134,Odes’ka Oblast’
+187,Svalyava,48.5472,22.9861,Zakarpats’ka Oblast’
+188,Zvenyhorodka,49.0833,30.9667,Cherkas’ka Oblast’
+189,Iziaslav,50.1167,26.8000,Khmel’nyts’ka Oblast’
+190,Vatutine,49.0167,31.0667,Cherkas’ka Oblast’
+191,Sudak,44.8514,34.9725,"Krym, Avtonomna Respublika"
+192,Horodok,49.1667,26.5667,Khmel’nyts’ka Oblast’
+193,Berezan,50.3197,31.4700,Kyyivs’ka Oblast’
+194,Bilohirsk,45.0544,34.6022,"Krym, Avtonomna Respublika"
+195,Verkhivtseve,48.4812,34.2488,Dnipropetrovs’ka Oblast’
+196,Kotsyubyns’ke,50.4883,30.3331,"Kyyiv, Misto"
+197,Hostomel,50.5692,30.2653,Kyyivs’ka Oblast’
+198,Bar,49.0781,27.6831,Vinnyts’ka Oblast’
+199,Ukrainka,50.1500,30.7519,Kyyivs’ka Oblast’
+200,Horodok,49.7822,23.6436,L’vivs’ka Oblast’
+201,Skvyra,49.7333,29.6833,Kyyivs’ka Oblast’
+202,Yuvileine,48.5531,39.1742,Luhans’ka Oblast’
+203,Ovruch,51.3244,28.8081,Zhytomyrs’ka Oblast’
+204,Putyvl,51.3347,33.8686,Sums’ka Oblast’
+205,Vynnyky,49.8156,24.1297,L’vivs’ka Oblast’
+206,Ostroh,50.3333,26.5167,Rivnens’ka Oblast’
+207,Rakhiv,48.0500,24.2167,Zakarpats’ka Oblast’
+208,Bohodukhiv,50.1608,35.5164,Kharkivs’ka Oblast’
+209,Bilopillya,51.1532,34.3025,Sums’ka Oblast’
+210,Tulchyn,48.6744,28.8497,Vinnyts’ka Oblast’
+211,Vil’nyans’k,47.9445,35.4331,Zaporiz’ka Oblast’
+212,Burshtyn,49.2600,24.6350,Ivano-Frankivs’ka Oblast’
+213,Zmiiv,49.6878,36.3558,Kharkivs’ka Oblast’
+214,Ochakiv,46.6186,31.5392,Mykolayivs’ka Oblast’
+215,Hulyaypole,47.6644,36.2632,Zaporiz’ka Oblast’
+216,Radomyshl,50.4947,29.2333,Zhytomyrs’ka Oblast’
+217,Stanytsia Luhanska,48.6667,39.4667,Luhans’ka Oblast’
+218,Orikhiv,47.5677,35.7849,Zaporiz’ka Oblast’
+219,Hola Prystan,46.5167,32.5167,Khersons’ka Oblast’
+220,Zolote,48.6833,38.5167,Luhans’ka Oblast’
+221,Lebedyn,50.5831,34.4823,Sums’ka Oblast’
+222,Kivertsi,50.8331,25.4614,Volyns’ka Oblast’
+223,Nyzhnia Krynka,48.1144,38.1606,Donets’ka Oblast’
+224,Zhashkiv,49.2500,30.1000,Cherkas’ka Oblast’
+225,Zhovkva,50.0667,23.9667,L’vivs’ka Oblast’
+226,Horodyshche,49.2925,31.4581,Cherkas’ka Oblast’
+227,Apostolove,47.6595,33.7170,Dnipropetrovs’ka Oblast’
+228,Talne,48.8863,30.7027,Cherkas’ka Oblast’
+229,Kaharlyk,49.8522,30.8092,Kyyivs’ka Oblast’
+230,Zelenodolsk,47.5631,33.6524,Dnipropetrovs’ka Oblast’
+231,Nosivka,50.9300,31.5800,Chernihivs’ka Oblast’
+232,Borodyanka,50.6439,29.9339,Kyyivs’ka Oblast’
+233,Slobozhanske,48.5342,35.0749,Dnipropetrovs’ka Oblast’
+234,Vasylivka,47.4344,35.2808,Zaporiz’ka Oblast’
+235,Izium,49.2238,37.2915,Kharkivs’ka Oblast’
+236,Yavoriv,49.9469,23.3931,L’vivs’ka Oblast’
+237,Velykodolynske,46.3425,30.5653,Odes’ka Oblast’
+238,Tetiiv,49.3708,29.6900,Kyyivs’ka Oblast’
+239,Rozhyshche,50.9131,25.2700,Volyns’ka Oblast’
+240,Novhorod-Siverskyi,51.9833,33.2667,Chernihivs’ka Oblast’
+241,Bershad,48.3728,29.5325,Vinnyts’ka Oblast’
+242,Perehinske,48.8103,24.1819,Ivano-Frankivs’ka Oblast’
+243,Kamianka-Dniprovska,47.4792,34.4232,Zaporiz’ka Oblast’
+244,Shchastia,48.7381,39.2311,Luhans’ka Oblast’
+245,Koriukivka,51.7833,32.2500,Chernihivs’ka Oblast’
+246,Buchach,49.0647,25.3872,Ternopil’s’ka Oblast’
+247,Kamin-Kashyrskyi,51.6242,24.9606,Volyns’ka Oblast’
+248,Hnivan,49.0833,28.3500,Vinnyts’ka Oblast’
+249,Beryslav,46.8333,33.4167,Khersons’ka Oblast’
+250,Vakhrusheve,48.1606,38.8389,Luhans’ka Oblast’
+251,Uzyn,49.8242,30.4425,Kyyivs’ka Oblast’
+252,Bilovodsk,49.1992,39.5756,Luhans’ka Oblast’
+253,Mykhailivka,47.2717,35.2248,Zaporiz’ka Oblast’
+254,Horodnia,51.8833,31.5833,Chernihivs’ka Oblast’
+255,Ukrainsk,48.1000,37.3667,Donets’ka Oblast’
+256,Baranivka,50.3000,27.6667,Zhytomyrs’ka Oblast’
+257,Ovidiopol,46.2667,30.4333,Odes’ka Oblast’
+258,Vasylkivka,48.2084,36.0253,Dnipropetrovs’ka Oblast’
+259,Nemyriv,48.9794,28.8439,Vinnyts’ka Oblast’
+260,Prymorsk,46.7333,36.3596,Zaporiz’ka Oblast’
+261,Mena,51.5167,32.2167,Chernihivs’ka Oblast’
+262,Mala Vyska,48.6500,31.6333,Kirovohrads’ka Oblast’
+263,Kalmiuske,47.6667,38.0667,Donets’ka Oblast’
+264,Lokhvytsya,50.3610,33.2652,Poltavs’ka Oblast’
+265,Yakymivka,46.6967,35.1664,Zaporiz’ka Oblast’
+266,Myronivka,49.6500,30.9833,Kyyivs’ka Oblast’
+267,Snovsk,51.8167,31.9500,Chernihivs’ka Oblast’
+268,Hirnyk,48.0500,37.3667,Donets’ka Oblast’
+269,Illintsi,49.1000,29.2000,Vinnyts’ka Oblast’
+270,Sosnivka,50.2946,24.2525,L’vivs’ka Oblast’
+271,Zhydachiv,49.3833,24.1333,L’vivs’ka Oblast’
+272,Rokytne,49.6897,30.4751,Kyyivs’ka Oblast’
+273,Bobrynets,48.0578,32.1581,Kirovohrads’ka Oblast’
+274,Bobrovytsia,50.7333,31.3833,Chernihivs’ka Oblast’
+275,Manevychi,51.2925,25.5503,Volyns’ka Oblast’
+276,Hrebinka,50.1180,32.4396,Poltavs’ka Oblast’
+277,Baryshivka,50.3703,31.3286,Kyyivs’ka Oblast’
+278,Khrystynivka,48.8333,29.9667,Cherkas’ka Oblast’
+279,Ichnia,50.8500,32.4000,Chernihivs’ka Oblast’
+280,Bolekhiv,49.0669,23.8514,Ivano-Frankivs’ka Oblast’
+281,Lyuboml’,51.2158,24.0408,Volyns’ka Oblast’
+282,Olevsk,51.2278,27.6481,Zhytomyrs’ka Oblast’
+283,Ivankiv,50.9333,29.9000,Kyyivs’ka Oblast’
+284,Krasnoilsk,48.0167,25.5833,Chernivets’ka Oblast’
+285,Letychiv,49.3833,27.6167,Khmel’nyts’ka Oblast’
+286,Verkhnodniprovsk,48.6561,34.3283,Dnipropetrovs’ka Oblast’
+287,Oster,50.9486,30.8811,Chernihivs’ka Oblast’
+288,Novgorodskoye,48.3156,37.8839,Donets’ka Oblast’
+289,Borzna,51.2333,32.4167,Chernihivs’ka Oblast’
+290,Shyroke,47.6882,33.2654,Dnipropetrovs’ka Oblast’
+291,Inkerman,44.6142,33.6083,"Sevastopol’, Misto"
+292,Tarashcha,49.5500,30.5000,Kyyivs’ka Oblast’
+293,Radyvyliv,50.1333,25.2500,Rivnens’ka Oblast’
+294,Korolevo,48.1500,23.1333,Zakarpats’ka Oblast’
+295,Teplodar,46.5036,30.3244,Odes’ka Oblast’
+296,Ratne,51.6500,24.5333,Volyns’ka Oblast’
+297,Sniatyn,48.4500,25.5667,Ivano-Frankivs’ka Oblast’
+298,Dubove,48.1781,23.8863,Zakarpats’ka Oblast’
+299,Pereshchepyne,49.0179,35.3598,Dnipropetrovs’ka Oblast’
+300,Pokrovske,47.9853,36.2367,Dnipropetrovs’ka Oblast’
+301,Zinkiv,50.2081,34.3668,Poltavs’ka Oblast’
+302,Berezivka,47.2039,30.9125,Odes’ka Oblast’
+303,Kobeliaky,49.1474,34.1993,Poltavs’ka Oblast’
+304,Makariv,50.4667,29.8167,Kyyivs’ka Oblast’
+305,Vesele,47.0160,34.9124,Zaporiz’ka Oblast’
+306,Khodoriv,49.4100,24.3094,L’vivs’ka Oblast’
+307,Sofiivka,48.2683,38.1847,Donets’ka Oblast’
+308,Mizhhiria,48.5286,23.5019,Zakarpats’ka Oblast’
+309,Bilozerka,46.6333,32.4333,Khersons’ka Oblast’
+310,Velyka Dymerka,50.5928,30.9103,Kyyivs’ka Oblast’
+311,Pohrebyshche,49.4869,29.2733,Vinnyts’ka Oblast’
+312,Nyzhnohirskyi,45.4464,34.7344,"Krym, Avtonomna Respublika"
+313,Bezliudivka,49.8694,36.2719,Kharkivs’ka Oblast’
+314,Dubrovytsya,51.5667,26.5667,Rivnens’ka Oblast’
+315,Tysmenytsia,48.9008,24.8492,Ivano-Frankivs’ka Oblast’
+316,Irshava,48.3172,23.0375,Zakarpats’ka Oblast’
+317,Khotyn,48.5078,26.4860,Chernivets’ka Oblast’
+318,Velykyi Bychkiv,47.9714,24.0047,Zakarpats’ka Oblast’
+319,Valky,49.8386,35.6217,Kharkivs’ka Oblast’
+320,Kalanchak,46.2550,33.2906,Khersons’ka Oblast’
+321,Obukhivka,48.5442,34.8664,Dnipropetrovs’ka Oblast’
+322,Stryzhavka,49.3103,28.4808,Vinnyts’ka Oblast’
+323,Bilenke,48.7664,37.6314,Donets’ka Oblast’
+324,Horokhiv,50.4994,24.7650,Volyns’ka Oblast’
+325,Hurzuf,44.5528,34.2875,"Krym, Avtonomna Respublika"
+326,Horodenka,48.6675,25.5003,Ivano-Frankivs’ka Oblast’
+327,Velyki Luchky,48.4200,22.5611,Zakarpats’ka Oblast’
+328,Tiachiv,48.0114,23.5722,Zakarpats’ka Oblast’
+329,Pomichna,48.2500,31.4167,Kirovohrads’ka Oblast’
+330,Kozova,49.4318,25.1544,Ternopil’s’ka Oblast’
+331,Uspenka,48.3939,39.1536,Luhans’ka Oblast’
+332,Chyhyryn,49.0833,32.6667,Cherkas’ka Oblast’
+333,Monastyryshche,48.9900,29.8011,Cherkas’ka Oblast’
+334,Chop,48.4333,22.2000,Zakarpats’ka Oblast’
+335,Tlumach,48.8669,25.0012,Ivano-Frankivs’ka Oblast’
+336,Ilarionove,48.4059,35.2734,Dnipropetrovs’ka Oblast’
+337,Kryzhopil,48.3842,28.8625,Vinnyts’ka Oblast’
+338,Barvynkove,48.9067,37.0131,Kharkivs’ka Oblast’
+339,Rava-Rus’ka,50.2500,23.6167,L’vivs’ka Oblast’
+340,Solotvyno,47.9597,23.8669,Zakarpats’ka Oblast’
+341,Busk,49.9667,24.6167,L’vivs’ka Oblast’
+342,Andrushivka,50.0167,29.0167,Zhytomyrs’ka Oblast’
+343,Yasinia,48.2728,24.3747,Zakarpats’ka Oblast’
+344,Masandra,44.5167,34.1833,"Krym, Avtonomna Respublika"
+345,Bushtyno,48.0503,23.4894,Zakarpats’ka Oblast’
+346,Nerubaiske,46.5467,30.6306,Odes’ka Oblast’
+347,Kosiv,48.3150,25.0953,Ivano-Frankivs’ka Oblast’
+348,Lypovets,49.2161,29.0561,Vinnyts’ka Oblast’
+349,Lanivtsi,49.8644,26.0782,Ternopil’s’ka Oblast’
+350,Deliatyn,48.5286,24.6236,Ivano-Frankivs’ka Oblast’
+351,Vyshkovo,48.0581,23.4164,Zakarpats’ka Oblast’
+352,Ivanivka,48.2325,38.9525,Luhans’ka Oblast’
+353,Mala Danylivka,50.0614,36.1675,Kharkivs’ka Oblast’
+354,Bohorodchany,48.8000,24.5333,Ivano-Frankivs’ka Oblast’
+355,Zavodske,50.4002,33.3908,Poltavs’ka Oblast’
+356,Novi Sanzhary,49.3354,34.3162,Poltavs’ka Oblast’
+357,Krasnopillya,50.7732,35.2717,Sums’ka Oblast’
+358,Lysianka,49.2542,30.8207,Cherkas’ka Oblast’
+359,Manhush,47.0500,37.3000,Donets’ka Oblast’
+360,Tarutyne,46.1846,29.1495,Odes’ka Oblast’
+361,Kvasyliv,50.5569,26.2675,Rivnens’ka Oblast’
+362,Yaremche,48.4536,24.5564,Ivano-Frankivs’ka Oblast’
+363,Ananiv,47.7225,29.9600,Odes’ka Oblast’
+364,Semenivka,52.1772,32.5797,Chernihivs’ka Oblast’
+365,Yasnohirka,48.7725,37.5506,Donets’ka Oblast’
+366,Kushuhum,47.7106,35.2192,Zaporiz’ka Oblast’
+367,Pidvolochysk,49.5311,26.1467,Ternopil’s’ka Oblast’
+368,Kozelets,50.9164,31.1147,Chernihivs’ka Oblast’
+369,Lanchyn,48.5475,24.7517,Ivano-Frankivs’ka Oblast’
+370,Rohatyn,49.4167,24.6167,Ivano-Frankivs’ka Oblast’
+371,Nemishayeve,50.5624,30.0925,Kyyivs’ka Oblast’
+372,Kryve Ozero,47.9333,30.3333,Mykolayivs’ka Oblast’
+373,Pivdenne,49.8849,36.0687,Kharkivs’ka Oblast’
+374,Dykanka,49.8222,34.5341,Poltavs’ka Oblast’
+375,Trostianets,48.5120,29.2137,Vinnyts’ka Oblast’
+376,Velykyi Dalnyk,46.4658,30.5583,Odes’ka Oblast’
+377,Khoroshiv,50.6000,28.4500,Zhytomyrs’ka Oblast’
+378,Solone,48.2054,34.8686,Dnipropetrovs’ka Oblast’
+379,Vapniarka,48.5333,28.7500,Vinnyts’ka Oblast’
+380,Teresva,48.0000,23.6992,Zakarpats’ka Oblast’
+381,Novoselytsia,48.2167,26.2667,Chernivets’ka Oblast’
+382,Velykyy Bereznyy,48.8922,22.4586,Zakarpats’ka Oblast’
+383,Romaniv,50.1517,27.9392,Zhytomyrs’ka Oblast’
+384,Artemivsk,48.4403,38.7422,Luhans’ka Oblast’
+385,Krasnokutsk,50.0567,35.1492,Kharkivs’ka Oblast’
+386,Tsarychanka,48.9432,34.4748,Dnipropetrovs’ka Oblast’
+387,Mezhova,48.2563,36.7313,Dnipropetrovs’ka Oblast’
+388,Rzhyshchiv,49.9611,31.0436,Kyyivs’ka Oblast’
+389,Borova,50.1733,30.1039,Kyyivs’ka Oblast’
+390,Lymanske,46.6639,29.9708,Odes’ka Oblast’
+391,Shyriaieve,47.3878,30.1911,Odes’ka Oblast’
+392,Rudno,49.8404,23.8747,L’vivs’ka Oblast’
+393,Poninka,50.1833,27.5333,Khmel’nyts’ka Oblast’
+394,Isliam-Terek,45.2256,35.2033,"Krym, Avtonomna Respublika"
+395,Molochansk,47.2038,35.5985,Zaporiz’ka Oblast’
+396,Petropavlivka,48.4549,36.4394,Dnipropetrovs’ka Oblast’
+397,Sharhorod,48.7500,28.0833,Vinnyts’ka Oblast’
+398,Sosnytsia,51.5222,32.5017,Chernihivs’ka Oblast’
+399,Vorozhba,51.1749,34.2299,Sums’ka Oblast’
+400,Pryvillya,48.9999,38.2948,Luhans’ka Oblast’
+401,Shevchenkove,49.6939,37.1794,Kharkivs’ka Oblast’
+402,Tomakivka,47.8163,34.7471,Dnipropetrovs’ka Oblast’
+403,Piskivka,50.7078,29.5950,Kyyivs’ka Oblast’
+404,Kupiansk,49.7064,37.6167,Kharkivs’ka Oblast’
+405,Vilshany,50.0533,35.8847,Kharkivs’ka Oblast’
+406,Dobroslav,46.8200,30.9450,Odes’ka Oblast’
+407,Chynadiyovo,48.4833,22.8333,Zakarpats’ka Oblast’
+408,Nova Maiachka,46.6033,33.2283,Khersons’ka Oblast’
+409,Bilmak,47.3589,36.6500,Zaporiz’ka Oblast’
+410,Dovhe,48.3675,23.2869,Zakarpats’ka Oblast’
+411,Velyki Komiaty,48.2386,22.9789,Zakarpats’ka Oblast’
+412,Sofiivka,48.0727,33.8937,Dnipropetrovs’ka Oblast’
+413,Hornostaivka,47.0070,33.7280,Khersons’ka Oblast’
+414,Rozsoshentsi,49.5406,34.5042,Poltavs’ka Oblast’
+415,Lozuvatka,48.0610,33.2927,Dnipropetrovs’ka Oblast’
+416,Irshansk,50.7167,28.7167,Zhytomyrs’ka Oblast’
+417,Oleksandrivsk,48.5833,39.1833,Luhans’ka Oblast’
+418,Perechyn,48.7333,22.4667,Zakarpats’ka Oblast’
+419,Lityn,49.3255,28.0872,Vinnyts’ka Oblast’
+420,Svesa,51.9481,33.9367,Sums’ka Oblast’
+421,Karnaukhivka,48.4698,34.7376,Dnipropetrovs’ka Oblast’
+422,Staryi Sambir,49.4333,23.0000,L’vivs’ka Oblast’
+423,Yemilchyne,50.8708,27.8028,Zhytomyrs’ka Oblast’
+424,Pryazovske,46.7378,35.6416,Zaporiz’ka Oblast’
+425,Voronovytsia,49.0989,28.6831,Vinnyts’ka Oblast’
+426,Bilokurakyne,49.5167,38.7167,Luhans’ka Oblast’
+427,Ivanychi,50.6419,24.3606,Volyns’ka Oblast’
+428,Tsuman,50.8333,25.8833,Volyns’ka Oblast’
+429,Kubei,45.7925,28.7475,Odes’ka Oblast’
+430,Sudova Vyshnya,49.7892,23.3722,L’vivs’ka Oblast’
+431,Bile,48.4936,39.0367,Luhans’ka Oblast’
+432,Slatyne,50.2161,36.1525,Kharkivs’ka Oblast’
+433,Dobrotvir,50.2056,24.3864,L’vivs’ka Oblast’
+434,Drabiv,49.9603,32.1481,Cherkas’ka Oblast’
+435,Vorzel,50.5500,30.1500,Kyyivs’ka Oblast’
+436,Chervonohryhorivka,47.6233,34.5309,Dnipropetrovs’ka Oblast’
+437,Stavyshche,49.3914,30.1917,Kyyivs’ka Oblast’
+438,Mahdalynivka,48.9147,34.9154,Dnipropetrovs’ka Oblast’
+439,Vinkivtsi,49.0333,27.2333,Khmel’nyts’ka Oblast’
+440,Turbiv,49.3463,28.7244,Vinnyts’ka Oblast’
+441,Velyki Mosty,50.2400,24.1394,L’vivs’ka Oblast’
+442,Teplyk,48.6594,29.7539,Vinnyts’ka Oblast’
+443,Fontanka,46.5644,30.8586,Odes’ka Oblast’
+444,Blahovishchenske,48.3197,30.2353,Kirovohrads’ka Oblast’
+445,Hvardiys’ke,48.7328,35.3110,Dnipropetrovs’ka Oblast’
+446,Halych,49.1128,24.7217,Ivano-Frankivs’ka Oblast’
+447,Petropavlivs’ka Borshchahivka,50.4378,30.3439,Kyyivs’ka Oblast’
+448,Kushnytsia,48.4517,23.2581,Zakarpats’ka Oblast’
+449,Kehychivka,49.2858,35.7622,Kharkivs’ka Oblast’
+450,Partenit,44.5764,34.3397,"Krym, Avtonomna Respublika"
+451,Sutysky,49.0422,28.4208,Vinnyts’ka Oblast’
+452,Ahrarne,45.0186,34.0544,"Krym, Avtonomna Respublika"
+453,Balabyne,47.7350,35.2142,Zaporiz’ka Oblast’
+454,Volodarka,49.5200,29.9153,Kyyivs’ka Oblast’
+455,Murovani Kurylivtsi,48.7222,27.5150,Vinnyts’ka Oblast’
+456,Ozerne,50.1794,28.7361,Zhytomyrs’ka Oblast’
+457,Morshyn,49.1550,23.8725,L’vivs’ka Oblast’
+458,Verkhovyna,48.1517,24.8136,Ivano-Frankivs’ka Oblast’
+459,Chernihivka,47.1942,36.2023,Zaporiz’ka Oblast’
+460,Veselynove,47.3583,31.2397,Mykolayivs’ka Oblast’
+461,Dobrovelychkivka,48.3500,31.1667,Kirovohrads’ka Oblast’
+462,Lyubeshiv,51.7631,25.4992,Volyns’ka Oblast’
+463,Hrebinky,49.9564,30.1714,Kyyivs’ka Oblast’
+464,Sokilnyky,49.7769,23.9614,L’vivs’ka Oblast’
+465,Turiys’k,51.0833,24.5333,Volyns’ka Oblast’
+466,Oleksandriiske,48.6019,32.9889,Kirovohrads’ka Oblast’
+467,Horonda,48.3786,22.5681,Zakarpats’ka Oblast’
+468,Dniprovske,48.5953,34.4207,Dnipropetrovs’ka Oblast’
+469,Chudniv,50.0528,28.0969,Zhytomyrs’ka Oblast’
+470,Dymer,50.7872,30.3117,Kyyivs’ka Oblast’
+471,Savyntsi,49.4105,37.0617,Kharkivs’ka Oblast’
+472,Broshniv-Osada,48.9994,24.1814,Ivano-Frankivs’ka Oblast’
+473,Korop,51.5661,32.9508,Chernihivs’ka Oblast’
+474,Zoria,45.9917,29.6989,Odes’ka Oblast’
+475,Tomashpil,48.5471,28.5157,Vinnyts’ka Oblast’
+476,Nova Borova,50.6922,28.6367,Zhytomyrs’ka Oblast’
+477,Nedryhayliv,50.8332,33.8799,Sums’ka Oblast’
+478,Hubynykha,48.8084,35.2535,Dnipropetrovs’ka Oblast’
+479,Rivne,48.2403,31.7492,Kirovohrads’ka Oblast’
+480,Stara Syniava,49.6000,27.6167,Khmel’nyts’ka Oblast’
+481,Stepanivka,50.9430,34.6334,Sums’ka Oblast’
+482,Koreiz,44.4331,34.0872,"Krym, Avtonomna Respublika"
+483,Otyniia,48.7339,24.8569,Ivano-Frankivs’ka Oblast’
+484,Pulyny,50.4664,28.2778,Zhytomyrs’ka Oblast’
+485,Bryukhovychi,49.9000,23.9436,L’vivs’ka Oblast’
+486,Horenka,50.5569,30.3175,Kyyivs’ka Oblast’
+487,Horodnytsia,50.8094,27.3183,Zhytomyrs’ka Oblast’
+488,Pishchanka,48.2058,28.8889,Vinnyts’ka Oblast’
+489,Shatsk,51.4878,23.9297,Volyns’ka Oblast’
+490,Hoshcha,50.5986,26.6753,Rivnens’ka Oblast’
+491,Mykolayivka,48.3823,36.3086,Dnipropetrovs’ka Oblast’
+492,Bratske,47.8636,31.5781,Mykolayivs’ka Oblast’
+493,Opishnya,49.9564,34.6120,Poltavs’ka Oblast’
+494,Komyshuvakha,47.7155,35.5241,Zaporiz’ka Oblast’
+495,Pechenihy,49.8647,36.9364,Kharkivs’ka Oblast’
+496,Pechenizhyn,48.5100,24.8892,Ivano-Frankivs’ka Oblast’
+497,Stara Vyzhivka,51.4396,24.4373,Volyns’ka Oblast’
+498,Bratslav,48.8147,28.9447,Vinnyts’ka Oblast’
+499,Novomykolayivka,47.9779,35.9099,Zaporiz’ka Oblast’
+500,Novohuivynske,50.2022,28.6850,Zhytomyrs’ka Oblast’
+501,Chemerivtsi,49.0000,26.3667,Khmel’nyts’ka Oblast’
+502,Kalynivka,50.2256,30.2319,Kyyivs’ka Oblast’
+503,Yalta,46.9667,37.2667,Donets’ka Oblast’
+504,Volovets,48.7242,23.2000,Zakarpats’ka Oblast’
+505,Kyrnasivka,48.5914,28.9800,Vinnyts’ka Oblast’
+506,Z·hurivka,50.4976,31.7739,Kyyivs’ka Oblast’
+507,Klavdiyevo-Tarasove,50.5825,30.0053,Kyyivs’ka Oblast’
+508,Kolochava,48.4266,23.6984,Zakarpats’ka Oblast’
+509,Bohdanivka,48.5015,36.1100,Dnipropetrovs’ka Oblast’
+510,Chechelnyk,48.2122,29.3622,Vinnyts’ka Oblast’
+511,Novoozerne,45.3858,33.1200,"Krym, Avtonomna Respublika"
+512,Brusyliv,50.2833,29.5333,Zhytomyrs’ka Oblast’
+513,Prosyana,48.1174,36.3743,Dnipropetrovs’ka Oblast’
+514,Dobromyl,49.5667,22.7833,L’vivs’ka Oblast’
+515,Miusynsk,48.0727,38.9002,Luhans’ka Oblast’
+516,Moshny,49.5117,31.7442,Cherkas’ka Oblast’
+517,Petropavlivka,48.8044,39.2628,Luhans’ka Oblast’
+518,Kalyta,50.7503,31.0264,Kyyivs’ka Oblast’
+519,Talalaivka,50.8299,33.1485,Chernihivs’ka Oblast’
+520,Khotiv,50.3333,30.4664,Kyyivs’ka Oblast’
+521,Blahodatne,50.6500,24.2667,Volyns’ka Oblast’
+522,Chabany,50.3400,30.4228,Kyyivs’ka Oblast’
+523,Torchyn,50.7667,25.0000,Volyns’ka Oblast’
+524,Myropil,50.1075,27.7058,Zhytomyrs’ka Oblast’
+525,Brailiv,49.1053,28.1536,Vinnyts’ka Oblast’
+526,Petrykivka,48.7281,34.6288,Dnipropetrovs’ka Oblast’
+527,Dubivskyi,48.0822,39.1569,Luhans’ka Oblast’
+528,Olenivka,47.8333,37.6500,Donets’ka Oblast’
+529,Velykyi Rakovets,48.2708,23.1444,Zakarpats’ka Oblast’
+530,Lyublynets’,51.1833,24.6167,Volyns’ka Oblast’
+531,Velykyi Liubin,49.7239,23.7336,L’vivs’ka Oblast’
+532,Krynychky,48.1264,38.0294,Donets’ka Oblast’
+533,Novooleksandrivka,48.3454,34.9969,Dnipropetrovs’ka Oblast’
+534,Boromlya,50.6204,34.9723,Sums’ka Oblast’
+535,Boikivske,47.4139,38.0108,Donets’ka Oblast’
+536,Stepnohirsk,47.5861,35.3638,Zaporiz’ka Oblast’
+537,Zabolottya,51.6333,24.2667,Volyns’ka Oblast’
+538,Znamenivka,48.6344,35.4561,Dnipropetrovs’ka Oblast’
+539,Svyatohirs’k,49.0333,37.5833,Donets’ka Oblast’
+540,Bytkiv,48.6244,24.4858,Ivano-Frankivs’ka Oblast’
+541,Krynychne,45.5358,28.6678,Odes’ka Oblast’
+542,Shyshaky,49.8769,34.0071,Poltavs’ka Oblast’
+543,Brylivka,46.4250,33.1511,Khersons’ka Oblast’
+544,Zaozerne,45.1600,33.2747,"Krym, Avtonomna Respublika"
+545,Mliiv,49.3475,31.5364,Cherkas’ka Oblast’
+546,Almazna,48.5167,38.5833,Luhans’ka Oblast’
+547,Dovbysh,50.3722,27.9895,Zhytomyrs’ka Oblast’
+548,Kolchyno,48.4667,22.7667,Zakarpats’ka Oblast’
+549,Shabelkivka,48.7608,37.4881,Donets’ka Oblast’
+550,Sursko-Lytovske,48.3364,34.9355,Dnipropetrovs’ka Oblast’
+551,Serednye,48.5333,22.5000,Zakarpats’ka Oblast’
+552,Novyi Kalyniv,49.5606,23.3044,L’vivs’ka Oblast’
+553,Cherkaske,48.7008,35.3844,Dnipropetrovs’ka Oblast’
+554,Vorokhta,48.2833,24.5667,Ivano-Frankivs’ka Oblast’
+555,Mykolaivka,50.9422,34.3820,Sums’ka Oblast’
+556,Obroshino,49.7853,23.8686,L’vivs’ka Oblast’
+557,Lyman,49.5894,36.4700,Kharkivs’ka Oblast’
+558,Krynychky,48.3686,34.4644,Dnipropetrovs’ka Oblast’
+559,Lazeshchyna,48.2692,24.4186,Zakarpats’ka Oblast’
+560,Hryshkivtsi,49.9356,28.6017,Zhytomyrs’ka Oblast’
+561,Ustynivka,47.9500,32.5333,Kirovohrads’ka Oblast’
+562,Melioratyvne,48.6222,35.3477,Dnipropetrovs’ka Oblast’
+563,Berezanka,46.8550,31.3875,Mykolayivs’ka Oblast’
+564,Auly,48.5575,34.4628,Dnipropetrovs’ka Oblast’
+565,Volodkova Divytsia,50.9436,31.7894,Chernihivs’ka Oblast’
+566,Novomykolaivka,48.5556,34.3771,Dnipropetrovs’ka Oblast’
+567,Luhyny,51.0667,28.3833,Zhytomyrs’ka Oblast’
+568,Nova Ushytsia,48.8330,27.2672,Khmel’nyts’ka Oblast’
+569,Oleksandrivka,47.9208,37.5750,Donets’ka Oblast’
+570,Kuty,48.2636,25.1736,Ivano-Frankivs’ka Oblast’
+571,Hołoby,51.0833,25.0167,Volyns’ka Oblast’
+572,Kolky,51.0992,25.6667,Volyns’ka Oblast’
+573,Velyki Sorochyntsi,50.0253,33.9477,Poltavs’ka Oblast’
+574,Novopillia,47.9539,33.5278,Dnipropetrovs’ka Oblast’
+575,Krynychne,47.9528,39.7383,Luhans’ka Oblast’
+576,Tyvriv,49.0116,28.5011,Vinnyts’ka Oblast’
+577,Zabolotiv,48.4667,25.2833,Ivano-Frankivs’ka Oblast’
+578,Vyzhnytsia,48.2500,25.1917,Chernivets’ka Oblast’
+579,Yerky,48.9781,30.9919,Cherkas’ka Oblast’
+580,Suprunivka,49.5812,34.4270,Poltavs’ka Oblast’
+581,Skalat,49.4333,25.9833,Ternopil’s’ka Oblast’
+582,Dzhulynka,48.4417,29.7475,Vinnyts’ka Oblast’
+583,Rubanivka,46.9953,34.1694,Khersons’ka Oblast’
+584,Matviyivka,47.9026,35.3046,Zaporiz’ka Oblast’
+585,Simeiz,44.4069,34.0111,"Krym, Avtonomna Respublika"
+586,Dashiv,49.0047,29.4278,Vinnyts’ka Oblast’
+587,Bohuslav,48.4661,36.0287,Dnipropetrovs’ka Oblast’
+588,Rozhniativ,48.9354,24.1585,Ivano-Frankivs’ka Oblast’
+589,Radushne,47.8220,33.5029,Dnipropetrovs’ka Oblast’
+590,Lokachi,50.7383,24.6372,Volyns’ka Oblast’
+591,Onufriivka,48.9023,33.4464,Kirovohrads’ka Oblast’
+592,Solotvyn,48.7000,24.5333,Ivano-Frankivs’ka Oblast’
+593,Klembivka,48.3894,28.4064,Vinnyts’ka Oblast’
+594,Prymorske,47.6244,35.2943,Zaporiz’ka Oblast’
+595,Holubivka,48.8853,35.3246,Dnipropetrovs’ka Oblast’
+596,Verbky,48.5911,35.8967,Dnipropetrovs’ka Oblast’
+597,Bibrka,49.6358,24.2936,L’vivs’ka Oblast’
+598,Kalynivka,50.5592,30.8211,Kyyivs’ka Oblast’
+599,Lazy,48.0581,23.6450,Zakarpats’ka Oblast’
+600,Pavlivka,49.4411,28.4653,Vinnyts’ka Oblast’
+601,Komarno,49.6333,23.7000,L’vivs’ka Oblast’
+602,Vendychany,48.6130,27.7944,Vinnyts’ka Oblast’
+603,Chaplyne,48.1273,36.2374,Dnipropetrovs’ka Oblast’
+604,Velykyi Burluk,50.0456,37.3906,Kharkivs’ka Oblast’
+605,Dmytrivka,48.3887,36.1918,Dnipropetrovs’ka Oblast’
+606,Lypcha,48.2628,23.3819,Zakarpats’ka Oblast’
+607,Novosilky,50.3544,30.4544,"Kyyiv, Misto"
+608,Medvyn,49.3903,30.7847,Kyyivs’ka Oblast’
+609,Nyzhnya Syrovatka,50.7814,34.8382,Sums’ka Oblast’
+610,Preobrazhenka,47.5784,35.8038,Zaporiz’ka Oblast’
+611,Losynivka,50.8300,31.9200,Chernihivs’ka Oblast’
+612,Kuchurhan,46.7236,29.9775,Odes’ka Oblast’
+613,Myhove,48.1500,25.3806,Chernivets’ka Oblast’
+614,Kashperivka,49.4311,29.6814,Kyyivs’ka Oblast’
+615,Zhvyrka,50.4650,24.2567,L’vivs’ka Oblast’
+616,Kamiani Potoky,48.9859,33.5186,Poltavs’ka Oblast’
+617,Voskresenka,47.4707,36.3570,Zaporiz’ka Oblast’
+618,Oleksiivka,47.5943,34.2377,Dnipropetrovs’ka Oblast’
+619,Tsybuliv,49.0733,29.8472,Cherkas’ka Oblast’
+620,Osiy,48.3611,23.1194,Zakarpats’ka Oblast’
+621,Zatyshshia,47.3353,29.8708,Odes’ka Oblast’
+622,Verbivka,49.4883,36.8297,Kharkivs’ka Oblast’
+623,Kryukivshchyna,50.3683,30.3681,Kyyivs’ka Oblast’
+624,Kobyletska Poliana,48.0822,24.0747,Zakarpats’ka Oblast’
+625,Makhnivka,49.7219,28.6769,Vinnyts’ka Oblast’
+626,Kyrylivka,46.3731,35.3675,Zaporiz’ka Oblast’
+627,Hora,50.3708,30.8617,Kyyivs’ka Oblast’
+628,Pershotravensk,50.2011,27.6339,Zhytomyrs’ka Oblast’
+629,Shchebetovka,44.9389,35.1583,"Krym, Avtonomna Respublika"
+630,Novopavlivka,48.1376,36.7827,Dnipropetrovs’ka Oblast’
+631,Solonka,49.7400,24.0300,L’vivs’ka Oblast’
+632,Kozyn,50.2278,30.6500,Kyyivs’ka Oblast’
+633,Medenychi,49.4333,23.7500,L’vivs’ka Oblast’
+634,Machukhy,49.5296,34.4297,Poltavs’ka Oblast’
+635,Ropcha,48.1175,25.7925,Chernivets’ka Oblast’
+636,Mykolayivka,48.7867,35.1796,Dnipropetrovs’ka Oblast’
+637,Hlukhivtsi,49.7728,28.7189,Vinnyts’ka Oblast’
+638,Malokaterynivka,47.6570,35.2591,Zaporiz’ka Oblast’
+639,Staryi Saltiv,50.0778,36.7933,Kharkivs’ka Oblast’
+640,Pluzhnoye,50.1803,26.5628,Khmel’nyts’ka Oblast’
+641,Koropets,48.9386,25.1794,Ternopil’s’ka Oblast’
+642,Ivanivtsi,48.4847,27.0147,Chernivets’ka Oblast’
+643,Khymchyn,48.3839,25.1497,Ivano-Frankivs’ka Oblast’
+644,Sholokhove,47.6981,34.0238,Dnipropetrovs’ka Oblast’
+645,Chervonyy Oskil,49.1744,37.4280,Kharkivs’ka Oblast’
+646,Vil’khivtsi-Lazy,48.1258,23.6975,Zakarpats’ka Oblast’
+647,Vylok,48.1000,22.8333,Zakarpats’ka Oblast’
+648,Rudnyky,49.4489,23.9136,L’vivs’ka Oblast’
+649,Lysychovo,48.4908,23.2742,Zakarpats’ka Oblast’
+650,Shpykiv,48.7870,28.5642,Vinnyts’ka Oblast’
+651,Kopashnovo,48.2156,23.4822,Zakarpats’ka Oblast’
+652,Ivanopil,49.8586,28.2156,Zhytomyrs’ka Oblast’
+653,Spaske,48.6579,35.0499,Dnipropetrovs’ka Oblast’
+654,Rozivka,47.3929,37.0694,Zaporiz’ka Oblast’
+655,Lazurne,46.0808,32.5200,Khersons’ka Oblast’
+656,Novi Bilokorovychi,51.0475,28.0519,Zhytomyrs’ka Oblast’
+657,Pryshyb,47.2564,35.3239,Zaporiz’ka Oblast’
+658,Krasnyi Kut,48.2119,38.7767,Luhans’ka Oblast’
+659,Hlyniany,49.8233,24.5167,L’vivs’ka Oblast’
+660,Novoekonomichne,48.3278,37.3319,Donets’ka Oblast’
+661,Orilka,48.9805,36.0075,Kharkivs’ka Oblast’
+662,Lukiv,51.2333,24.3475,Volyns’ka Oblast’
+663,Malyy Rakovets’,48.2642,23.2064,Zakarpats’ka Oblast’
+664,Olyka,50.7167,25.8167,Volyns’ka Oblast’
+665,Horinchovo,48.2697,23.4339,Zakarpats’ka Oblast’
+666,Koviahy,49.9044,35.5586,Kharkivs’ka Oblast’
+667,Nyzhnie Selyshche,48.1997,23.4475,Zakarpats’ka Oblast’
+668,Obertyn,48.6894,25.1700,Ivano-Frankivs’ka Oblast’
+669,Mykhailo-Kotsiubynske,51.4550,31.0772,Chernihivs’ka Oblast’
+670,Bila Tserkva,47.9500,23.9333,Zakarpats’ka Oblast’
+671,Holovne,51.3333,24.0833,Volyns’ka Oblast’
+672,Batovo,48.3667,22.3833,Zakarpats’ka Oblast’
+673,Novyi Yarychiv,49.9019,24.3033,L’vivs’ka Oblast’
+674,Berezovo,48.3039,23.4892,Zakarpats’ka Oblast’
+675,Stari Petrivtsi,50.6525,30.4158,Kyyivs’ka Oblast’
+676,Hozhuly,49.6056,34.4479,Poltavs’ka Oblast’
+677,Myrne,46.9502,35.4431,Zaporiz’ka Oblast’
+678,Sadky,49.0090,33.4602,Poltavs’ka Oblast’
+679,Lysets,48.8717,24.6047,Ivano-Frankivs’ka Oblast’
+680,Polovynkyne,49.2250,38.9150,Luhans’ka Oblast’
+681,Urzuf,46.9119,37.0936,Donets’ka Oblast’
+682,Staryi Mizun,48.9206,23.8739,Ivano-Frankivs’ka Oblast’
+683,Myropillya,51.0225,35.2603,Sums’ka Oblast’
+684,Chervone,49.9497,28.8686,Zhytomyrs’ka Oblast’
+685,Pervomaiskyi,47.9736,38.7875,Donets’ka Oblast’
+686,Lychkove,49.0918,35.2078,Dnipropetrovs’ka Oblast’
+687,Stanislavchyk,48.9728,28.1028,Vinnyts’ka Oblast’
+688,Babyntsi,50.6411,30.0269,Kyyivs’ka Oblast’
+689,Yezupil,49.0431,24.7764,Ivano-Frankivs’ka Oblast’
+690,Koktebel,44.9600,35.2406,"Krym, Avtonomna Respublika"
+691,Orativ,49.1876,29.5289,Vinnyts’ka Oblast’
+692,Oleksandrivka,48.5173,35.2304,Dnipropetrovs’ka Oblast’
+693,Dertsen,48.3350,22.6825,Zakarpats’ka Oblast’
+694,Holubyne,48.5714,22.9697,Zakarpats’ka Oblast’
+695,Blyzhnie,45.0569,35.3306,"Krym, Avtonomna Respublika"
+696,Narodychi,51.2029,29.0823,Zhytomyrs’ka Oblast’
+697,Voinyliv,49.1194,24.4936,Ivano-Frankivs’ka Oblast’
+698,Andriivka,47.1026,36.5871,Zaporiz’ka Oblast’
+699,Poliana,48.6253,22.9697,Zakarpats’ka Oblast’
+700,Sheludkivka,49.6778,36.5433,Kharkivs’ka Oblast’
+701,Askaniia-Nova,46.4511,33.8683,Khersons’ka Oblast’
+702,Imstychovo,48.2953,23.1969,Zakarpats’ka Oblast’
+703,Chernivtsi,48.5425,28.1122,Vinnyts’ka Oblast’
+704,Hlodosy,48.4614,31.3294,Kirovohrads’ka Oblast’
+705,Sernyky,51.8217,26.2358,Rivnens’ka Oblast’
+706,Shramkivka,50.1333,32.1333,Cherkas’ka Oblast’
+707,Kotovka,49.1301,34.9428,Dnipropetrovs’ka Oblast’
+708,Khroly,49.9014,36.3687,Kharkivs’ka Oblast’
+709,Petrushiv,48.0767,23.8064,Zakarpats’ka Oblast’
+710,Smyha,50.2400,25.7658,Khmel’nyts’ka Oblast’
+711,Popeli,49.3092,23.3850,L’vivs’ka Oblast’
+712,Molodkiv,48.6568,24.5085,Ivano-Frankivs’ka Oblast’
+713,Lyubymivka,48.3721,35.1772,Dnipropetrovs’ka Oblast’
+714,Ustia,48.3778,29.6606,Vinnyts’ka Oblast’
+715,Delen,45.9125,29.1878,Odes’ka Oblast’
+716,Saksahan,48.3468,33.8406,Dnipropetrovs’ka Oblast’
+717,Partyzanske,48.5871,34.8143,Dnipropetrovs’ka Oblast’
+718,Kurylivka,48.5732,34.6104,Dnipropetrovs’ka Oblast’
+719,Kaihador,44.9633,35.3553,"Krym, Avtonomna Respublika"
+720,Barturyn,51.3333,32.8833,Chernihivs’ka Oblast’
+721,Sursko-Mykhailivka,48.2720,34.7276,Dnipropetrovs’ka Oblast’
+722,Kyinka,51.4544,31.1983,Chernihivs’ka Oblast’
+723,Lypetska Poliana,48.3344,23.3594,Zakarpats’ka Oblast’
+724,Trushki,49.7544,29.9428,Kyyivs’ka Oblast’
+725,Novoselytsia,48.4333,26.9814,Chernivets’ka Oblast’
+726,Bilokorovychi,51.1089,28.0175,Zhytomyrs’ka Oblast’
+727,Ivana Franka,49.3619,23.3206,L’vivs’ka Oblast’
+728,Chornukhy,50.2699,32.9476,Poltavs’ka Oblast’
+729,Tomashhorod,51.3122,27.0250,Rivnens’ka Oblast’
+730,Babche,48.6667,24.4417,Ivano-Frankivs’ka Oblast’
+731,Khomutets,50.0619,33.7235,Poltavs’ka Oblast’
+732,Bilousivka,49.9453,32.3714,Cherkas’ka Oblast’
+733,Nikita,44.5111,34.2353,"Krym, Avtonomna Respublika"
+734,Stari Kryvotuly,48.7858,24.8556,Ivano-Frankivs’ka Oblast’
+735,Nahiryanka,48.9308,25.7342,Ternopil’s’ka Oblast’
+736,Vovkovyntsi,49.2085,27.6560,Khmel’nyts’ka Oblast’
+737,Pershotravneve,51.3929,28.8684,Zhytomyrs’ka Oblast’
+738,Korytne,48.3336,25.3753,Chernivets’ka Oblast’
+739,Tereshky,49.5471,34.6227,Poltavs’ka Oblast’
+740,Prydniprovske,47.6182,34.4506,Dnipropetrovs’ka Oblast’
+741,Zarichany,50.2300,28.6500,Zhytomyrs’ka Oblast’
+742,Yelizavetivka,48.6197,34.6496,Dnipropetrovs’ka Oblast’
+743,Aviatorske,48.3664,35.0830,Dnipropetrovs’ka Oblast’
+744,Chyshky,49.7975,24.1689,L’vivs’ka Oblast’
+745,Parafiivka,50.8850,32.6464,Chernihivs’ka Oblast’
+746,Zalukva,49.1192,24.7111,Ivano-Frankivs’ka Oblast’
+747,Morske,44.8306,34.8014,"Krym, Avtonomna Respublika"
+748,Satanov,49.2500,26.2667,Khmel’nyts’ka Oblast’
+749,Vyrishal’ne,50.1914,33.4488,Poltavs’ka Oblast’
+750,Strilky,49.3264,22.9717,L’vivs’ka Oblast’
+751,Mykhailivka,48.4964,38.9025,Luhans’ka Oblast’
+752,Chornivka,48.4186,26.0106,Chernivets’ka Oblast’
+753,Shalyhyne,51.5676,34.1197,Sums’ka Oblast’
+754,Sharovechka,49.4150,26.8986,Khmel’nyts’ka Oblast’
+755,Vyshneve,48.4369,33.9185,Dnipropetrovs’ka Oblast’
+756,Izobilne,44.7014,34.3533,"Krym, Avtonomna Respublika"
+757,Verkhnosadove,44.6889,33.7056,"Sevastopol’, Misto"
+758,Aeroflotskyi,45.0194,34.0000,"Krym, Avtonomna Respublika"
+759,Lenkivtsi,48.5056,26.7586,Chernivets’ka Oblast’
+760,Drachyntsi,48.3164,25.7003,Chernivets’ka Oblast’
+761,Zhovte,48.5041,33.5401,Dnipropetrovs’ka Oblast’
+762,Belz,50.3833,24.0167,L’vivs’ka Oblast’
+763,Slov”yanka,48.3997,36.7152,Dnipropetrovs’ka Oblast’
+764,Verbka,48.2139,29.2847,Vinnyts’ka Oblast’
+765,Perebykivtsi,48.5861,26.1358,Chernivets’ka Oblast’
+766,Vyhoda,48.9667,23.9500,Ivano-Frankivs’ka Oblast’
+767,Nyzhnii Bystryi,48.3628,23.5272,Zakarpats’ka Oblast’
+768,Matroska,45.3450,28.7758,Odes’ka Oblast’
+769,Velyki Korovyntsi,49.9714,28.2947,Zhytomyrs’ka Oblast’
+770,Novovasylivka,46.8314,35.7543,Zaporiz’ka Oblast’
+771,Zhniatyno,48.3506,22.5958,Zakarpats’ka Oblast’
+772,Kosari,49.0450,32.1817,Cherkas’ka Oblast’
+773,Zavorychi,50.7056,31.1328,Kyyivs’ka Oblast’
+774,Osynove,49.5636,39.0675,Luhans’ka Oblast’
+775,Topchyno,48.0389,23.8528,Zakarpats’ka Oblast’
+776,Vyshcheolchedaiv,48.7236,27.6842,Vinnyts’ka Oblast’
+777,Sytkivtsi,48.9066,29.2022,Vinnyts’ka Oblast’
+778,Chornotysiv,48.0783,23.0536,Zakarpats’ka Oblast’
+779,Takhtaulove,49.6616,34.5294,Poltavs’ka Oblast’
+780,Pidhorodna,48.1070,30.8895,Mykolayivs’ka Oblast’
+781,Stari Troiany,45.6719,29.1703,Odes’ka Oblast’
+782,Utoropy,48.3864,24.9831,Ivano-Frankivs’ka Oblast’
+783,Bilokrynnytsia,50.1429,25.7497,Ternopil’s’ka Oblast’
+784,Fedorivka,47.5455,36.5555,Zaporiz’ka Oblast’
+785,Slavhorod,48.1097,35.5109,Dnipropetrovs’ka Oblast’
+786,Borki,49.9133,23.9178,L’vivs’ka Oblast’
+787,Nova Haleshchyna,49.1688,33.7584,Poltavs’ka Oblast’
+788,Yur”yivka,48.7397,36.0216,Dnipropetrovs’ka Oblast’
+789,Vysunsk,47.2564,32.8189,Mykolayivs’ka Oblast’
+790,Komysh-Zoria,47.3275,36.6931,Zaporiz’ka Oblast’
+791,Velykyi Khutir,49.8617,32.1053,Cherkas’ka Oblast’
+792,Obolon,49.6040,32.8765,Poltavs’ka Oblast’
+793,Mykhaylivka,47.9527,35.2650,Zaporiz’ka Oblast’
+794,Ustyluh,50.8600,24.1569,Volyns’ka Oblast’
+795,Nelypivtsi,48.4200,26.9200,Chernivets’ka Oblast’
+796,Voinivka,48.7086,33.0611,Kirovohrads’ka Oblast’
+797,Khomenky,48.6853,28.2306,Vinnyts’ka Oblast’
+798,Novopetrivka,46.8266,36.8944,Zaporiz’ka Oblast’
+799,Rotmistrivka,49.1489,31.7158,Cherkas’ka Oblast’
+800,Liubar,49.9205,27.7592,Zhytomyrs’ka Oblast’
+801,Piilo,49.0028,24.3036,Ivano-Frankivs’ka Oblast’
+802,Skhidnytsia,49.2013,23.3617,L’vivs’ka Oblast’
+803,Mali Kopani,46.4356,32.7289,Khersons’ka Oblast’
+804,Babyn,48.5242,26.8553,Chernivets’ka Oblast’
+805,Sokolivka,48.4419,28.9922,Vinnyts’ka Oblast’
+806,Kovalivka,49.6060,34.7000,Poltavs’ka Oblast’
+807,Pryshyb,49.5115,36.7510,Kharkivs’ka Oblast’
+808,Bulakhivka,48.5995,35.6663,Dnipropetrovs’ka Oblast’
+809,Berezyna,49.4461,24.0672,L’vivs’ka Oblast’
+810,Rososhany,48.3986,26.9994,Chernivets’ka Oblast’
+811,Stare Selo,49.7036,24.1917,L’vivs’ka Oblast’
+812,Hertsa,48.1500,26.2500,Chernivets’ka Oblast’
+813,Preslav,46.6879,36.2135,Zaporiz’ka Oblast’
+814,Kornyn,50.0839,29.5375,Zhytomyrs’ka Oblast’
+815,Lisovi Hrynivtsi,49.4744,27.0158,Khmel’nyts’ka Oblast’
+816,Malomykolaivka,48.3069,39.0219,Luhans’ka Oblast’
+817,Stinka,48.9172,25.2504,Ternopil’s’ka Oblast’
+818,Tynytsia,51.1333,32.9167,Chernihivs’ka Oblast’
+819,Liubech,51.7052,30.6617,Chernihivs’ka Oblast’
+820,Berezhynka,48.4867,32.3547,Kirovohrads’ka Oblast’
+821,Bilyne,47.8731,29.6244,Odes’ka Oblast’
+822,Svyatets,49.8439,26.2975,Khmel’nyts’ka Oblast’
+823,Yabluniv,48.4042,24.9387,Ivano-Frankivs’ka Oblast’
+824,Klenovyi,48.1189,39.4564,Luhans’ka Oblast’
+825,Maidanetske,48.8169,30.7100,Cherkas’ka Oblast’
+826,Tartak,48.2022,29.4119,Vinnyts’ka Oblast’
+827,Dubivtsi,49.0814,24.7736,Ivano-Frankivs’ka Oblast’
+828,Hubnyk,48.6192,29.3306,Vinnyts’ka Oblast’
+829,Vilne,45.5656,34.3064,"Krym, Avtonomna Respublika"
+830,Kapulivka,47.5476,34.2266,Dnipropetrovs’ka Oblast’
+831,Potoky,49.0973,33.5784,Poltavs’ka Oblast’
+832,Uhroyidy,50.8626,35.2688,Sums’ka Oblast’
+833,Moshoryne,48.6158,32.7219,Kirovohrads’ka Oblast’
+834,Belobozhnitsa,49.0494,25.6814,Ternopil’s’ka Oblast’
+835,Barashi,50.7156,28.0308,Zhytomyrs’ka Oblast’
+836,Tiudiv,48.2394,25.1303,Ivano-Frankivs’ka Oblast’
+837,Kozhanka,49.9681,29.7647,Kyyivs’ka Oblast’
+838,Prykolotne,50.1586,37.3367,Kharkivs’ka Oblast’
+839,Borozenske,47.1786,33.4197,Khersons’ka Oblast’
+840,Piatyhory,49.3397,29.9089,Kyyivs’ka Oblast’
+841,Viitivtsi,49.6239,27.9014,Vinnyts’ka Oblast’
+842,Andrushky,49.8731,29.3433,Zhytomyrs’ka Oblast’
+843,Dovzhok,48.2392,28.5261,Vinnyts’ka Oblast’
+844,Mazurivka,48.6569,28.8142,Vinnyts’ka Oblast’
+845,Mostove,47.4172,30.9883,Mykolayivs’ka Oblast’
+846,Ploske,50.5378,31.1003,Kyyivs’ka Oblast’
+847,Chkalove,47.6950,34.3216,Dnipropetrovs’ka Oblast’
+848,Vilne,48.7427,35.2941,Dnipropetrovs’ka Oblast’
+849,Velyka Kyriivka,48.3772,29.6247,Vinnyts’ka Oblast’
+850,Lykhivka,48.6874,33.9228,Dnipropetrovs’ka Oblast’
+851,Prybuzhzhia,47.6719,31.2422,Mykolayivs’ka Oblast’
+852,Ozaryntsi,48.5406,27.8069,Vinnyts’ka Oblast’
+853,Yablunytsia,48.3161,24.5033,Ivano-Frankivs’ka Oblast’
+854,Sheshory,48.3364,24.9911,Ivano-Frankivs’ka Oblast’
+855,Opytne,48.5542,38.0169,Donets’ka Oblast’
+856,Dobrovlyany,48.6641,25.7540,Ternopil’s’ka Oblast’
+857,Zelena,48.3628,26.7250,Chernivets’ka Oblast’
+858,Bandurove,48.2275,29.8606,Kirovohrads’ka Oblast’
+859,Krasnosilka,48.5064,29.6214,Vinnyts’ka Oblast’
+860,Chaplynka,48.7348,34.7726,Dnipropetrovs’ka Oblast’
+861,Chumaky,48.6579,34.8739,Dnipropetrovs’ka Oblast’
+862,Lypne,51.0189,26.0344,Volyns’ka Oblast’
+863,V”yazivok,48.6430,35.7708,Dnipropetrovs’ka Oblast’
+864,Berezova Rudka,50.3153,32.2401,Poltavs’ka Oblast’
+865,Chemer,51.0989,31.2186,Chernihivs’ka Oblast’
+866,Kvitneve,49.9847,29.5158,Zhytomyrs’ka Oblast’
+867,Velyka Burimka,49.6089,32.6381,Cherkas’ka Oblast’
+868,Velykomykhaylivka,47.9720,36.4723,Dnipropetrovs’ka Oblast’
+869,Dubyshche,50.9264,25.3000,Volyns’ka Oblast’
+870,Vysokopillia,49.9186,35.4203,Kharkivs’ka Oblast’
+871,Ivanivka,48.7276,34.5755,Dnipropetrovs’ka Oblast’
+872,Lativka,46.5642,30.7114,Odes’ka Oblast’
+873,Semykozivka,49.2433,39.5678,Luhans’ka Oblast’
+874,Vakulenchuk,49.9417,28.3031,Zhytomyrs’ka Oblast’
+875,Bilshivtsi,49.1833,24.7500,Ivano-Frankivs’ka Oblast’
+876,Poberezhzhia,49.0200,24.8225,Ivano-Frankivs’ka Oblast’
+877,Semenivka,47.9347,31.0594,Mykolayivs’ka Oblast’
+878,Repuzhyntsi,48.6531,25.7931,Chernivets’ka Oblast’
+879,Troianiv,50.1133,28.5231,Zhytomyrs’ka Oblast’
+880,Priadivka,48.9198,34.7067,Dnipropetrovs’ka Oblast’
+881,Serby,48.1014,29.0667,Odes’ka Oblast’
+882,Serdyte,48.0417,38.3883,Donets’ka Oblast’
+883,Mala Petrykivka,48.7141,34.6603,Dnipropetrovs’ka Oblast’
+884,Borovytsia,49.2433,32.4889,Cherkas’ka Oblast’
+885,Sukha,48.4292,23.2997,Zakarpats’ka Oblast’
+886,Kumachove,47.6239,38.2642,Donets’ka Oblast’
+887,Hvizdets,48.5753,25.2831,Ivano-Frankivs’ka Oblast’
+888,Nemyriv,50.1039,23.4344,L’vivs’ka Oblast’
+889,Vyshnivchyk,49.0211,26.4672,Khmel’nyts’ka Oblast’
+890,Pishchane,49.2692,38.9511,Luhans’ka Oblast’
+891,Velyka Byihan,48.2481,22.5747,Zakarpats’ka Oblast’
+892,Monastyrets,48.2928,23.4278,Zakarpats’ka Oblast’
+893,Horoshova,48.5457,26.1050,Chernivets’ka Oblast’
+894,Chopovychi,50.8333,28.9525,Zhytomyrs’ka Oblast’
+895,Mykhailivka,48.8075,28.2906,Vinnyts’ka Oblast’
+896,Doslidnytske,49.9219,30.1478,Kyyivs’ka Oblast’
+897,Pristromy,50.2253,31.4311,Kyyivs’ka Oblast’
+898,Samhorodok,49.5306,28.8417,Vinnyts’ka Oblast’
+899,Shamraivka,49.7719,29.8328,Kyyivs’ka Oblast’
+900,Kniazhdvir,48.5581,24.9128,Ivano-Frankivs’ka Oblast’
+901,Zelenky,49.7467,30.9286,Kyyivs’ka Oblast’
+902,Holovyne,50.4725,28.8281,Zhytomyrs’ka Oblast’
+903,Pryvitne,44.8222,34.6778,"Krym, Avtonomna Respublika"
+904,Shcherbani,49.5334,34.5385,Poltavs’ka Oblast’
+905,Vilkhivka,48.2633,23.0656,Zakarpats’ka Oblast’
+906,Simer,48.7322,22.5169,Zakarpats’ka Oblast’
+907,Ostriv,50.3939,24.1697,L’vivs’ka Oblast’
+908,Ternivka,44.5819,33.7444,"Krym, Avtonomna Respublika"
+909,Piatkivka,48.3189,29.3833,Vinnyts’ka Oblast’
+910,Pysarivka,48.3264,28.3956,Vinnyts’ka Oblast’
+911,Bohdanivka,47.8158,31.1344,Mykolayivs’ka Oblast’
+912,Pysarivka,49.5200,26.4458,Khmel’nyts’ka Oblast’
+913,Staryy Chortoryys’k,51.2242,25.8825,Volyns’ka Oblast’
+914,Vakhnivka,49.3200,28.8433,Vinnyts’ka Oblast’
+915,Zinkiv,49.0769,27.0722,Khmel’nyts’ka Oblast’
+916,Belogorodka,50.0042,26.6475,Khmel’nyts’ka Oblast’
+917,Vovche,49.2111,22.9094,L’vivs’ka Oblast’
+918,Velyka Pavlivka,50.2369,34.2683,Poltavs’ka Oblast’
+919,Novopokrovka,48.0552,34.6132,Dnipropetrovs’ka Oblast’
+920,Komariv,48.5597,26.9883,Chernivets’ka Oblast’
+921,Svitlohirske,48.3447,34.5089,Dnipropetrovs’ka Oblast’
+922,Severynivka,49.0511,27.9458,Vinnyts’ka Oblast’
+923,Tsybuleve,48.8144,32.4878,Kirovohrads’ka Oblast’
+924,Ostapovo,49.3786,26.0358,Ternopil’s’ka Oblast’
+925,Horodyshche,49.0511,39.6514,Luhans’ka Oblast’
+926,Stavchany,49.7575,23.8392,L’vivs’ka Oblast’
+927,Ternivka,48.3944,28.9019,Vinnyts’ka Oblast’
+928,Vil’bivne,50.3597,26.5667,Rivnens’ka Oblast’
+929,Baibuzy,49.4772,31.6728,Cherkas’ka Oblast’
+930,Bilozirka,47.0853,32.4544,Mykolayivs’ka Oblast’
+931,Shepit,48.2653,24.8567,Ivano-Frankivs’ka Oblast’
+932,Novotaromske,48.4015,34.6784,Dnipropetrovs’ka Oblast’
+933,Kolybaivka,48.6411,26.5450,Khmel’nyts’ka Oblast’
+934,Hirne,49.1806,23.7342,L’vivs’ka Oblast’
+935,Razdory,48.3285,35.7045,Dnipropetrovs’ka Oblast’
+936,Chervone,49.8028,24.7656,L’vivs’ka Oblast’
+937,Vynohradne,47.0906,37.6603,Donets’ka Oblast’
+938,Bykivka,50.2928,27.9831,Zhytomyrs’ka Oblast’
+939,Byrlivka,50.0853,32.0725,Cherkas’ka Oblast’
+940,Hrabiv,48.9047,23.9989,Ivano-Frankivs’ka Oblast’
+941,Ivankov,48.8242,26.1724,Ternopil’s’ka Oblast’
+942,Maidan,48.6117,23.5019,Zakarpats’ka Oblast’
+943,Deleva,48.9117,25.2208,Ivano-Frankivs’ka Oblast’
+944,Havryshivka,49.2367,28.6425,Vinnyts’ka Oblast’
+945,Berestechko,50.3500,25.1167,Volyns’ka Oblast’
+946,Syniukhyn Brid,48.1458,30.8208,Mykolayivs’ka Oblast’
+947,Karpylivka,50.8483,25.8406,Volyns’ka Oblast’
+948,Krylos,49.0883,24.6886,Ivano-Frankivs’ka Oblast’
+949,Huta,51.6289,24.1264,Volyns’ka Oblast’
+950,Andriievo-Ivanivka,47.5008,30.4633,Odes’ka Oblast’
+951,Bokhonyky,49.1644,28.3800,Vinnyts’ka Oblast’
+952,Novozarivka,47.6406,38.1311,Donets’ka Oblast’
+953,Bilche,49.4100,23.8294,L’vivs’ka Oblast’
+954,Samchyky,49.7592,27.3869,Khmel’nyts’ka Oblast’
+955,Veryn,49.4844,23.9903,L’vivs’ka Oblast’
+956,Abazivka,49.6053,34.3499,Poltavs’ka Oblast’
+957,Bochechky,51.2994,33.4176,Sums’ka Oblast’
+958,Chernyatin,49.0475,27.9089,Vinnyts’ka Oblast’
+959,Sharivka,50.0272,35.4411,Kharkivs’ka Oblast’
+960,Imeni Shevchenko,48.2200,37.1453,Donets’ka Oblast’
+961,Polianka,50.2584,27.6881,Zhytomyrs’ka Oblast’
+962,Tavrychanka,46.5533,33.8203,Khersons’ka Oblast’
+963,Kocherezhky,48.6681,35.6895,Dnipropetrovs’ka Oblast’
+964,Kyslychuvata,47.8508,34.7262,Dnipropetrovs’ka Oblast’
+965,Iltsi,48.1531,24.7600,Ivano-Frankivs’ka Oblast’
+966,Velyka Andrusivka,49.0533,32.9544,Kirovohrads’ka Oblast’
+967,Kovalivka,49.9847,30.0131,Kyyivs’ka Oblast’
+968,Volosianka,48.9808,22.8072,Zakarpats’ka Oblast’
+969,Buzovytsia,48.5014,26.9275,Chernivets’ka Oblast’
+970,Vilshanka,48.2458,28.6256,Vinnyts’ka Oblast’
+971,Rybakivka,46.6203,31.3514,Mykolayivs’ka Oblast’
+972,Holma,47.9211,29.8531,Odes’ka Oblast’
+973,Krasnopilka,48.8000,29.7178,Vinnyts’ka Oblast’
+974,Troiandove,46.8944,30.8611,Odes’ka Oblast’
+975,Stari Kodaky,48.3792,35.1332,Dnipropetrovs’ka Oblast’
+976,Palanka,48.7294,30.0983,Cherkas’ka Oblast’
+977,Kuchakiv,50.3756,31.1264,Kyyivs’ka Oblast’
+978,Borivtsi,48.5867,25.6361,Chernivets’ka Oblast’
+979,Holovy,48.0619,24.8789,Ivano-Frankivs’ka Oblast’
+980,Birky,51.8081,25.1947,Volyns’ka Oblast’
+981,Verchany,49.2619,23.8992,L’vivs’ka Oblast’
+982,Sviatylivka,49.4628,32.8108,Poltavs’ka Oblast’
+983,Mykolaivka,47.9850,34.1545,Dnipropetrovs’ka Oblast’
+984,Zarichchia,50.8383,24.2975,Volyns’ka Oblast’
+985,Vladychen,45.5656,28.6039,Odes’ka Oblast’
+986,Huiva,50.2108,28.6553,Zhytomyrs’ka Oblast’
+987,Velykyi Zhvanchyk,48.7617,26.9631,Khmel’nyts’ka Oblast’
+988,Nasypne,45.0458,35.2958,"Krym, Avtonomna Respublika"
+989,Plodorodne,47.1651,35.3162,Zaporiz’ka Oblast’
+990,Radisne,46.9997,30.3397,Odes’ka Oblast’
+991,Cherepashyntsi,49.5325,28.5928,Vinnyts’ka Oblast’
+992,Mankivka,48.4819,29.6281,Vinnyts’ka Oblast’
+993,Chernelytsya,48.8111,25.4300,Ivano-Frankivs’ka Oblast’
+994,Lyutens’ki Budyshcha,50.1837,34.2328,Poltavs’ka Oblast’
+995,Ust-Chorna,48.3192,23.9389,Zakarpats’ka Oblast’
+996,Lukovo,48.3197,23.2108,Zakarpats’ka Oblast’
+997,Bystryk,49.7364,29.1436,Zhytomyrs’ka Oblast’
+998,Hrechyshkyne,48.8642,38.8950,Luhans’ka Oblast’
+999,Rokyni,50.8333,25.2833,Volyns’ka Oblast’
+1000,Trostianets,48.3578,28.2317,Vinnyts’ka Oblast’
+1001,Baranykivka,49.1586,39.8453,Luhans’ka Oblast’
+1002,Ivashkivtsi,48.7439,27.9475,Vinnyts’ka Oblast’
+1003,Bazaliia,49.7178,26.4708,Khmel’nyts’ka Oblast’
+1004,Doroshivtsi,48.5872,25.8931,Chernivets’ka Oblast’
+1005,Rogozno,49.8747,23.3397,L’vivs’ka Oblast’
+1006,Derno,50.7728,25.7458,Volyns’ka Oblast’
+1007,Zaliznyi Port,46.1222,32.2983,Khersons’ka Oblast’
+1008,Menchykury,47.0711,34.8041,Zaporiz’ka Oblast’
+1009,Kozhukhivka,50.2536,30.2333,Kyyivs’ka Oblast’
+1010,Kosmach,48.7497,24.3686,Ivano-Frankivs’ka Oblast’
+1011,Zelenohirske,47.8728,30.0978,Odes’ka Oblast’
+1012,Lisnyky,50.3039,30.5158,Kyyivs’ka Oblast’
+1013,Medynia,49.0917,24.5769,Ivano-Frankivs’ka Oblast’
+1014,Turiia,48.8717,31.6519,Kirovohrads’ka Oblast’
+1015,Tokari,50.4148,33.4274,Poltavs’ka Oblast’
+1016,Potashnia,48.3131,29.6122,Vinnyts’ka Oblast’
+1017,Havrylivka,47.2219,33.8769,Khersons’ka Oblast’
+1018,Tatariv,48.3436,24.5778,Ivano-Frankivs’ka Oblast’
+1019,Mala Uhol’ka,48.1769,23.6383,Zakarpats’ka Oblast’
+1020,Borzhava,48.1564,22.7217,Zakarpats’ka Oblast’
+1021,Lisovychi,49.5131,30.4664,Kyyivs’ka Oblast’
+1022,Beleluia,48.4986,25.4775,Ivano-Frankivs’ka Oblast’
+1023,Andriivka,44.8161,33.5635,"Sevastopol’, Misto"
+1024,Zarih,49.8085,32.6541,Poltavs’ka Oblast’
+1025,Krupske,49.4619,24.0300,L’vivs’ka Oblast’
+1026,Kryvorivnia,48.1750,24.8964,Ivano-Frankivs’ka Oblast’
+1027,Borisov,50.1753,26.6481,Khmel’nyts’ka Oblast’
+1028,Stryzhivka,49.9081,27.7419,Zhytomyrs’ka Oblast’
+1029,Mezhyrich,50.3011,26.4750,Rivnens’ka Oblast’
+1030,Antonivka,48.5286,28.4314,Vinnyts’ka Oblast’
+1031,Trudove,45.6183,29.3967,Odes’ka Oblast’
+1032,Vilkhovets,48.6986,27.3575,Khmel’nyts’ka Oblast’
+1033,Kapytolivka,49.1936,37.3542,Kharkivs’ka Oblast’
+1034,Kamianske,48.2797,22.9386,Zakarpats’ka Oblast’
+1035,Holovkivka,49.1203,32.3383,Cherkas’ka Oblast’
+1036,Luka,50.4602,33.2907,Poltavs’ka Oblast’
+1037,Hlynsk,49.5753,28.4642,Vinnyts’ka Oblast’
+1038,Novokrasnyanka,49.1433,38.2431,Luhans’ka Oblast’
+1039,Makariv Yar,48.5744,39.7169,Luhans’ka Oblast’
+1040,Suskovo,48.5422,22.9153,Zakarpats’ka Oblast’
+1041,Kolychivka,51.4136,31.3042,Chernihivs’ka Oblast’
+1042,Ivanopillia,48.4794,37.7589,Donets’ka Oblast’
+1043,Sokolove,49.7167,36.1958,Kharkivs’ka Oblast’
+1044,Rudnyky,51.0336,25.7619,Volyns’ka Oblast’
+1045,Mykhailivka,48.8350,29.5447,Vinnyts’ka Oblast’
+1046,Hranitne,50.7428,29.3522,Zhytomyrs’ka Oblast’
+1047,Nehrovets,48.4617,23.6406,Zakarpats’ka Oblast’
+1048,Oleksandrivka,47.7329,33.5318,Dnipropetrovs’ka Oblast’
+1049,Livyntsi,48.4081,26.6081,Chernivets’ka Oblast’
+1050,Rachky,48.9933,28.9058,Vinnyts’ka Oblast’
+1051,Buhas,47.6347,37.5614,Donets’ka Oblast’
+1052,Pysarivka,49.1939,28.6011,Vinnyts’ka Oblast’
+1053,Rivne,46.3661,34.7569,Khersons’ka Oblast’
+1054,Horianivske,48.5792,34.8750,Dnipropetrovs’ka Oblast’
+1055,Moshanets,48.4733,26.6939,Chernivets’ka Oblast’
+1056,Popivtsi,48.9033,27.8334,Vinnyts’ka Oblast’
+1057,Olenivka,45.3833,32.5333,"Krym, Avtonomna Respublika"
+1058,Anysiv,51.4356,31.3611,Chernihivs’ka Oblast’
+1059,Dyrdyn,49.2428,31.4467,Cherkas’ka Oblast’
+1060,Rozsosha,49.3392,26.8803,Khmel’nyts’ka Oblast’
+1061,Khrystoforivka,47.9822,33.0877,Dnipropetrovs’ka Oblast’
+1062,Studenytsia,50.3386,28.8972,Zhytomyrs’ka Oblast’
+1063,Harasymiv,48.7522,25.2061,Ivano-Frankivs’ka Oblast’
+1064,Skomoroshky,49.3292,29.4408,Vinnyts’ka Oblast’
+1065,Stavky,48.3819,29.7803,Vinnyts’ka Oblast’
+1066,Holubynka,44.5972,33.9153,"Krym, Avtonomna Respublika"
+1067,Olenivka,48.9372,34.9841,Dnipropetrovs’ka Oblast’
+1068,Ulashkivtsi,48.8994,25.8186,Ternopil’s’ka Oblast’
+1069,Mykolaivka,47.5322,30.2489,Odes’ka Oblast’
+1070,Ozeriany,50.4957,32.9039,Chernihivs’ka Oblast’
+1071,Uspenivka,47.7815,36.3992,Zaporiz’ka Oblast’
+1072,Bashmachka,48.1560,35.0109,Dnipropetrovs’ka Oblast’
+1073,Kodra,50.5942,29.5667,Kyyivs’ka Oblast’
+1074,Iverske,48.6367,36.9608,Donets’ka Oblast’
+1075,Ivanivka,48.0985,36.6427,Dnipropetrovs’ka Oblast’
+1076,Hrunyky,48.1456,23.6658,Zakarpats’ka Oblast’
+1077,Hordiivka,48.5206,29.3175,Vinnyts’ka Oblast’
+1078,Lisova Lysiivka,49.3647,28.6114,Vinnyts’ka Oblast’
+1079,Strilkove,45.8964,34.8811,Khersons’ka Oblast’
+1080,Denyshi,50.2153,28.4078,Zhytomyrs’ka Oblast’
+1081,Bene,48.1664,22.7569,Zakarpats’ka Oblast’
+1082,Chukaluvka,48.8681,24.6897,Ivano-Frankivs’ka Oblast’
+1083,Prymorske,47.3208,37.9439,Donets’ka Oblast’
+1084,Adamivka,48.3235,34.2162,Dnipropetrovs’ka Oblast’
+1085,Stratiivka,48.1450,29.4258,Vinnyts’ka Oblast’
+1086,Borynia,49.0778,22.9953,L’vivs’ka Oblast’
+1087,Myroliubivka,48.2586,28.8386,Vinnyts’ka Oblast’
+1088,Perkivtsi,48.4489,26.6561,Chernivets’ka Oblast’
+1089,Ternivka,48.5403,29.9678,Vinnyts’ka Oblast’
+1090,Novyi Bilous,51.5356,31.1853,Chernihivs’ka Oblast’
+1091,Velikiy Khodachkov,49.4869,25.4372,Ternopil’s’ka Oblast’
+1092,Troyits’ke,48.4140,35.8668,Dnipropetrovs’ka Oblast’
+1093,Radovel,51.1489,27.8356,Zhytomyrs’ka Oblast’
+1094,Rudkivka,50.7700,31.2964,Chernihivs’ka Oblast’
+1095,Velbivka,50.3430,34.0463,Poltavs’ka Oblast’
+1096,Medzhybizh,49.4360,27.3950,Khmel’nyts’ka Oblast’
+1097,Stepove,48.6387,34.9063,Dnipropetrovs’ka Oblast’
+1098,Trebukhivtsi,49.4297,27.4106,Khmel’nyts’ka Oblast’
+1099,Staryi Ostropil,49.8096,27.5593,Khmel’nyts’ka Oblast’
+1100,Zarichne,48.7017,28.7939,Vinnyts’ka Oblast’
+1101,Zaluzh’ye,49.9661,23.4292,L’vivs’ka Oblast’
+1102,Hleiuvatka,48.0475,33.4220,Dnipropetrovs’ka Oblast’
+1103,Khodorkiv,50.0972,29.3081,Zhytomyrs’ka Oblast’
+1104,Lozova,48.6728,28.0108,Vinnyts’ka Oblast’
+1105,Pasytsely,47.8364,29.6500,Odes’ka Oblast’
+1106,Dmukhailivka,49.0566,34.7604,Dnipropetrovs’ka Oblast’
+1107,Zabuzhzhia,50.4853,24.2628,L’vivs’ka Oblast’
+1108,Voloske,48.3049,35.1394,Dnipropetrovs’ka Oblast’
+1109,Zhuravlivka,48.6394,28.7292,Vinnyts’ka Oblast’
+1110,Hulsk,50.5192,27.7211,Zhytomyrs’ka Oblast’
+1111,Ruska Mokra,48.3483,23.9008,Zakarpats’ka Oblast’
+1112,Loshkarivka,47.9350,34.1539,Dnipropetrovs’ka Oblast’
+1113,Suvorove,46.0872,33.6911,"Krym, Avtonomna Respublika"
+1114,Melekyne,46.9561,37.3897,Donets’ka Oblast’
+1115,Malyy Khodachkov,49.4869,25.8358,Ternopil’s’ka Oblast’
+1116,Pryvitne,50.6372,24.7489,Volyns’ka Oblast’
+1117,Chornoholova,48.8508,22.6069,Zakarpats’ka Oblast’
+1118,Hupalivka,49.1034,34.7277,Dnipropetrovs’ka Oblast’
+1119,Holoskiv,49.3808,27.3431,Khmel’nyts’ka Oblast’
+1120,Chortomlyk,47.6232,34.1420,Dnipropetrovs’ka Oblast’
+1121,Zahirne,49.2750,23.9761,L’vivs’ka Oblast’
+1122,Popasne,48.8139,35.5320,Dnipropetrovs’ka Oblast’
+1123,Vremivka,47.8344,36.8133,Donets’ka Oblast’
+1124,Solomonovo,48.4306,22.1639,Zakarpats’ka Oblast’
+1125,Zhuravne,49.5081,28.1781,Vinnyts’ka Oblast’
+1126,Vakulove,47.8984,33.9327,Dnipropetrovs’ka Oblast’
+1127,Kolodribka,48.6332,26.0215,Ternopil’s’ka Oblast’
+1128,Kachanivka,49.6392,27.8969,Vinnyts’ka Oblast’
+1129,Popelnaste,48.6611,33.7131,Kirovohrads’ka Oblast’
+1130,Kvitky,49.3158,31.2458,Cherkas’ka Oblast’
+1131,Polohy,49.9156,30.1147,Kyyivs’ka Oblast’
+1132,Stepanivka,49.1306,28.7656,Vinnyts’ka Oblast’
+1133,Hrushivtsi,48.5478,26.8214,Chernivets’ka Oblast’
+1134,Kopachivka,50.8819,25.2267,Volyns’ka Oblast’
+1135,Pivdenne,47.6674,34.3610,Dnipropetrovs’ka Oblast’
+1136,Vovchynets,48.4528,26.9128,Chernivets’ka Oblast’
+1137,Pashkivtsi,49.7686,27.1319,Khmel’nyts’ka Oblast’
+1138,Tarasivka,50.2464,34.3491,Poltavs’ka Oblast’
+1139,Nova Dacha,48.5494,36.2110,Dnipropetrovs’ka Oblast’
+1140,Katerynivka,48.0141,36.1312,Dnipropetrovs’ka Oblast’
+1141,Novomykolaivka,48.3092,34.8618,Dnipropetrovs’ka Oblast’
+1142,Hirsivka,46.6403,35.3940,Zaporiz’ka Oblast’
+1143,Hreblya,48.2831,23.0494,Zakarpats’ka Oblast’
+1144,Stryzhivka,50.3019,28.9858,Zhytomyrs’ka Oblast’
+1145,Ternuvate,47.8305,36.1276,Zaporiz’ka Oblast’
+1146,Lavky,48.4800,22.6944,Zakarpats’ka Oblast’
+1147,Velyka Linyna,49.3853,22.9067,L’vivs’ka Oblast’
+1148,Nekhvoroshch,49.9633,28.9561,Zhytomyrs’ka Oblast’
+1149,Baykovtsy,49.5603,25.6872,Ternopil’s’ka Oblast’
+1150,Vynohrad,49.2364,30.5472,Cherkas’ka Oblast’
+1151,Borshchivka,49.5082,36.9742,Kharkivs’ka Oblast’
+1152,Senkevychivka,50.5333,25.0333,Volyns’ka Oblast’
+1153,Budy,48.4669,29.2331,Vinnyts’ka Oblast’
+1154,Berezhany,49.5442,28.5072,Vinnyts’ka Oblast’
+1155,Richytsya,51.7589,24.6575,Volyns’ka Oblast’
+1156,Palahychi,48.9028,24.9956,Ivano-Frankivs’ka Oblast’
+1157,Stari Sanzhary,49.4284,34.4474,Poltavs’ka Oblast’
+1158,Krasnoillia,48.1081,24.9050,Ivano-Frankivs’ka Oblast’
+1159,Korchyn,49.0961,23.5364,L’vivs’ka Oblast’
+1160,Kukavka,48.6036,27.7050,Vinnyts’ka Oblast’
+1161,Trokhizbenka,48.7575,38.9633,Luhans’ka Oblast’
+1162,Horodyshche,49.3669,28.1036,Vinnyts’ka Oblast’
+1163,Mytchenky,51.2833,32.9500,Chernihivs’ka Oblast’
+1164,Zhabotyn,49.1575,32.1506,Cherkas’ka Oblast’
+1165,Mykhailivtsi,48.8756,27.5211,Vinnyts’ka Oblast’
+1166,Bilenke,46.0519,30.3697,Odes’ka Oblast’
+1167,Lupareve,46.6969,31.9794,Mykolayivs’ka Oblast’
+1168,Mykolaivka,48.3567,34.6806,Dnipropetrovs’ka Oblast’
+1169,Zavadov,50.0606,23.3925,L’vivs’ka Oblast’
+1170,Verkhivka,48.4419,29.1606,Vinnyts’ka Oblast’
+1171,Nova Hreblia,49.4667,28.7644,Vinnyts’ka Oblast’
+1172,Kopaihorod,48.8550,27.8019,Vinnyts’ka Oblast’
+1173,Brody,51.7639,24.5275,Volyns’ka Oblast’
+1174,Zelenkiv,48.7797,30.6497,Cherkas’ka Oblast’
+1175,Barashivka,50.2714,28.5489,Zhytomyrs’ka Oblast’
+1176,Babyn,49.1314,29.3228,Vinnyts’ka Oblast’
+1177,Pidplesha,48.1314,23.8003,Zakarpats’ka Oblast’
+1178,Mardarivka,47.5333,29.7333,Odes’ka Oblast’
+1179,Sudiivka,49.5086,34.4305,Poltavs’ka Oblast’
+1180,Kytaihorod,48.9667,29.4969,Vinnyts’ka Oblast’
+1181,Khreshchatytske,47.2331,37.9269,Donets’ka Oblast’
+1182,Biloberizka,48.1656,25.0469,Chernivets’ka Oblast’
+1183,Hlyboke,45.7292,29.6094,Odes’ka Oblast’
+1184,Vasyliv,48.6042,25.8417,Chernivets’ka Oblast’
+1185,Mykolaivka,48.5437,34.7086,Dnipropetrovs’ka Oblast’
+1186,Vorotsev,49.8572,23.8178,L’vivs’ka Oblast’
+1187,Dihtiari,50.5814,32.7699,Chernihivs’ka Oblast’
+1188,Kaydanovo,48.4725,22.5758,Zakarpats’ka Oblast’
+1189,Fedorivka,46.8006,32.8061,Khersons’ka Oblast’
+1190,Myrne,50.5928,24.8939,Volyns’ka Oblast’
+1191,Stara Sil,49.4894,22.9656,L’vivs’ka Oblast’
+1192,Bukachivtsi,49.2583,24.4972,Ivano-Frankivs’ka Oblast’
+1193,Synkiv,48.6172,25.9572,Ternopil’s’ka Oblast’
+1194,Horyhliady,48.8756,25.1481,Ivano-Frankivs’ka Oblast’
+1195,Sedlyshche,51.6753,25.3847,Volyns’ka Oblast’
+1196,Verkhnii Luzhok,49.3617,23.0181,L’vivs’ka Oblast’
+1197,Bozhkivs’ke,49.6698,34.7583,Poltavs’ka Oblast’
+1198,Isaiky,49.4833,30.8150,Kyyivs’ka Oblast’
+1199,Bezborodky,49.8994,31.9856,Cherkas’ka Oblast’
+1200,Dnistrivka,48.5361,26.9258,Chernivets’ka Oblast’
+1201,Ladychin,49.3778,25.5703,Ternopil’s’ka Oblast’
+1202,Mykolayiv,50.3400,24.9692,L’vivs’ka Oblast’
+1203,Vesela Dolyna,46.2333,29.3167,Odes’ka Oblast’
+1204,Verkhnii Yaseniv,48.1614,24.9453,Ivano-Frankivs’ka Oblast’
+1205,Voziluv,48.8552,25.3126,Ternopil’s’ka Oblast’
+1206,Andriivka,46.2200,30.0825,Odes’ka Oblast’
+1207,Gorishnyaya Vygnanka,49.0267,25.8067,Ternopil’s’ka Oblast’
+1208,Pomynyk,48.9017,30.2872,Cherkas’ka Oblast’
+1209,Zavadiv,49.2533,23.7650,L’vivs’ka Oblast’
+1210,Vesela Hora,48.7117,39.2497,Luhans’ka Oblast’
+1211,Tavriiske,46.5850,34.8484,Zaporiz’ka Oblast’
+1212,Keleberda,49.7442,31.5611,Cherkas’ka Oblast’
+1213,Pysmenne,48.2030,35.8057,Dnipropetrovs’ka Oblast’
+1214,Pasika,48.5292,22.9058,Zakarpats’ka Oblast’
+1215,Serbynivtsi,49.0929,27.9279,Vinnyts’ka Oblast’
+1216,Dmytrivka,46.6339,31.7350,Mykolayivs’ka Oblast’
+1217,Mel’nyky,51.5497,23.9350,Volyns’ka Oblast’
+1218,Shulhivka,48.7434,34.3924,Dnipropetrovs’ka Oblast’
+1219,Peredilske,48.7569,39.1489,Luhans’ka Oblast’
+1220,Zhdanivka,48.9623,35.0637,Dnipropetrovs’ka Oblast’
+1221,Komariv,49.1417,28.6639,Vinnyts’ka Oblast’
+1222,Roishche,51.6539,31.2636,Chernihivs’ka Oblast’
+1223,Lepetykha,47.3283,33.0503,Mykolayivs’ka Oblast’
+1224,Kam”yane,47.8742,35.3985,Zaporiz’ka Oblast’
+1225,Birky,50.1251,34.1706,Poltavs’ka Oblast’
+1226,Zamahora,48.1022,24.8217,Ivano-Frankivs’ka Oblast’
+1227,Podishor,48.0422,23.8658,Zakarpats’ka Oblast’
+1228,Luchyste,44.7436,34.3711,"Krym, Avtonomna Respublika"
+1229,Huliaipole,48.1211,34.1495,Dnipropetrovs’ka Oblast’
+1230,Sabatynivka,48.1783,30.1844,Kirovohrads’ka Oblast’
+1231,Yevhenivka,47.0886,32.9003,Mykolayivs’ka Oblast’
+1232,Novyi Kropyvnyk,49.2167,23.3103,L’vivs’ka Oblast’
+1233,Slobozhanske,50.1928,36.4136,Kharkivs’ka Oblast’
+1234,Seliatyn,47.8736,25.1861,Chernivets’ka Oblast’
+1235,Kruhlyakivka,49.5278,37.7125,Kharkivs’ka Oblast’
+1236,Blystavytsya,50.6006,30.1822,Kyyivs’ka Oblast’
+1237,Hlushkiv,48.6436,25.4767,Ivano-Frankivs’ka Oblast’
+1238,Holovetsko,49.3083,22.8906,L’vivs’ka Oblast’
+1239,Lytvynivka,49.3111,39.4414,Luhans’ka Oblast’
+1240,Slobodka-Mushkatovka,48.8114,26.1010,Ternopil’s’ka Oblast’
+1241,Oleksiivka,48.0186,36.9497,Donets’ka Oblast’
+1242,Pishcha,51.6050,23.8100,Volyns’ka Oblast’
+1243,Stara Huta,51.4119,24.2436,Volyns’ka Oblast’
+1244,Zvenyhorod,49.7328,24.2469,L’vivs’ka Oblast’
+1245,Nedaivoda,48.1400,33.3758,Dnipropetrovs’ka Oblast’
+1246,Kernitsa,49.7811,23.7556,L’vivs’ka Oblast’
+1247,Bodakva,50.2996,33.4281,Poltavs’ka Oblast’
+1248,Nadezhdivka,46.7067,32.3617,Khersons’ka Oblast’
+1249,Duba,48.8481,24.1533,Ivano-Frankivs’ka Oblast’
+1250,Krasnostavtsy,48.7972,26.3981,Khmel’nyts’ka Oblast’
+1251,Bodaki,49.8933,25.8071,Ternopil’s’ka Oblast’
+1252,Zasluchne,49.6581,26.7747,Khmel’nyts’ka Oblast’
+1253,Verbka,48.2883,28.5689,Vinnyts’ka Oblast’
+1254,Khoroshe,48.5549,36.4766,Dnipropetrovs’ka Oblast’
+1255,Rosishka,47.9850,24.0697,Zakarpats’ka Oblast’
+1256,Novohupalivka,48.0238,35.4233,Zaporiz’ka Oblast’
+1257,Lozuvatka,48.4665,33.8825,Dnipropetrovs’ka Oblast’
+1258,Kalynivske,47.1150,32.9747,Khersons’ka Oblast’
+1259,Kryklyvets,48.3217,28.9786,Vinnyts’ka Oblast’
+1260,Mikhailivka,48.2733,28.0944,Vinnyts’ka Oblast’
+1261,Uniatychi,49.3736,23.4158,L’vivs’ka Oblast’
+1262,Kutyshche,48.9078,25.1192,Ivano-Frankivs’ka Oblast’
+1263,Velykyi Trostianets,49.4975,34.5390,Poltavs’ka Oblast’
+1264,Korniyivka,50.4183,31.4533,Kyyivs’ka Oblast’
+1265,Arkhanhelska Sloboda,46.6350,33.7047,Khersons’ka Oblast’
+1266,Rudnytsia,48.2667,28.9333,Vinnyts’ka Oblast’
+1267,Zdvyzhivka,50.6722,30.0692,Kyyivs’ka Oblast’
+1268,Pryvilne,48.2099,34.7188,Dnipropetrovs’ka Oblast’
+1269,Dobra,48.9631,30.1325,Cherkas’ka Oblast’
+1270,Napadovka,49.8852,26.0357,Ternopil’s’ka Oblast’
+1271,Novooleksandrivka,49.1336,39.2789,Luhans’ka Oblast’
+1272,Peremoha,51.5482,33.9418,Sums’ka Oblast’
+1273,Vilshany,48.3500,23.6197,Zakarpats’ka Oblast’
+1274,Bernove,48.4981,26.6336,Khmel’nyts’ka Oblast’
+1275,Rozvazh,50.3669,26.5150,Rivnens’ka Oblast’
+1276,Podove,46.5561,34.1403,Khersons’ka Oblast’
+1277,Stavnytsia,49.4478,27.4264,Khmel’nyts’ka Oblast’
+1278,Yablunets,50.8000,28.0667,Zhytomyrs’ka Oblast’
+1279,Nyzhniy Dubovets’,48.1592,23.9089,Zakarpats’ka Oblast’
+1280,Rashkiv,48.5111,26.2689,Chernivets’ka Oblast’
+1281,Bobrivnyk,50.2347,34.3054,Poltavs’ka Oblast’
+1282,Rusov,48.5153,25.5250,Ivano-Frankivs’ka Oblast’
+1283,Sarazhynka,48.0878,29.4475,Odes’ka Oblast’
+1284,Maidan,49.0075,24.5611,Ivano-Frankivs’ka Oblast’
+1285,Nehrovo,48.3719,22.9094,Zakarpats’ka Oblast’
+1286,Sedniv,51.6433,31.5689,Chernihivs’ka Oblast’
+1287,Novopoltavka,47.5483,32.5011,Mykolayivs’ka Oblast’
+1288,Poltavka,47.7192,36.4821,Zaporiz’ka Oblast’
+1289,Solochyn,48.6003,22.9564,Zakarpats’ka Oblast’
+1290,Sosnivka,50.2916,34.0175,Poltavs’ka Oblast’
+1291,Nahirne,49.4817,23.2206,L’vivs’ka Oblast’
+1292,Kaznacheyivka,48.7958,35.0811,Dnipropetrovs’ka Oblast’
+1293,Dobrik,48.0122,23.9033,Zakarpats’ka Oblast’
+1294,Potik,49.7622,31.0542,Kyyivs’ka Oblast’
+1295,Andrushivka,49.3600,29.2025,Vinnyts’ka Oblast’
+1296,Zhdeniievo,48.7667,22.9833,Zakarpats’ka Oblast’
+1297,Pnikut,49.7110,23.1383,L’vivs’ka Oblast’
+1298,Saivka,48.3457,33.8810,Dnipropetrovs’ka Oblast’
+1299,Novyy Svit,44.8292,34.9128,"Krym, Avtonomna Respublika"
+1300,Chkalove,47.0722,34.7122,Zaporiz’ka Oblast’
+1301,Ustia,48.6134,26.0868,Ternopil’s’ka Oblast’
+1302,Zaliznychne,47.6504,36.1662,Zaporiz’ka Oblast’
+1303,Mykhailivka,49.9242,32.1781,Cherkas’ka Oblast’
+1304,Zaytseve,48.4312,35.6711,Dnipropetrovs’ka Oblast’
+1305,Oleyëvo-Korolëvka,48.7421,25.9935,Ternopil’s’ka Oblast’
+1306,Naraivka,48.9019,29.6842,Vinnyts’ka Oblast’
+1307,Samarske,48.4799,36.4621,Dnipropetrovs’ka Oblast’
+1308,Krasnostavtsi,48.5328,25.4831,Ivano-Frankivs’ka Oblast’
+1309,Lisohirka,49.3742,27.4206,Khmel’nyts’ka Oblast’
+1310,Horodok,51.3700,25.4792,Volyns’ka Oblast’
+1311,Krasnyk,48.1444,24.7364,Ivano-Frankivs’ka Oblast’
+1312,Samary-Orikhovi,51.8517,24.6633,Volyns’ka Oblast’
+1313,Staryy Skalat,49.4639,25.9822,Ternopil’s’ka Oblast’
+1314,Vesele,48.2317,36.6133,Dnipropetrovs’ka Oblast’
+1315,Reia,50.0219,28.6219,Zhytomyrs’ka Oblast’
+1316,Abrykosivka,45.1097,35.0986,"Krym, Avtonomna Respublika"
+1317,Pohreby,50.0950,32.1889,Cherkas’ka Oblast’
+1318,Chernechchyna,49.1192,34.7703,Dnipropetrovs’ka Oblast’
+1319,Buzynove,46.9742,30.4869,Odes’ka Oblast’
+1320,Krasnokamianka,44.5625,34.2931,"Krym, Avtonomna Respublika"
+1321,Livadiia,44.4708,34.1439,"Krym, Avtonomna Respublika"
+1322,Chornyy Potik,48.1808,22.9067,Zakarpats’ka Oblast’
+1323,Bohynivka,48.4890,36.3527,Dnipropetrovs’ka Oblast’
+1324,Fertesholmash,47.9808,22.9269,Zakarpats’ka Oblast’
+1325,Lemeshivka,50.3125,32.0767,Kyyivs’ka Oblast’
+1326,Novoderkul,49.1294,39.6203,Luhans’ka Oblast’
+1327,Stara Kulna,47.6961,29.3150,Odes’ka Oblast’
+1328,Preobrazhenka,48.9716,34.6129,Dnipropetrovs’ka Oblast’
+1329,Bairachky,48.3883,38.5992,Luhans’ka Oblast’
+1330,Puhachivka,50.5669,25.6192,Rivnens’ka Oblast’
+1331,Zhukotyn,48.6778,25.0642,Ivano-Frankivs’ka Oblast’
+1332,Skelivka,49.5353,22.9625,L’vivs’ka Oblast’
+1333,Kariv,50.3469,23.7989,L’vivs’ka Oblast’
+1334,Malyi Kobeliachok,49.3429,34.2180,Poltavs’ka Oblast’
+1335,Bilkivtsi,50.3675,28.9772,Zhytomyrs’ka Oblast’
+1336,Borokhiv,50.7811,25.4611,Volyns’ka Oblast’
+1337,Ivanivka,47.5778,37.3175,Donets’ka Oblast’
+1338,Kashperivka,50.2714,27.5281,Zhytomyrs’ka Oblast’
+1339,Vistria,48.9247,25.1311,Ternopil’s’ka Oblast’
+1340,Melnyky,49.1433,32.2969,Cherkas’ka Oblast’
+1341,Oleksandrivka,46.5371,35.4897,Zaporiz’ka Oblast’
+1342,Verkhivtsi,49.6353,23.1006,L’vivs’ka Oblast’
+1343,Zaperedillia,48.4747,23.5042,Zakarpats’ka Oblast’
+1344,Basyuvka,49.7811,23.9092,L’vivs’ka Oblast’
+1345,Viktoriya,50.2406,32.2880,Poltavs’ka Oblast’
+1346,Peremyl,50.3961,25.1642,Volyns’ka Oblast’
+1347,Volitsa,49.8100,23.0878,L’vivs’ka Oblast’
+1348,Hyryavi Iskivtsi,50.4247,33.3134,Poltavs’ka Oblast’
+1349,Bendzary,47.9308,29.6642,Odes’ka Oblast’
+1350,Bochanytsya,50.5286,26.6953,Rivnens’ka Oblast’
+1351,Stina,48.4525,28.4211,Vinnyts’ka Oblast’
+1352,Vytylivka,48.4072,25.8011,Chernivets’ka Oblast’
+1353,Somaky,49.1147,28.1058,Vinnyts’ka Oblast’
+1354,Zhuky,49.6749,34.5007,Poltavs’ka Oblast’
+1355,Kosyno,48.5125,22.7994,Zakarpats’ka Oblast’
+1356,Fastovets,50.0572,30.0442,Kyyivs’ka Oblast’
+1357,Bohdanivka,48.6414,29.1081,Vinnyts’ka Oblast’
+1358,Shandra,49.7864,31.1519,Kyyivs’ka Oblast’
+1359,Savyntsi,48.4775,29.0544,Vinnyts’ka Oblast’
+1360,Pidlisne,48.7842,32.2531,Kirovohrads’ka Oblast’
+1361,Demuryne,48.1781,36.4830,Dnipropetrovs’ka Oblast’
+1362,Zoryane,48.4985,36.8260,Dnipropetrovs’ka Oblast’
+1363,Pridberezzia,50.5417,24.6186,Volyns’ka Oblast’
+1364,Sadove,46.0233,29.2742,Odes’ka Oblast’
+1365,Marianivka,48.3118,33.5294,Dnipropetrovs’ka Oblast’
+1366,Mariiampil,49.0383,24.8525,Ivano-Frankivs’ka Oblast’
+1367,Verkhnia Stynava,49.1603,23.6136,L’vivs’ka Oblast’
+1368,Ivanivske,49.4489,35.5536,Kharkivs’ka Oblast’
+1369,Luhy,48.2217,29.1411,Vinnyts’ka Oblast’
+1370,Veselivka,48.6239,29.8625,Vinnyts’ka Oblast’
+1371,Volytsia,50.3914,24.3475,L’vivs’ka Oblast’
+1372,Mytlashivka,49.9764,32.3122,Cherkas’ka Oblast’
+1373,Novi Kryvotuly,48.7936,24.9039,Ivano-Frankivs’ka Oblast’
+1374,Lany,49.6206,23.8672,L’vivs’ka Oblast’
+1375,Kochubeyev,48.8242,26.3919,Khmel’nyts’ka Oblast’
+1376,Honcharivka,49.8744,24.7858,L’vivs’ka Oblast’
+1377,Kozyriany,48.3711,26.6461,Chernivets’ka Oblast’
+1378,Novosamarka,47.5081,29.5244,Odes’ka Oblast’
+1379,Hrechane,48.7383,34.5094,Dnipropetrovs’ka Oblast’
+1380,Novopidhorodne,48.2482,36.9008,Dnipropetrovs’ka Oblast’
+1381,Chervonohrad,50.3842,24.2265,L’vivs’ka Oblast’
+1382,Pervomaisk,48.0500,30.8500,Mykolayivs’ka Oblast’
+1383,Mykolaiv,49.5266,23.9814,L’vivs’ka Oblast’
+1384,Pustomyty,49.7139,23.9108,L’vivs’ka Oblast’
+1385,Kitsman,48.4425,25.7614,Chernivets’ka Oblast’
+1386,Hlyboka,48.0833,25.9333,Chernivets’ka Oblast’
+1387,Sokyriany,48.4500,27.4167,Chernivets’ka Oblast’
+1388,Zastavna,48.5167,25.8500,Chernivets’ka Oblast’
+1389,Storozhynets,48.1597,25.7150,Chernivets’ka Oblast’
+1390,Zalishchyky,48.6392,25.7374,Ternopil’s’ka Oblast’
+1391,Biliaivka,46.4828,30.2014,Odes’ka Oblast’
+1392,Reni,45.4500,28.2833,Odes’ka Oblast’
+1393,Berezhany,49.4464,24.9436,Ternopil’s’ka Oblast’
+1394,Kelmentsi,48.4615,26.8360,Chernivets’ka Oblast’
+1395,Monastyryska,49.0889,25.1694,Ternopil’s’ka Oblast’
+1396,Haivoron,48.3333,29.8500,Kirovohrads’ka Oblast’
+1397,Volnovakha,47.5978,37.4836,Donets’ka Oblast’
+1398,Sarny,51.3269,26.6331,Rivnens’ka Oblast’
+1399,Yampil,48.2414,28.2819,Vinnyts’ka Oblast’
+1400,Kurman,45.5010,34.3011,"Krym, Avtonomna Respublika"
+1401,Krasnohrad,49.3719,35.4569,Kharkivs’ka Oblast’
+1402,Novovorontsovka,47.4962,33.9230,Khersons’ka Oblast’
+1403,Oleshky,46.6167,32.7167,Khersons’ka Oblast’
+1404,Zboriv,49.6616,25.1469,Ternopil’s’ka Oblast’
+1405,Bohuslav,49.5464,30.8741,Kyyivs’ka Oblast’
+1406,Kiliia,45.4503,29.2667,Odes’ka Oblast’
+1407,Peremyshliany,49.6700,24.5594,L’vivs’ka Oblast’
+1408,Turka,49.1544,23.0300,L’vivs’ka Oblast’
+1409,Rozdilna,46.8473,30.0773,Odes’ka Oblast’
+1410,Pidhaitsi,49.2667,25.1333,Ternopil’s’ka Oblast’
+1411,Ichki,45.3413,34.9292,"Krym, Avtonomna Respublika"
+1412,Novoazovsk,47.1167,38.0833,Donets’ka Oblast’
+1413,Kodyma,48.1000,29.1167,Odes’ka Oblast’
+1414,Sarata,46.0232,29.6631,Odes’ka Oblast’
+1415,Khorol,49.7840,33.2589,Poltavs’ka Oblast’
+1416,Skole,49.0378,23.5139,L’vivs’ka Oblast’
+1417,Popilnia,49.9664,29.4433,Zhytomyrs’ka Oblast’
+1418,Artsyz,45.9833,29.4167,Odes’ka Oblast’
+1419,Tatarbunary,45.8355,29.6147,Odes’ka Oblast’
+1420,Savran,48.1300,30.0794,Odes’ka Oblast’
+1421,Holovanivsk,48.3800,30.4472,Kirovohrads’ka Oblast’
+1422,Putyla,47.9919,25.0908,Chernivets’ka Oblast’
+1423,Snihurivka,47.0708,32.7997,Mykolayivs’ka Oblast’
+1424,Liubashivka,47.8333,30.2500,Odes’ka Oblast’
+1425,Rozdolne,45.7702,33.4909,"Krym, Avtonomna Respublika"
+1426,Ruzhyn,49.7217,29.2187,Zhytomyrs’ka Oblast’
+1427,Novomyrhorod,48.7833,31.6500,Kirovohrads’ka Oblast’
+1428,Reshetylivka,49.5636,34.0763,Poltavs’ka Oblast’
+1429,Hlobyne,49.3886,33.2632,Poltavs’ka Oblast’
+1430,Novoukrainka,48.3156,31.5269,Kirovohrads’ka Oblast’
+1431,Pervomaiske,45.7169,33.8608,"Krym, Avtonomna Respublika"
+1432,Novyi Buh,47.6833,32.5000,Mykolayivs’ka Oblast’
+1433,Varash,51.3400,25.8508,Rivnens’ka Oblast’
+1434,Orzhytsia,49.7910,32.7015,Poltavs’ka Oblast’
+1435,Nikolske,47.2019,37.3128,Donets’ka Oblast’
+1436,Nova Odesa,47.3167,31.7833,Mykolayivs’ka Oblast’
+1437,Velyka Bahachka,49.7944,33.7207,Poltavs’ka Oblast’
+1438,Oleksandrivka,48.9667,32.2333,Kirovohrads’ka Oblast’
+1439,Yedy-Kuiu,45.2977,35.7748,"Krym, Avtonomna Respublika"
+1440,Chornomorske,45.5039,32.7062,"Krym, Avtonomna Respublika"
+1441,Ivanivka,46.9756,30.4697,Odes’ka Oblast’
+1442,Chaplynka,46.3629,33.5302,Khersons’ka Oblast’
+1443,Bashtanka,47.4000,32.4500,Mykolayivs’ka Oblast’
+1444,Mashivka,49.4449,34.8758,Poltavs’ka Oblast’
+1445,Vysokopillia,47.4797,33.5300,Khersons’ka Oblast’
+1446,Vradiivka,47.8617,30.5931,Mykolayivs’ka Oblast’
+1447,Velyka Mykhailivka,47.0783,29.8533,Odes’ka Oblast’
+1448,Arbuzynka,47.9067,31.3131,Mykolayivs’ka Oblast’
+1449,Kozelshchyna,49.2155,33.8518,Poltavs’ka Oblast’
+1450,Petrove,48.3312,33.2682,Kirovohrads’ka Oblast’
+1451,Semenivka,49.6017,33.1875,Poltavs’ka Oblast’
+1452,Novotroitske,46.3559,34.3335,Khersons’ka Oblast’
+1453,Novoarkhanhelsk,48.6589,30.8186,Kirovohrads’ka Oblast’
+1454,Oleksandriia,48.6667,33.1167,Kirovohrads’ka Oblast’
+1455,Vilshanka,48.2322,30.8779,Kirovohrads’ka Oblast’
+1456,Domanivka,47.6292,30.9896,Mykolayivs’ka Oblast’
+1457,Velyka Oleksandrivka,47.3108,33.2942,Khersons’ka Oblast’
+1458,Velyka Lepetykha,47.1639,33.9381,Khersons’ka Oblast’
+1459,Bereznehuvate,47.3114,32.8478,Mykolayivs’ka Oblast’
+1460,Velyka Bilozerka,47.2720,34.6947,Zaporiz’ka Oblast’
+1461,Novoaidar,48.9592,39.0194,Luhans’ka Oblast’
+1462,Novhorodka,48.3565,32.6466,Kirovohrads’ka Oblast’
+1463,Verkhnii Rohachyk,47.2414,34.3600,Khersons’ka Oblast’
+1464,Kompaniivka,48.2500,32.2000,Kirovohrads’ka Oblast’
+1465,Yelanets,47.6978,31.8544,Mykolayivs’ka Oblast’
+1466,Kazanka,47.8381,32.8261,Mykolayivs’ka Oblast’
+1467,Mykolaivka,47.5389,30.7528,Odes’ka Oblast’
+1468,Milove,49.3778,40.1306,Luhans’ka Oblast’
+1469,Nyzhni Sirohozy,46.8395,34.3760,Khersons’ka Oblast’
+1470,Ivanivka,46.7100,34.5500,Khersons’ka Oblast’
