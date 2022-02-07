@@ -180,7 +180,7 @@ def add_subscription():
     return {'message': 'Subscription is successfuly created'}, 200
 
 
-@api_blueprint.route('/cities', methods=['GET'])
+@api_blueprint.route('/cities', methods=['POST'])
 def get_cities():
     """
     Takes city name substring regardless of case
