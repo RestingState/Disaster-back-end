@@ -33,11 +33,11 @@ def create_user():
 
     exists = session.query(User).filter_by(username=data['username']).first()
     if exists:
-        return {'message': 'User with this username exists'}, 400
+        return {'message': 'User with this username exists'}, 403
 
     exists = session.query(User).filter_by(email=data['email']).first()
     if exists:
-        return {'message': 'User with this email exists'}, 400
+        return {'message': 'User with this email exists'}, 403
 
     if check_email_existance(data['email']) != 'valid':
         return {'message': 'This email does not exist'}, 400
@@ -65,7 +65,7 @@ def login_user():
     data = request.get_json()
 
     if not data or 'username' not in data or 'password' not in data:
-        return {'message': 'Wrong input data provided'}, 401
+        return {'message': 'Wrong input data provided'}, 400
 
     if data['username'] == 'admin' and data['password'] == Config.ADMIN_PASSWORD:
         access_token = create_access_token(identity='admin')
@@ -128,7 +128,7 @@ def create_category():
         return {'message': 'Access is denied'}, 403
 
     if not data or 'name' not in data:
-        return {'message': 'Wrong input data provided'}, 401
+        return {'message': 'Wrong input data provided'}, 400
 
     if session.query(Category).filter_by(name=data['name']).first() is not None:
         return {'message': 'Category with this name already exists'}, 403
@@ -159,14 +159,14 @@ def add_subscription():
         return {'message': 'Invalid token provided'}, 400
 
     if not data or 'user_id' not in data or 'category_id' not in data:
-        return {'message': 'Wrong input data provided'}, 401
+        return {'message': 'Wrong input data provided'}, 400
 
     if user.id != int(data['user_id']):
         return {'message': 'Access is denied'}, 403
 
     category = session.query(Category).filter_by(id=data['category_id']).first()
     if category is None:
-        return {'message': 'Category with this id does not exist'}, 400
+        return {'message': 'Category with this id does not exist'}, 404
 
     if session.query(user_category).filter_by(user_id=data['user_id'],
                                               category_id=data['category_id']).first() is not None:
@@ -191,6 +191,9 @@ def get_cities():
     data = request.get_json()
     cities = session.query(City).all()
 
+    if not data or 'name' not in data:
+        return {'message': 'Wrong input data provided'}, 400
+
     found_cities = []
     for city in cities:
         if re.search(data['name'], CitySchema().dump(city)['name'], re.IGNORECASE):
@@ -199,5 +202,18 @@ def get_cities():
     if len(found_cities) == 0:
         return {'message': 'There are no cities with this name'}, 404
 
+    session.close()
     schema = CitySchema(many=True)
     return jsonify(schema.dump(found_cities))
+
+
+@api_blueprint.route('/cities/<int:city_id>', methods=['GET'])
+def get_city_by_id(city_id):
+    session = Session()
+
+    city = session.query(City).filter_by(id=city_id).first()
+    if city is None:
+        return {'message': 'Wrong city id provided'}, 404
+
+    session.close()
+    return {'name': city.name}, 200
