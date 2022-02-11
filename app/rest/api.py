@@ -4,6 +4,11 @@ from app.api.email_newsletter import check_email_existance
 import re
 
 
+@api_blueprint.route('/', methods=['GET'])
+def print_hello():
+    return "Hello User"
+
+
 @api_blueprint.route('/user', methods=['POST'])
 def create_user():
     """
