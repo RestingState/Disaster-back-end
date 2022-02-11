@@ -9,6 +9,11 @@ user_category = Table('user_category', Base.metadata,
                       Column('category_id', ForeignKey('category.id'), primary_key=True))
 
 
+user_satellite = Table('user_satellite', Base.metadata,
+                       Column('user_id', ForeignKey('user.id')),
+                       Column('satellite_id', ForeignKey('satellites.norad_id')))
+
+
 class User(Base):
     __tablename__ = 'user'
     id = Column(Integer, primary_key=True)
@@ -18,7 +23,9 @@ class User(Base):
     password = Column(VARCHAR, nullable=False)
     city_id = Column(Integer, ForeignKey('city.id'))
     username = Column(VARCHAR, nullable=False, unique=True)
+
     categories = relationship("Category", secondary=user_category)
+    satellite = relationship("Satellites", secondary=user_satellite)
 
 
 class Category(Base):
@@ -33,7 +40,7 @@ class City(Base):
     name = Column(VARCHAR, nullable=False)
     latitude = Column(VARCHAR, nullable=False)
     longitude = Column(VARCHAR, nullable=False)
-    admin_name = Column(VARCHAR,nullable=False)
+    admin_name = Column(VARCHAR, nullable=False)
 
 
 class Satellites(Base):

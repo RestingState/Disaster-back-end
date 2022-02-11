@@ -53,3 +53,8 @@ curl -X GET http://127.0.0.1:5000/Moon?key=WIx9fxdc4xc7xbax08x0eTxf7dx9fxc5
 curl -X GET http://127.0.0.1:5000/satellite/id
 
 curl -X GET http://127.0.0.1:5000/satellite/id/DD-MM-YY/HH:MM:SS
+
+---------------------------------------------------------------------------------------
+subscription_api
+---------------------------------------------------------------------------------------
+curl http://127.0.0.1:5000/satellite/subscribe -X POST -H "Content-Type:application/json" --data-binary "{\"user_id\":\"2\", \"satellite_id\":\"25544\"}" -H "Authorization: Bearer "
