@@ -4,7 +4,7 @@ from app.api.email_newsletter import check_email_existance
 import re
 
 
-@api_blueprint.route('/', methods=['GET'])
+@api_blueprint.route('/')
 def print_hello():
     return "Hello User"
 
