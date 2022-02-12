@@ -2,9 +2,7 @@ from . import subscription_blueprint
 from app import Session
 from flask import request
 from app.models.models import user_satellite, User, Satellites
-# from app.models.schemas import UserSatelliteSchema
 from flask_jwt_extended import jwt_required, get_jwt_identity
-# from marshmallow import ValidationError
 
 
 @subscription_blueprint.route('/satellite/subscribe', methods=['POST'])
@@ -36,7 +34,6 @@ def add_satellite_subscription():
     if data['satellite_id'] == 'all':
         satellites = session.query(Satellites).all()
         sub_satellites = user.satellite
-        print(sub_satellites)
         for satellite in satellites:
             if satellite not in sub_satellites:
                 user.satellite.append(satellite)
