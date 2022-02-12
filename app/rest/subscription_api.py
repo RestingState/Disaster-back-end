@@ -17,31 +17,45 @@ def add_satellite_subscription():
     if not data or 'user_id' not in data or 'satellite_id' not in data:
         return {'message': 'Wrong input data provided'}, 400
 
+    try:
+        if data['satellite_id'] != 'all':
+            data['satellite_id'] = int(data['satellite_id'])
+        data['user_id'] = int(data['user_id'])
+    except ValueError:
+        return {'message': 'Wrong input data provided'}, 400
+    except Exception:
+        return {'message': 'internal server error'}, 500
+
     user = session.query(User).filter_by(username=current_identity_username).first()
     if not user:
         return {'message': 'User not found'}, 404
 
-    if user.id != int(data['user_id']):
+    if user.id != data['user_id']:
         return {'message': 'Access is denied'}, 403
 
-    satellite = session.query(Satellites).filter_by(norad_id=int(data['satellite_id'])).first()
-    if not satellite:
-        return {'message': 'Satellite not found'}, 404
+    if data['satellite_id'] == 'all':
+        satellites = session.query(Satellites).all()
+        sub_satellites = user.satellite
+        print(sub_satellites)
+        for satellite in satellites:
+            if satellite not in sub_satellites:
+                user.satellite.append(satellite)
+        session.add(user)
+        session.commit()
 
-    subscription = session.query(user_satellite).filter_by(user_id=int(data['user_id']),
-                                                           satellite_id=int(data['satellite_id'])).first()
-    if subscription:
-        return {'message': 'You are already subscribed for this satellite'}, 403
+    else:
+        satellite = session.query(Satellites).filter_by(norad_id=data['satellite_id']).first()
+        if not satellite:
+            return {'message': 'Satellite not found'}, 404
 
-    # try:
-    #     valid_data = UserSatelliteSchema().load(data)
-    # except ValidationError as err:
-    #     return err.messages, 422
+        subscription = session.query(user_satellite).filter_by(user_id=data['user_id'],
+                                                               satellite_id=data['satellite_id']).first()
+        if subscription:
+            return {'message': 'You are already subscribed for this satellite'}, 403
 
-    user.satellite.append(satellite)
-    # user_satellite_object = user_satellite(**valid_data)
-    session.add(user)
-    session.commit()
+        user.satellite.append(satellite)
+        session.add(user)
+        session.commit()
+
     session.close()
-
     return {'message': 'Success'}
