@@ -8,6 +8,16 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 @subscription_blueprint.route('/satellite/subscribe', methods=['POST'])
 @jwt_required()
 def add_satellite_subscription():
+    """
+    json format input:
+    user_id: id of user
+    satellite_id: norad_id of satellite or keyword 'all' for all of the satellites
+
+    Creates subscription for satellites(one or all of them)
+    if you call 'all' when you already have some subscriptions it will
+    ignore previous and only add ones that are missing.
+    """
+
     session = Session()
     current_identity_username = get_jwt_identity()
     data = request.get_json()
@@ -61,6 +71,14 @@ def add_satellite_subscription():
 @subscription_blueprint.route('/satellite/unsubscribe', methods=['DELETE'])
 @jwt_required()
 def delete_satellite_subscription():
+    """
+    json format input:
+    user_id: id of user
+    satellite_id: norad_id of satellite or keyword 'all' for all of the satellites
+
+    Deletes subscription for satellites(one or all of your subscriptions).
+    """
+
     session = Session()
     current_identity_username = get_jwt_identity()
     data = request.get_json()
