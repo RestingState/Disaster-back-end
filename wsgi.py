@@ -4,8 +4,7 @@ from app.rest.api import api_blueprint
 from app.rest.sky_info_api import sky_blueprint
 from app.rest.subscription_api import subscription_blueprint
 from apscheduler.schedulers.background import BackgroundScheduler
-from app.api.job_functions import delete_records, insert_records
-
+from app.api.job_functions import delete_records, insert_records, check_satellite_subscription
 
 api.register_blueprint(api_blueprint)
 api.register_blueprint(sky_blueprint)
@@ -46,6 +45,8 @@ if __name__ == "__main__":
                           year='*', month='*', day=1, hour=14, minute=44, second=0)
         scheduler.add_job(func=delete_records, trigger="cron",
                           year='*', month='*', day=1, hour=14, minute=45, second=0)
+        scheduler.add_job(func=check_satellite_subscription, trigger="cron",
+                          year='*', month='*', day='*', hour=13, minute=00, second=0)
         scheduler.start()
     except AttributeError:
         print('There is no data in database')
