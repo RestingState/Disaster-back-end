@@ -57,8 +57,9 @@ curl -X GET http://127.0.0.1:5000/satellite/id/DD-MM-YY/HH:MM:SS
 ---------------------------------------------------------------------------------------
 subscription_api
 ---------------------------------------------------------------------------------------
-curl http://127.0.0.1:5000/satellite/subscribe -X POST -H "Content-Type:application/json" --data-binary "{\"user_id\":\"2\", \"satellite_id\":\"all\"}" -H "Authorization: Bearer "
+curl http://127.0.0.1:5000/satellite/subscribe -X POST -H "Content-Type:application/json" --data-binary "{\"user_id\":\"2\", \"satellite_id\":\"25544\"}" -H "Authorization: Bearer "
 curl http://127.0.0.1:5000/satellite/subscribe -X POST -H "Content-Type:application/json" --data-binary "{\"user_id\":\"2\", \"satellite_id\":\"all\"}" -H "Authorization: Bearer "
 
+curl http://127.0.0.1:5000/satellite/unsubscribe -X DELETE -H "Content-Type:application/json" --data-binary "{\"user_id\":\"2\", \"satellite_id\":\"25544\"}" -H "Authorization: Bearer "
 curl http://127.0.0.1:5000/satellite/unsubscribe -X DELETE -H "Content-Type:application/json" --data-binary "{\"user_id\":\"2\", \"satellite_id\":\"all\"}" -H "Authorization: Bearer "
 
