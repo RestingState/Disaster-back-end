@@ -17,3 +17,5 @@ class Config:
     WEATHER_API_KEY = '38a998fffca4ade707ae1065880997a3'
     ADMIN_PASSWORD = '8Gaw$S@6Paq%rRC'
 
+
+
