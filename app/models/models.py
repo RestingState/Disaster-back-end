@@ -47,9 +47,6 @@ class Satellites(Base):
     __tablename__ = 'satellites'
     norad_id = Column(BigInteger, primary_key=True)
     satname = Column(VARCHAR, nullable=False)
-    owner = Column(VARCHAR, nullable=False)
-    launchdate = Column(Date, nullable=False)
-    launchsite = Column(VARCHAR, nullable=False)
     inclination = Column(VARCHAR, nullable=False)
     ascending_node_longitude = Column(VARCHAR, nullable=False)
     eccentricity = Column(VARCHAR, nullable=False)
