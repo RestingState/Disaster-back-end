@@ -2,7 +2,9 @@ from app import Session
 from app.api.planet import load_planet_coordinates
 from app.api.planet import Planet as PlanetClass
 import datetime
-from app.models.models import Planet, PlanetCoordinates
+from app.models.models import *
+from app.api.satellite import Satellite
+from app.api.email_newsletter import send_email
 
 
 def delete_records():
@@ -37,3 +39,42 @@ def insert_records():
                 print('Internal server error')
     session.commit()
     session.close()
+
+
+def check_satellite_subscription():
+    session = Session()
+    subscriptions = session.query(user_satellite).order_by("user_id").all()
+    text = ''
+
+    for i in range(0, len(subscriptions)):
+
+        user = session.query(User).filter_by(id=subscriptions[i][0]).first()
+        user_city = user.city_id
+        city = session.query(City).filter_by(id=user_city).first()
+        latitude = float(city.latitude)
+        longitude = float(city.longitude)
+        user_email = user.email
+
+        satellite = session.query(Satellites).filter_by(norad_id=subscriptions[i][1]).first()
+        data_satellite = '2 ' + str(satellite.norad_id) + ' ' + \
+                         satellite.ascending_node_longitude + ' ' + \
+                         satellite.eccentricity + ' ' + \
+                         satellite.pericenter_argument + ' ' + \
+                         satellite.average_anomaly + ' ' + \
+                         satellite.inclination + ' ' + \
+                         satellite.call_frequency
+
+        sat = Satellite(satellite.norad_id)
+        message = Satellite.get_satellite_observation(sat, data_satellite, latitude, longitude)
+        print(message)
+
+        if message != 'No observation of satellite soon':
+            if (i == len(subscriptions) - 1) or (i != len(subscriptions) - 1 and subscriptions[i][0] != subscriptions[i + 1][0]):
+                text += f'Satellite \'{satellite.satname}\' with norad \'{satellite.norad_id}\' can be ' \
+                        f'observed at {message} in {city.name}.\n'
+                send_email(user_email, 'Future satellites flights', text)
+                print(text)
+                text = ''
+            elif subscriptions[i][0] == subscriptions[i + 1][0] and i != len(subscriptions) - 1:
+                text += f'Satellite \'{satellite.satname}\' with norad \'{satellite.norad_id}\' can be ' \
+                        f'observed at {message} in {city.name}.\n'
