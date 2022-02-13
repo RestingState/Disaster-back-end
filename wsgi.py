@@ -2,12 +2,14 @@ from app import api
 from wsgiref.simple_server import make_server
 from app.rest.api import api_blueprint
 from app.rest.sky_info_api import sky_blueprint
+from app.rest.subscription_api import subscription_blueprint
 from apscheduler.schedulers.background import BackgroundScheduler
 from app.api.job_functions import delete_records, insert_records
 
 
 api.register_blueprint(api_blueprint)
 api.register_blueprint(sky_blueprint)
+api.register_blueprint(subscription_blueprint)
 
 
 # with make_server('', 5000, api) as server:

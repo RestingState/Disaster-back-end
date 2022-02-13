@@ -1,0 +1,14 @@
+
+CREATE TABLE IF NOT EXISTS public.user_satellite
+(
+    user_id serial NOT NULL,
+    satellite_id serial NOT NULL
+);
+
+ALTER TABLE IF EXISTS public.user_satellite
+    ADD FOREIGN KEY (user_id)
+    REFERENCES public."user" (id);
+
+ALTER TABLE IF EXISTS public.user_satellite
+    ADD FOREIGN KEY (satellite_id)
+    REFERENCES public.satellites (norad_id) ;
