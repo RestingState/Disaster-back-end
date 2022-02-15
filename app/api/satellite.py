@@ -200,18 +200,13 @@ class Satellite:
         above_horizon = alt.degrees > 0
         # indicators, = above_horizon.nonzero()
 
-        boundaries, = np.diff(above_horizon).nonzero()
+        passes, = np.diff(above_horizon).nonzero()
 
-        if np.size(boundaries) > 1:
-            passes = boundaries.reshape(len(boundaries) // 2, 2)
-            result = []
-            for k in range(np.size(passes) - 1):
-                i, j = passes[k]
-                result.append('Rises above the horizon: ' + str(datetime.now() + timedelta(minutes=int(i))) +
-                              ' Sets below the horizon: ' + str(datetime.now() + timedelta(minutes=int(j))))
+        if np.size(passes) > 0:
+            result = ""
+            for k in range(np.size(passes)):
+                result += str(datetime.now() + timedelta(minutes=int(passes[k]))) + " "
             return result
-        elif np.size(boundaries) == 1:
-            return str(datetime.now() + timedelta(minutes=int(boundaries[0])))
         else:
             return "No observation of satellite soon"
 
@@ -221,3 +216,4 @@ class Satellite:
 # tle_ = "1 25544U 98067A   18077.09047010  .00001878  00000-0  35621-4 0  9999 " \
 #       "2 25544  51.6412 112.8495 0001928 208.4187 178.9720 15.54106440104358"
 # print(sat.get_satellite_lon_lat(tle_, date_time))
+# print(sat.get_satellite_observation(tle_, 41.55, 70.32))
