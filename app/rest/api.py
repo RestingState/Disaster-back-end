@@ -212,7 +212,7 @@ def get_cities():
     return jsonify(schema.dump(found_cities))
 
 
-@api_blueprint.route('/cities/<int:city_id>', methods=['GET'])
+@api_blueprint.route('/cities/<int:city_id>', methods=['POST'])
 def get_city_by_id(city_id):
     session = Session()
 
