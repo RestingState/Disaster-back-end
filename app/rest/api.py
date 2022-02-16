@@ -1,6 +1,6 @@
 from app.rest import *
 from app import bcrypt
-from app.api.email_newsletter import check_email_existance
+from app.api.email_newsletter import check_email_existance, send_feedback_email
 import re
 
 
@@ -143,7 +143,7 @@ def create_category():
     session.commit()
     session.close()
 
-    return {'message': 'Category is successfuly created'}, 200
+    return {'message': 'Category is successfully created'}, 200
 
 
 @api_blueprint.route('/user/subscription', methods=['POST'])
@@ -182,7 +182,7 @@ def add_subscription():
     session.commit()
     session.close()
 
-    return {'message': 'Subscription is successfuly created'}, 200
+    return {'message': 'Subscription is successfully created'}, 200
 
 
 @api_blueprint.route('/cities', methods=['POST'])
@@ -222,3 +222,15 @@ def get_city_by_id(city_id):
 
     session.close()
     return {'name': city.name}, 200
+
+
+@api_blueprint.route('/feedback', methods=['POST'])
+def send_feedback():
+    data = request.get_json()
+
+    if not data or 'email' not in data or 'name' not in data or 'message' not in data:
+        return {'message': 'Wrong input data provided'}, 400
+
+    send_feedback_email(data['name'], data['email'], data['message'])
+
+    return {'message': 'Response is successfully sent'}, 200

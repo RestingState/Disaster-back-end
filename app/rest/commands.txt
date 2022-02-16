@@ -25,6 +25,8 @@ curl -X POST http://127.0.0.1:5000/cities -H "Content-Type:application/json" --d
 
 curl -X GET http://127.0.0.1:5000/cities/2
 
+curl -X POST http://127.0.0.1:5000/feedback -H "Content-Type:application/json" --data "{\"email\":\"test@gmail.com\", \"name\":\"Elon Musk\", \"message\":\"I'm very satisfied with your service. Best regards!!!\"}"
+
 ---------------------------------------------------------------------------------------
 sky_info_api
 ---------------------------------------------------------------------------------------

@@ -4,7 +4,8 @@ from app.api.planet import Planet as PlanetClass
 import datetime
 from app.models.models import *
 from app.api.satellite import Satellite
-from app.api.email_newsletter import send_email
+from app.api.email_newsletter import send_event_email
+from textwrap import wrap
 
 
 def delete_records():
@@ -65,16 +66,19 @@ def check_satellite_subscription():
                          satellite.call_frequency
 
         sat = Satellite(satellite.norad_id)
+
         message = Satellite.get_satellite_observation(sat, data_satellite, latitude, longitude)
-        print(message)
+        message = message[:-1]
+        message = message.split(' ')
+        message = [' '.join(x) for x in zip(message[0::2], message[1::2])]
+        message = '\n'.join(message)
 
         if message != 'No observation of satellite soon':
             if (i == len(subscriptions) - 1) or (i != len(subscriptions) - 1 and subscriptions[i][0] != subscriptions[i + 1][0]):
                 text += f'Satellite \'{satellite.satname}\' with norad \'{satellite.norad_id}\' can be ' \
-                        f'observed at {message} in {city.name}.\n'
-                send_email(user_email, 'Future satellites flights', text)
-                print(text)
+                        f'observed at:\n{message}\n'
+                send_event_email(user.first_name + ' ' + user.last_name, user_email, 'Future satellites flights', city.name, text)
                 text = ''
             elif subscriptions[i][0] == subscriptions[i + 1][0] and i != len(subscriptions) - 1:
                 text += f'Satellite \'{satellite.satname}\' with norad \'{satellite.norad_id}\' can be ' \
-                        f'observed at {message} in {city.name}.\n'
+                        f'observed at:\n{message}\n'
