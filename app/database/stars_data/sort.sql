@@ -12,5 +12,7 @@ CREATE VIEW  stars_parallax AS
 select * from stars
 order by parallax::decimal DESC;
 
+
+
  -- select * from stars_flux_v;
 -- select * from stars_parallax;
