@@ -14,7 +14,7 @@ def insert_sat_data(sat_id,sat_data):
     try:
         # read database configuration
         # connect to the PostgreSQL database
-        conn = psycopg2.connect(user="tecmint", password="rolny34F",host="127.0.0.1", port="5432", database="test")
+        conn = psycopg2.connect(user="jwybdxdlrzhdqo", password="43dbc041a5cdd9494c373cc1ba1a74dfb0e06bd0b35783472cf8a2c0d5f471a2",host="ec2-54-78-36-245.eu-west-1.compute.amazonaws.com", port="5432", database="dcdois4sl8pdd2")
         # create a new cursor
         cur = conn.cursor()
         # execute the INSERT statement
